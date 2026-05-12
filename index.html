@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maker-X — ShanghaiTech University</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Exo+2:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,300&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --blue: #2563EB; --indigo: #4F46E5; --purple: #7C3AED;
+  --fuchsia: #C026D3; --coral: #EA580C; --gold: #D97706;
+  --green: #059669; --teal: #0891B2;
+  --text: #0F172A; --muted: #475569; --border: #E2E8F0;
+  --surface: #F8FAFF;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Barlow', sans-serif;
+  background: #0A0F1E;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* ── NOISE OVERLAY ── */
+body::before {
+  content: '';
+  position: fixed; inset: 0; z-index: 0; pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  opacity: 0.4;
+}
+
+/* ════════════════════════════════
+   NAV
+════════════════════════════════ */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  padding: 0 48px;
+  display: flex; align-items: center; justify-content: space-between;
+  height: 64px;
+  background: rgba(10,15,30,0.75);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+
+.nav-logo {
+  font-family: 'Audiowide', sans-serif;
+  font-size: 18px; color: #fff;
+  text-decoration: none; letter-spacing: .04em;
+}
+.nav-logo span { color: #93C5FD; }
+
+.nav-links { display: flex; gap: 32px; list-style: none; }
+.nav-links a {
+  font-family: 'Exo 2', sans-serif; font-size: 12px; font-weight: 600;
+  letter-spacing: .14em; text-transform: uppercase;
+  color: rgba(255,255,255,0.55); text-decoration: none;
+  transition: color .2s;
+}
+.nav-links a:hover { color: #fff; }
+
+.nav-cta {
+  font-family: 'Exo 2', sans-serif; font-size: 11px; font-weight: 700;
+  letter-spacing: .14em; text-transform: uppercase;
+  padding: 8px 20px; border-radius: 4px;
+  background: var(--blue); color: #fff;
+  text-decoration: none; transition: background .2s;
+}
+.nav-cta:hover { background: #1D4ED8; }
+
+/* ════════════════════════════════
+   HERO
+════════════════════════════════ */
+.hero {
+  position: relative; min-height: 100vh;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  text-align: center;
+  padding: 120px 24px 80px;
+  overflow: hidden;
+}
+
+/* Gradient orbs */
+.hero::before {
+  content: '';
+  position: absolute; inset: 0; z-index: 0;
+  background:
+    radial-gradient(ellipse 70% 60% at 15% 20%, rgba(37,99,235,0.35) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 50% at 85% 15%, rgba(124,58,237,0.30) 0%, transparent 60%),
+    radial-gradient(ellipse 80% 60% at 50% 110%, rgba(192,38,211,0.20) 0%, transparent 55%);
+}
+
+/* Grid lines */
+.hero::after {
+  content: '';
+  position: absolute; inset: 0; z-index: 0; pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+.hero-content { position: relative; z-index: 1; max-width: 860px; }
+
+.hero-badge {
+  display: inline-flex; align-items: center; gap: 10px;
+  margin-bottom: 28px;
+  padding: 6px 16px 6px 10px; border-radius: 30px;
+  border: 1px solid rgba(147,197,253,0.3);
+  background: rgba(37,99,235,0.12);
+  font-family: 'Exo 2', sans-serif; font-size: 11px; font-weight: 700;
+  letter-spacing: .18em; text-transform: uppercase; color: #93C5FD;
+}
+.hero-badge-dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: #3B82F6;
+  box-shadow: 0 0 8px #3B82F6;
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.6; transform: scale(0.85); }
+}
+
+h1.hero-title {
+  font-family: 'Audiowide', sans-serif;
+  font-size: clamp(64px, 10vw, 110px);
+  line-height: .88;
+  color: #fff;
+  margin-bottom: 8px;
+  letter-spacing: -.01em;
+}
+h1.hero-title .accent { color: #93C5FD; }
+
+.hero-sub {
+  font-family: 'Exo 2', sans-serif; font-size: 13px; font-weight: 300;
+  letter-spacing: .22em; text-transform: uppercase;
+  color: rgba(255,255,255,0.45); margin-bottom: 24px;
+}
+
+.hero-tagline {
+  font-size: 19px; font-weight: 300; line-height: 1.65;
+  color: rgba(255,255,255,0.72); max-width: 620px;
+  margin: 0 auto 40px;
+}
+.hero-tagline strong { color: #FCD34D; font-weight: 600; }
+
+/* Rainbow bar */
+.rainbow-bar {
+  height: 3px; width: 120px; margin: 0 auto 36px;
+  border-radius: 2px;
+  background: linear-gradient(to right, var(--blue),var(--indigo),var(--purple),var(--fuchsia),var(--coral),var(--gold),var(--green),var(--teal));
+}
+
+.hero-actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+.btn-primary {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 14px 28px; border-radius: 6px;
+  background: var(--blue); color: #fff;
+  font-family: 'Exo 2', sans-serif; font-size: 12px; font-weight: 700;
+  letter-spacing: .14em; text-transform: uppercase;
+  text-decoration: none; transition: background .2s, transform .2s;
+}
+.btn-primary:hover { background: #1D4ED8; transform: translateY(-2px); }
+
+.btn-outline {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 14px 28px; border-radius: 6px;
+  border: 1px solid rgba(255,255,255,0.2); color: rgba(255,255,255,0.8);
+  font-family: 'Exo 2', sans-serif; font-size: 12px; font-weight: 700;
+  letter-spacing: .14em; text-transform: uppercase;
+  text-decoration: none; background: rgba(255,255,255,0.04);
+  transition: border-color .2s, color .2s, transform .2s;
+}
+.btn-outline:hover { border-color: rgba(255,255,255,0.5); color: #fff; transform: translateY(-2px); }
+
+/* Scroll indicator */
+.scroll-hint {
+  position: absolute; bottom: 36px; left: 50%; transform: translateX(-50%);
+  display: flex; flex-direction: column; align-items: center; gap: 6px;
+  font-family: 'Exo 2', sans-serif; font-size: 9px; font-weight: 600;
+  letter-spacing: .2em; text-transform: uppercase;
+  color: rgba(255,255,255,0.25); z-index: 1;
+  animation: fadeup 3s ease infinite;
+}
+.scroll-hint svg { opacity: 0.4; }
+@keyframes fadeup {
+  0%, 100% { opacity: 0.4; transform: translateX(-50%) translateY(0); }
+  50%       { opacity: 0.9; transform: translateX(-50%) translateY(6px); }
+}
+
+/* ════════════════════════════════
+   STATS STRIP
+════════════════════════════════ */
+.stats-strip {
+  display: grid; grid-template-columns: repeat(4,1fr);
+  border-top: 1px solid rgba(255,255,255,0.07);
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+  background: rgba(255,255,255,0.03);
+}
+
+.stat {
+  padding: 28px 20px; text-align: center;
+  border-right: 1px solid rgba(255,255,255,0.07);
+  position: relative;
+}
+.stat:last-child { border-right: none; }
+.stat::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+}
+.stat:nth-child(1)::before { background: var(--blue); }
+.stat:nth-child(2)::before { background: var(--purple); }
+.stat:nth-child(3)::before { background: var(--coral); }
+.stat:nth-child(4)::before { background: var(--green); }
+
+.stat-num {
+  font-family: 'Audiowide', sans-serif; font-size: 36px;
+  display: block; line-height: 1; margin-bottom: 7px;
+}
+.stat:nth-child(1) .stat-num { color: #60A5FA; }
+.stat:nth-child(2) .stat-num { color: #A78BFA; }
+.stat:nth-child(3) .stat-num { color: #FB923C; }
+.stat:nth-child(4) .stat-num { color: #34D399; }
+
+.stat-label {
+  font-family: 'Exo 2', sans-serif; font-size: 9px;
+  letter-spacing: .2em; text-transform: uppercase;
+  color: rgba(255,255,255,0.38);
+}
+
+/* ════════════════════════════════
+   SECTIONS COMMON
+════════════════════════════════ */
+section { position: relative; z-index: 1; }
+
+.section-inner {
+  max-width: 1080px; margin: 0 auto;
+  padding: 96px 48px;
+}
+
+.sl {
+  font-family: 'Exo 2', sans-serif; font-size: 9px; font-weight: 700;
+  letter-spacing: .32em; text-transform: uppercase;
+  color: var(--green); margin-bottom: 14px; display: block;
+}
+.sl-blue  { color: #60A5FA; }
+.sl-purple{ color: #A78BFA; }
+.sl-coral { color: #FB923C; }
+.sl-gold  { color: #FCD34D; }
+
+h2.section-title {
+  font-family: 'Exo 2', sans-serif; font-size: 36px; font-weight: 800;
+  color: #fff; line-height: 1.15; margin-bottom: 16px;
+}
+
+.section-lead {
+  font-size: 17px; font-weight: 300; line-height: 1.7;
+  color: rgba(255,255,255,0.60); max-width: 640px; margin-bottom: 56px;
+}
+.section-lead strong { color: #fff; font-weight: 600; }
+
+/* ════════════════════════════════
+   MISSION — FOUR VERBS
+════════════════════════════════ */
+.mission-section { background: #0D1221; }
+
+.verbs-grid {
+  display: grid; grid-template-columns: repeat(4,1fr); gap: 1px;
+  border: 1px solid rgba(255,255,255,0.07); border-radius: 12px;
+  overflow: hidden;
+}
+
+.verb-card {
+  padding: 28px 24px 24px;
+  background: rgba(255,255,255,0.025);
+  border-right: 1px solid rgba(255,255,255,0.07);
+  transition: background .2s;
+}
+.verb-card:last-child { border-right: none; }
+.verb-card:hover { background: rgba(255,255,255,0.05); }
+
+.verb-num {
+  font-family: 'Audiowide', sans-serif; font-size: 11px;
+  margin-bottom: 14px; display: block; opacity: 0.35;
+}
+.vc-1 .verb-num { color: #60A5FA; }
+.vc-2 .verb-num { color: #A78BFA; }
+.vc-3 .verb-num { color: #FB923C; }
+.vc-4 .verb-num { color: #34D399; }
+
+.verb-icon { font-size: 26px; margin-bottom: 12px; display: block; }
+
+.verb-name {
+  font-family: 'Audiowide', sans-serif; font-size: 14px;
+  margin-bottom: 8px; display: block;
+}
+.vc-1 .verb-name { color: #60A5FA; }
+.vc-2 .verb-name { color: #A78BFA; }
+.vc-3 .verb-name { color: #FB923C; }
+.vc-4 .verb-name { color: #34D399; }
+
+.verb-desc {
+  font-size: 12.5px; line-height: 1.6;
+  color: rgba(255,255,255,0.45);
+  font-family: 'Exo 2', sans-serif;
+}
+
+/* ════════════════════════════════
+   TECHNOLOGY
+════════════════════════════════ */
+.tech-section { background: #0A0F1E; }
+
+.tech-grid {
+  display: grid; grid-template-columns: repeat(3,1fr); gap: 16px;
+}
+
+.tech-card {
+  border-radius: 10px; overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.07);
+  background: rgba(255,255,255,0.025);
+  padding: 24px; transition: border-color .2s, transform .2s;
+}
+.tech-card:hover { border-color: rgba(255,255,255,0.15); transform: translateY(-3px); }
+
+.tech-card-icon { font-size: 28px; margin-bottom: 14px; display: block; }
+
+.tech-card-title {
+  font-family: 'Exo 2', sans-serif; font-size: 13px; font-weight: 700;
+  letter-spacing: .1em; text-transform: uppercase;
+  color: #fff; margin-bottom: 8px;
+}
+
+.tech-card-desc {
+  font-size: 12.5px; line-height: 1.65;
+  color: rgba(255,255,255,0.45);
+}
+
+.tc-blue   { border-top: 3px solid var(--blue); }
+.tc-teal   { border-top: 3px solid var(--teal); }
+.tc-purple { border-top: 3px solid var(--purple); }
+.tc-green  { border-top: 3px solid var(--green); }
+.tc-coral  { border-top: 3px solid var(--coral); }
+.tc-gold   { border-top: 3px solid var(--gold); }
+
+/* ════════════════════════════════
+   TIMELINE
+════════════════════════════════ */
+.timeline-section { background: #0D1221; }
+
+.timeline {
+  position: relative;
+  display: grid; grid-template-columns: repeat(4,1fr); gap: 0;
+  margin-top: 8px;
+}
+
+/* Connecting line */
+.timeline::before {
+  content: ''; position: absolute;
+  top: 40px; left: 12.5%; right: 12.5%; height: 3px;
+  background: linear-gradient(to right, var(--blue),var(--purple),var(--coral),var(--green));
+  border-radius: 2px;
+}
+
+.tl-item {
+  display: flex; flex-direction: column; align-items: center;
+  gap: 14px; padding: 0 16px; text-align: center;
+}
+
+.tl-dot {
+  width: 80px; height: 80px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Audiowide', sans-serif; font-size: 11px; font-weight: 700;
+  position: relative; z-index: 1;
+  border: 2px solid; letter-spacing: .05em;
+  flex-shrink: 0;
+}
+.tl-1 .tl-dot { background: rgba(37,99,235,.15);  color: #60A5FA;  border-color: rgba(96,165,250,.5); }
+.tl-2 .tl-dot { background: rgba(124,58,237,.15); color: #A78BFA;  border-color: rgba(167,139,250,.5); }
+.tl-3 .tl-dot { background: rgba(234,88,12,.15);  color: #FB923C;  border-color: rgba(251,146,60,.5); }
+.tl-4 .tl-dot { background: rgba(5,150,105,.15);  color: #34D399;  border-color: rgba(52,211,153,.5); }
+
+.tl-week {
+  font-family: 'Exo 2', sans-serif; font-size: 11px; font-weight: 700;
+  letter-spacing: .12em; text-transform: uppercase; color: #fff;
+}
+
+.tl-label {
+  font-family: 'Audiowide', sans-serif; font-size: 12px;
+}
+.tl-1 .tl-label { color: #60A5FA; }
+.tl-2 .tl-label { color: #A78BFA; }
+.tl-3 .tl-label { color: #FB923C; }
+.tl-4 .tl-label { color: #34D399; }
+
+.tl-desc {
+  font-size: 11.5px; line-height: 1.6;
+  color: rgba(255,255,255,0.4); max-width: 140px;
+}
+
+/* ════════════════════════════════
+   INSTRUCTORS
+════════════════════════════════ */
+.instructors-section { background: #0A0F1E; }
+
+.instructors-grid {
+  display: grid; grid-template-columns: repeat(3,1fr); gap: 20px;
+}
+
+.instructor-card {
+  border-radius: 12px; overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.07);
+  background: rgba(255,255,255,0.025);
+  padding: 32px 28px;
+  display: flex; flex-direction: column; gap: 12px;
+  transition: border-color .2s, transform .2s;
+}
+.instructor-card:hover { border-color: rgba(255,255,255,0.15); transform: translateY(-3px); }
+
+.instructor-avatar {
+  width: 56px; height: 56px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Audiowide', sans-serif; font-size: 20px; color: #fff;
+  flex-shrink: 0;
+}
+.av-blue   { background: linear-gradient(135deg, #1D4ED8, #7C3AED); }
+.av-indigo { background: linear-gradient(135deg, #4F46E5, #0891B2); }
+.av-teal   { background: linear-gradient(135deg, #0891B2, #059669); }
+
+.instructor-name {
+  font-family: 'Exo 2', sans-serif; font-size: 16px; font-weight: 700;
+  color: #fff;
+}
+.instructor-role {
+  font-family: 'Exo 2', sans-serif; font-size: 10px; font-weight: 600;
+  letter-spacing: .18em; text-transform: uppercase;
+  color: rgba(255,255,255,0.35);
+}
+
+.instructor-tag {
+  display: inline-block; margin-top: 4px;
+  padding: 3px 10px; border-radius: 20px;
+  font-family: 'Exo 2', sans-serif; font-size: 9px; font-weight: 700;
+  letter-spacing: .14em; text-transform: uppercase;
+}
+.tag-sca  { background: rgba(37,99,235,.2);  color: #93C5FD; border: 1px solid rgba(37,99,235,.4); }
+.tag-sist { background: rgba(5,150,105,.2);  color: #6EE7B7; border: 1px solid rgba(5,150,105,.4); }
+
+/* ════════════════════════════════
+   CTA BAND
+════════════════════════════════ */
+.cta-section {
+  background:
+    radial-gradient(ellipse 80% 80% at 50% 50%, rgba(37,99,235,0.18) 0%, transparent 65%),
+    #0A0F1E;
+  border-top: 1px solid rgba(255,255,255,0.07);
+}
+
+.cta-inner {
+  max-width: 780px; margin: 0 auto;
+  padding: 96px 48px; text-align: center;
+}
+
+.cta-inner h2 {
+  font-family: 'Audiowide', sans-serif; font-size: 36px;
+  color: #fff; margin-bottom: 16px; line-height: 1.2;
+}
+.cta-inner h2 span { color: #93C5FD; }
+
+.cta-inner p {
+  font-size: 16px; font-weight: 300; line-height: 1.65;
+  color: rgba(255,255,255,0.55); margin-bottom: 40px;
+}
+
+.cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+.btn-lg {
+  padding: 16px 36px; border-radius: 6px;
+  font-family: 'Exo 2', sans-serif; font-size: 12px; font-weight: 700;
+  letter-spacing: .14em; text-transform: uppercase; text-decoration: none;
+  transition: all .2s;
+}
+.btn-lg-primary { background: var(--blue); color: #fff; }
+.btn-lg-primary:hover { background: #1D4ED8; transform: translateY(-2px); }
+.btn-lg-ghost {
+  background: transparent; color: rgba(255,255,255,0.65);
+  border: 1px solid rgba(255,255,255,0.2);
+}
+.btn-lg-ghost:hover { border-color: rgba(255,255,255,0.5); color: #fff; transform: translateY(-2px); }
+
+/* ════════════════════════════════
+   FOOTER
+════════════════════════════════ */
+footer {
+  border-top: 1px solid rgba(255,255,255,0.07);
+  background: rgba(0,0,0,0.3);
+  padding: 28px 48px;
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 12px;
+}
+
+.footer-left {
+  font-family: 'Exo 2', sans-serif; font-size: 12px; font-weight: 700;
+  color: #fff; letter-spacing: .06em;
+}
+.footer-left span { color: rgba(255,255,255,0.35); font-weight: 400; }
+
+.footer-right {
+  display: flex; gap: 28px;
+}
+.footer-right a {
+  font-family: 'Exo 2', sans-serif; font-size: 11px;
+  letter-spacing: .1em; text-transform: uppercase;
+  color: rgba(255,255,255,0.35); text-decoration: none;
+  transition: color .2s;
+}
+.footer-right a:hover { color: rgba(255,255,255,0.7); }
+
+/* rainbow footer border */
+footer::before {
+  content: ''; display: block;
+  position: absolute; left: 0; right: 0; height: 0;
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#">MAKER<span>-X</span></a>
+  <ul class="nav-links">
+    <li><a href="#mission">Mission</a></li>
+    <li><a href="#tech">Technology</a></li>
+    <li><a href="#timeline">Timeline</a></li>
+    <li><a href="#instructors">Instructors</a></li>
+  </ul>
+  <a class="nav-cta" href="Brief.html">Course Brief ↗</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-badge">
+      <div class="hero-badge-dot"></div>
+      Summer 2026 &nbsp;·&nbsp; ShanghaiTech University
+    </div>
+
+    <h1 class="hero-title">MAKER<span class="accent">-X</span></h1>
+    <p class="hero-sub">School of Creativity &amp; Art &nbsp;·&nbsp; SIST</p>
+
+    <div class="rainbow-bar"></div>
+
+    <p class="hero-tagline">
+      You don't just <strong>build</strong> a robot — you conceive the idea,
+      design its personality, build the electronics, and then
+      <strong>pitch and sell</strong> it. Four weeks. One team. One product you own end-to-end.
+    </p>
+
+    <div class="hero-actions">
+      <a class="btn-primary" href="#mission">Explore the Course ↓</a>
+      <a class="btn-outline" href="Brief.html">View Full Brief ↗</a>
+    </div>
+  </div>
+
+  <div class="scroll-hint">
+    <svg width="16" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 16 20">
+      <rect x="4" y="1" width="8" height="13" rx="4"/>
+      <line x1="8" y1="5" x2="8" y2="8"/>
+      <line x1="4" y1="18" x2="8" y2="22"/>
+      <line x1="12" y1="18" x2="8" y2="22"/>
+    </svg>
+    scroll
+  </div>
+</section>
+
+<!-- STATS STRIP -->
+<div class="stats-strip">
+  <div class="stat">
+    <span class="stat-num">4</span>
+    <span class="stat-label">Weeks</span>
+  </div>
+  <div class="stat">
+    <span class="stat-num">12h</span>
+    <span class="stat-label">Per Week</span>
+  </div>
+  <div class="stat">
+    <span class="stat-num">¥600</span>
+    <span class="stat-label">Per Team Budget</span>
+  </div>
+  <div class="stat">
+    <span class="stat-num">2–3</span>
+    <span class="stat-label">Students / Team</span>
+  </div>
+</div>
+
+<!-- MISSION -->
+<section class="mission-section" id="mission">
+  <div class="section-inner">
+    <span class="sl sl-blue">// The Mission</span>
+    <h2 class="section-title">Conceive it. Design it.<br>Build it. Sell it.</h2>
+    <p class="section-lead">
+      Maker-X is an intensive <strong>4-week project course</strong> where cross-disciplinary teams
+      build AI-powered robotic companions from scratch — hardware, firmware, personality, and pitch.
+      Instruction in <strong>Chinese &amp; English</strong>.
+    </p>
+
+    <div class="verbs-grid">
+      <div class="verb-card vc-1">
+        <span class="verb-num">01</span>
+        <span class="verb-icon">💡</span>
+        <span class="verb-name">Conceive</span>
+        <span class="verb-desc">Identify a real user and a genuine need. Define the personality and the purpose of your robot before touching any hardware.</span>
+      </div>
+      <div class="verb-card vc-2">
+        <span class="verb-num">02</span>
+        <span class="verb-icon">✏️</span>
+        <span class="verb-name">Design</span>
+        <span class="verb-desc">Shape, sound, language, expression — every detail of the robot's soul. Prototype rapidly and iterate without fear.</span>
+      </div>
+      <div class="verb-card vc-3">
+        <span class="verb-num">03</span>
+        <span class="verb-icon">🔧</span>
+        <span class="verb-name">Build</span>
+        <span class="verb-desc">Solder, code, 3D-print, and integrate. Electronics, firmware, enclosure — one complete, working product.</span>
+      </div>
+      <div class="verb-card vc-4">
+        <span class="verb-num">04</span>
+        <span class="verb-icon">🚀</span>
+        <span class="verb-name">Sell</span>
+        <span class="verb-desc">Demo and pitch to real university guests. A poster, a product, a story — this is your public debut.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TECHNOLOGY -->
+<section class="tech-section" id="tech">
+  <div class="section-inner">
+    <span class="sl sl-purple">// Core Technology</span>
+    <h2 class="section-title">What you'll build with</h2>
+    <p class="section-lead">
+      Every team gets the same foundation. What you build on top of it is entirely yours.
+    </p>
+
+    <div class="tech-grid">
+      <div class="tech-card tc-blue">
+        <span class="tech-card-icon">🧠</span>
+        <div class="tech-card-title">Brain — ESP32-S3</div>
+        <div class="tech-card-desc">Microcontroller with integrated LCD display, Wi-Fi, Bluetooth, and enough compute to run the whole show.</div>
+      </div>
+      <div class="tech-card tc-teal">
+        <span class="tech-card-icon">☁️</span>
+        <div class="tech-card-title">Cloud LLM API</div>
+        <div class="tech-card-desc">Connect your robot to a large language model over Wi-Fi. Your robot isn't scripted — it thinks.</div>
+      </div>
+      <div class="tech-card tc-purple">
+        <span class="tech-card-icon">👁️</span>
+        <div class="tech-card-title">Sensing</div>
+        <div class="tech-card-desc">Camera, heart rate, GSR — or whatever makes your concept real. Pick the sensors that fit your user story.</div>
+      </div>
+      <div class="tech-card tc-green">
+        <span class="tech-card-icon">🔊</span>
+        <div class="tech-card-title">Voice I/O</div>
+        <div class="tech-card-desc">Speech synthesis and natural voice input. Your robot speaks, listens, and responds in real time.</div>
+      </div>
+      <div class="tech-card tc-coral">
+        <span class="tech-card-icon">🖨️</span>
+        <div class="tech-card-title">3D-Printed Body</div>
+        <div class="tech-card-desc">Design and print a custom enclosure — up to 180 × 180 × 180 mm. Shape is part of the personality.</div>
+      </div>
+      <div class="tech-card tc-gold">
+        <span class="tech-card-icon">✦</span>
+        <div class="tech-card-title">Your X Factor</div>
+        <div class="tech-card-desc">Maker-X leaves room for the unexpected. If it makes your robot more yours, it's fair game.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section class="timeline-section" id="timeline">
+  <div class="section-inner">
+    <span class="sl sl-coral">// Mission Timeline</span>
+    <h2 class="section-title">Four weeks.<br>One product.</h2>
+    <p class="section-lead">
+      The course runs at <strong>12 hours per week</strong> — enough time to go deep, not enough time to hesitate.
+    </p>
+
+    <div class="timeline">
+      <div class="tl-item tl-1">
+        <div class="tl-dot">W1</div>
+        <div class="tl-week">Week One</div>
+        <div class="tl-label">Conceive</div>
+        <div class="tl-desc">User research, concept selection, personality brief</div>
+      </div>
+      <div class="tl-item tl-2">
+        <div class="tl-dot">W2</div>
+        <div class="tl-week">Week Two</div>
+        <div class="tl-label">Design</div>
+        <div class="tl-desc">Prototyping, firmware, form &amp; character development</div>
+      </div>
+      <div class="tl-item tl-3">
+        <div class="tl-dot">W3</div>
+        <div class="tl-week">Week Three</div>
+        <div class="tl-label">Build</div>
+        <div class="tl-desc">User testing, refinement, 3D-print the enclosure</div>
+      </div>
+      <div class="tl-item tl-4">
+        <div class="tl-dot">W4 ★</div>
+        <div class="tl-week">Week Four</div>
+        <div class="tl-label">Sell ★</div>
+        <div class="tl-desc">Demo &amp; pitch to university guests — poster presentation</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INSTRUCTORS -->
+<section class="instructors-section" id="instructors">
+  <div class="section-inner">
+    <span class="sl sl-gold">// Instructors</span>
+    <h2 class="section-title">Meet your team</h2>
+    <p class="section-lead">
+      A joint offering from <strong>SCA</strong> (School of Creativity and Art) and <strong>SIST</strong>
+      (School of Information Science and Technology).
+    </p>
+
+    <div class="instructors-grid">
+      <div class="instructor-card">
+        <div class="instructor-avatar av-blue">S</div>
+        <div>
+          <div class="instructor-name">Shimon Shmueli</div>
+          <div class="instructor-role">Instructor</div>
+          <span class="instructor-tag tag-sca">SCA</span>
+        </div>
+      </div>
+      <div class="instructor-card">
+        <div class="instructor-avatar av-indigo">D</div>
+        <div>
+          <div class="instructor-name">Daniel Koo</div>
+          <div class="instructor-role">Instructor</div>
+          <span class="instructor-tag tag-sca">SCA</span>
+        </div>
+      </div>
+      <div class="instructor-card">
+        <div class="instructor-avatar av-teal">梁</div>
+        <div>
+          <div class="instructor-name">梁俊睿</div>
+          <div class="instructor-role">Instructor</div>
+          <span class="instructor-tag tag-sist">SIST</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="cta-inner">
+    <h2>Ready to build<br>something <span>real</span>?</h2>
+    <p>
+      Download the full course brief for specifications, deliverables,
+      budget breakdown, and the complete project brief.
+    </p>
+    <div class="cta-buttons">
+      <a class="btn-lg btn-lg-primary" href="Brief.html">View Full Course Brief ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-left">
+    MAKER-X &nbsp;<span>·&nbsp; Summer 2026 &nbsp;·&nbsp; ShanghaiTech University</span>
+  </div>
+  <div class="footer-right">
+    <a href="Brief.html">Course Brief</a>
+    <a href="#mission">Mission</a>
+    <a href="#instructors">Instructors</a>
+  </div>
+</footer>
+
+</body>
+</html>
