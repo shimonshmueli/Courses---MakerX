@@ -493,6 +493,22 @@ h2.section-title {
 }
 .btn-lg-ghost:hover { border-color: rgba(255,255,255,0.5); color: #fff; transform: translateY(-2px); }
 
+.btn-lg-interested {
+  background: linear-gradient(135deg, #D97706, #EA580C);
+  color: #fff; font-size: 14px; letter-spacing: .1em;
+  box-shadow: 0 0 28px rgba(217,119,6,0.5), 0 4px 16px rgba(0,0,0,0.3);
+  animation: glow 2.5s ease-in-out infinite;
+}
+.btn-lg-interested:hover {
+  background: linear-gradient(135deg, #B45309, #C2410C);
+  transform: translateY(-3px);
+  box-shadow: 0 0 40px rgba(217,119,6,0.7), 0 6px 20px rgba(0,0,0,0.35);
+}
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 28px rgba(217,119,6,0.5), 0 4px 16px rgba(0,0,0,0.3); }
+  50%       { box-shadow: 0 0 48px rgba(217,119,6,0.85), 0 4px 16px rgba(0,0,0,0.3); }
+}
+
 /* ════════════════════════════════
    FOOTER
 ════════════════════════════════ */
@@ -768,6 +784,7 @@ footer::before {
       budget breakdown, and the complete project brief.
     </p>
     <div class="cta-buttons">
+      <a class="btn-lg btn-lg-interested" href="mailto:sshmueli@shanghaitech.edu.cn?subject=I%20am%20interested">✉️ &nbsp;I Am Interested</a>
       <a class="btn-lg btn-lg-primary" href="Brief.html">View Full Course Brief ↗</a>
     </div>
   </div>
