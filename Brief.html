@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Maker-X — Design Brief</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Exo+2:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+:root{
+  --blue:#2563EB; --indigo:#4F46E5; --purple:#7C3AED;
+  --fuchsia:#C026D3; --coral:#EA580C; --gold:#D97706;
+  --green:#059669; --teal:#0891B2;
+  --text:#0F172A; --muted:#475569; --border:#E2E8F0;
+}
+
+body{
+  background:#94A3B8;
+  display:flex;justify-content:center;
+  padding:40px 20px 80px;
+  font-family:'Barlow',sans-serif;
+}
+
+.poster{
+  width:900px;background:#fff;color:var(--text);
+  overflow:hidden;
+  box-shadow:0 8px 40px rgba(0,0,0,0.2);
+}
+
+/* ══ HEADER ══ */
+.header{
+  padding:40px 52px 0 56px;
+  display:grid;grid-template-columns:1fr 215px;
+  gap:0;align-items:flex-start;
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(ellipse at 5% 0%,  #1D4ED8 0%, transparent 52%),
+    radial-gradient(ellipse at 98% 5%, #6D28D9 0%, transparent 52%),
+    radial-gradient(ellipse at 55% 115%,#BE185D 0%, transparent 50%),
+    #1E1B4B;
+}
+
+/* Decorative rings */
+.hring1{position:absolute;top:-50px;right:220px;width:200px;height:200px;border-radius:50%;border:1px solid rgba(147,197,253,0.1);pointer-events:none}
+.hring2{position:absolute;bottom:-70px;left:-40px;width:220px;height:220px;border-radius:50%;border:1px solid rgba(167,139,250,0.09);pointer-events:none}
+
+/* Rainbow bottom stripe */
+.header::after{
+  content:'';position:absolute;bottom:0;left:0;right:0;height:4px;
+  background:linear-gradient(to right,var(--blue),var(--indigo),var(--purple),var(--fuchsia),var(--coral),var(--gold),var(--green),var(--teal));
+}
+
+.header-left{padding-bottom:44px}
+
+.badge-row{display:flex;align-items:center;gap:14px;margin-bottom:16px}
+
+.badge{
+  font-family:'Exo 2',sans-serif;font-size:9px;font-weight:700;
+  letter-spacing:.22em;text-transform:uppercase;
+  color:#FCD34D;border:1px solid rgba(252,211,77,0.6);
+  padding:4px 12px;border-radius:2px;background:rgba(252,211,77,0.08);
+}
+
+.institution{
+  font-family:'Exo 2',sans-serif;font-size:10px;font-weight:300;
+  color:rgba(255,255,255,0.45);letter-spacing:.1em;text-transform:uppercase;
+}
+
+h1.title{
+  font-family:'Audiowide',sans-serif;font-size:60px;line-height:.88;
+  color:#fff;margin-bottom:13px;
+}
+
+h1.title .ac{color:#93C5FD}
+
+.tagline{
+  font-family:'Exo 2',sans-serif;font-size:14px;font-weight:300;font-style:italic;
+  color:#FCD34D;letter-spacing:.08em;margin-bottom:16px;
+}
+
+/* ── FOUR VERBS STRIP ── */
+.verbs{display:flex;align-items:center;gap:5px;flex-wrap:wrap}
+
+.verb{
+  font-family:'Exo 2',sans-serif;font-size:9px;font-weight:700;
+  letter-spacing:.15em;text-transform:uppercase;
+  padding:4px 11px;border-radius:3px;border:1px solid;
+}
+
+.v1{color:#93C5FD;border-color:rgba(147,197,253,.4);background:rgba(147,197,253,.1)}
+.v2{color:#C4B5FD;border-color:rgba(196,181,253,.4);background:rgba(196,181,253,.1)}
+.v3{color:#FDBA74;border-color:rgba(253,186,116,.4);background:rgba(253,186,116,.1)}
+.v4{color:#6EE7B7;border-color:rgba(110,231,183,.4);background:rgba(110,231,183,.1)}
+
+.vsep{color:rgba(255,255,255,0.2);font-size:12px;padding:0 1px}
+
+/* ══ STATS BAR ══ */
+.stats-bar{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  border-bottom:1px solid var(--border);
+}
+
+.stat{
+  padding:17px 16px;text-align:center;
+  border-right:1px solid var(--border);position:relative;
+}
+.stat:last-child{border-right:none}
+
+.stat::before{content:'';position:absolute;top:0;left:0;right:0;height:3px}
+.stat:nth-child(1)::before{background:var(--blue)}
+.stat:nth-child(2)::before{background:var(--purple)}
+.stat:nth-child(3)::before{background:var(--coral)}
+.stat:nth-child(4)::before{background:var(--green)}
+
+.stat-num{font-family:'Audiowide',sans-serif;font-size:28px;display:block;line-height:1;margin-bottom:5px}
+.stat:nth-child(1) .stat-num{color:var(--blue)}
+.stat:nth-child(2) .stat-num{color:var(--purple)}
+.stat:nth-child(3) .stat-num{color:var(--coral)}
+.stat:nth-child(4) .stat-num{color:var(--green)}
+
+.stat-label{font-family:'Exo 2',sans-serif;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+
+/* ══ SECTION LABEL ══ */
+.sl{font-family:'Exo 2',sans-serif;font-size:9px;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:var(--green);margin-bottom:12px}
+
+/* ══ CIRCUIT DOT-GRID ══ */
+.body-zone{
+  background-image:
+    radial-gradient(rgba(79,70,229,0.09) 1.5px, transparent 1.5px),
+    radial-gradient(rgba(79,70,229,0.04) 1px, transparent 1px);
+  background-size:28px 28px, 14px 14px;
+  background-position:0 0, 7px 7px;
+}
+
+/* ══ MISSION ══ */
+.mission{padding:28px 56px 24px;border-bottom:1px solid var(--border);background:#fff}
+
+.mission-text{font-size:18.5px;font-weight:300;line-height:1.65;color:var(--text);max-width:710px;margin-bottom:20px}
+
+.mission-text strong{font-weight:600;color:var(--blue)}
+.mission-text em{font-style:normal;font-weight:600;color:var(--green)}
+
+/* 4-action flow in mission */
+.action-flow{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  gap:0;border:1px solid var(--border);border-radius:8px;overflow:hidden;
+}
+
+.action-step{
+  padding:12px 14px;text-align:center;
+  border-right:1px solid var(--border);
+}
+.action-step:last-child{border-right:none}
+
+.action-step:nth-child(1){background:#EFF6FF}
+.action-step:nth-child(2){background:#F5F3FF}
+.action-step:nth-child(3){background:#FFF7ED}
+.action-step:nth-child(4){background:#ECFDF5}
+
+.action-verb{
+  font-family:'Audiowide',sans-serif;font-size:11px;
+  display:block;margin-bottom:4px;
+}
+.action-step:nth-child(1) .action-verb{color:var(--blue)}
+.action-step:nth-child(2) .action-verb{color:var(--purple)}
+.action-step:nth-child(3) .action-verb{color:var(--coral)}
+.action-step:nth-child(4) .action-verb{color:var(--green)}
+
+.action-sub{font-family:'Exo 2',sans-serif;font-size:9px;color:var(--muted);letter-spacing:.05em}
+
+/* ══ PHOTO STRIP ══ */
+.photo-strip{display:grid;grid-template-columns:repeat(3,1fr);height:175px;border-bottom:1px solid var(--border)}
+
+.photo-card{position:relative;overflow:hidden}
+.photo-card+.photo-card{border-left:1px solid rgba(255,255,255,0.25)}
+
+.photo-card img{width:100%;height:100%;object-fit:cover;display:block;filter:brightness(0.88) saturate(1.2)}
+
+.photo-overlay{position:absolute;inset:0;display:flex;align-items:flex-end;padding:11px 14px}
+
+.photo-card:nth-child(1) .photo-overlay{background:linear-gradient(to top,rgba(29,78,216,0.78) 0%,transparent 55%)}
+.photo-card:nth-child(2) .photo-overlay{background:linear-gradient(to top,rgba(5,150,105,0.78) 0%,transparent 55%)}
+.photo-card:nth-child(3) .photo-overlay{background:linear-gradient(to top,rgba(124,58,237,0.78) 0%,transparent 55%)}
+
+.photo-label{
+  font-family:'Exo 2',sans-serif;font-size:11px;font-weight:700;
+  letter-spacing:.1em;text-transform:uppercase;color:#fff;
+  border-bottom:2px solid rgba(255,255,255,0.55);padding-bottom:2px;
+}
+
+/* ══ TWO-COL ══ */
+.two-col{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--border)}
+
+.col{padding:24px 30px 24px 56px;background:#fff}
+.col.right{padding:24px 56px 24px 30px;background:#F8FAFF;border-left:1px solid var(--border)}
+
+.col-title{font-family:'Exo 2',sans-serif;font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--blue);margin-bottom:13px}
+
+.tech-list{list-style:none;display:flex;flex-direction:column;gap:5px}
+
+.tech-item{display:flex;align-items:center;font-size:12px;overflow:hidden}
+
+.ti-icon{width:30px;height:30px;display:flex;align-items:center;justify-content:center;font-size:13px;flex-shrink:0}
+
+.tech-item:nth-child(1){border-left:3px solid var(--blue);   background:#EFF6FF}
+.tech-item:nth-child(1) .ti-icon{background:rgba(37,99,235,.12)}
+.tech-item:nth-child(2){border-left:3px solid var(--teal);   background:#ECFEFF}
+.tech-item:nth-child(2) .ti-icon{background:rgba(8,145,178,.12)}
+.tech-item:nth-child(3){border-left:3px solid var(--purple);  background:#F5F3FF}
+.tech-item:nth-child(3) .ti-icon{background:rgba(124,58,237,.12)}
+.tech-item:nth-child(4){border-left:3px solid var(--green);   background:#ECFDF5}
+.tech-item:nth-child(4) .ti-icon{background:rgba(5,150,105,.12)}
+.tech-item:nth-child(5){border-left:3px solid var(--coral);   background:#FFF7ED}
+.tech-item:nth-child(5) .ti-icon{background:rgba(234,88,12,.12)}
+.tech-item:nth-child(6){border-left:3px solid var(--gold);    background:#FFFBEB}
+.tech-item:nth-child(6) .ti-icon{background:rgba(217,119,6,.12)}
+
+.ti-label{font-family:'Exo 2',sans-serif;font-size:8.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);min-width:50px;padding:0 7px}
+.ti-val{color:var(--text);padding:0 7px}
+
+.p-blurb{font-size:12.5px;line-height:1.75;color:var(--muted);margin-bottom:14px}
+
+.tags{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:14px}
+
+.tag{font-family:'Exo 2',sans-serif;font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:5px 12px;border-radius:20px;border:none}
+
+.t-cute  {background:#FCE7F3;color:#9D174D}
+.t-cool  {background:#DBEAFE;color:#1E40AF}
+.t-techy {background:#D1FAE5;color:#065F46}
+.t-warm  {background:#FEF3C7;color:#92400E}
+.t-robot {background:#EDE9FE;color:#5B21B6}
+.t-open  {background:#F1F5F9;color:#475569;font-style:italic}
+
+.method-box{padding:10px 14px;background:linear-gradient(135deg,#FEF9C3,#FEF3C7);border-left:3px solid var(--gold);font-size:12px;color:var(--text);font-style:italic;line-height:1.65}
+
+/* ══ SCENARIOS ══ */
+.scenarios{padding:24px 56px;border-bottom:1px solid var(--border);background:#fff}
+
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin-top:13px}
+
+.card{border-radius:10px;overflow:hidden;border:1px solid var(--border)}
+
+.card-head{padding:15px 17px 13px;display:flex;flex-direction:column;gap:7px}
+
+.c-blue  .card-head{background:linear-gradient(135deg,#1E3A8A,#2563EB)}
+.c-green .card-head{background:linear-gradient(135deg,#064E3B,#059669)}
+.c-gold  .card-head{background:linear-gradient(135deg,#78350F,#D97706);border:1.5px dashed rgba(252,211,77,.5);border-bottom:none;border-radius:10px 10px 0 0}
+
+.card-icon{font-size:20px}
+
+.card-name{font-family:'Exo 2',sans-serif;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#fff}
+
+.card-body{padding:12px 17px;background:#fff}
+.card-desc{font-size:12px;color:var(--muted);line-height:1.65}
+
+/* ══ TIMELINE ══ */
+.timeline-sec{padding:24px 56px;border-bottom:1px solid var(--border);background:#fff}
+
+.track{display:grid;grid-template-columns:repeat(4,1fr);margin-top:18px;position:relative}
+
+.track::before{
+  content:'';position:absolute;top:23px;left:12%;right:12%;height:3px;
+  background:linear-gradient(to right,var(--blue),var(--purple),var(--coral),var(--green));
+  border-radius:2px;
+}
+
+.wk{display:flex;flex-direction:column;align-items:center;gap:8px}
+
+.wk-dot{width:46px;height:46px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Audiowide',sans-serif;font-size:10px;position:relative;z-index:1;border:2.5px solid;font-weight:700}
+
+.wk:nth-child(1) .wk-dot{background:#DBEAFE;color:var(--blue);border-color:var(--blue)}
+.wk:nth-child(2) .wk-dot{background:#EDE9FE;color:var(--purple);border-color:var(--purple)}
+.wk:nth-child(3) .wk-dot{background:#FFEDD5;color:var(--coral);border-color:var(--coral)}
+.wk:nth-child(4) .wk-dot{background:#D1FAE5;color:var(--green);border-color:var(--green)}
+
+.wk-name{font-family:'Exo 2',sans-serif;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--text)}
+.wk-desc{font-size:10.5px;color:var(--muted);text-align:center;line-height:1.5;max-width:130px}
+.wk-date{font-family:'Exo 2',sans-serif;font-size:10px;color:var(--gold);letter-spacing:.05em}
+
+/* ══ FOOTER ══ */
+.footer-bar{
+  padding:20px 56px;display:grid;grid-template-columns:1fr auto;
+  align-items:center;gap:24px;background:#F8FAFF;
+  border-top:3px solid transparent;
+  border-image:linear-gradient(to right,var(--blue),var(--purple),var(--coral),var(--green)) 1;
+}
+
+.delivs{display:flex;gap:18px;flex-wrap:wrap}
+.deliv{display:flex;align-items:center;gap:8px;font-family:'Exo 2',sans-serif;font-size:12px;font-weight:600;color:var(--text)}
+.d-dot{width:8px;height:8px;border-radius:50%}
+.deliv:nth-child(1) .d-dot{background:var(--blue)}
+.deliv:nth-child(2) .d-dot{background:var(--purple)}
+.deliv:nth-child(3) .d-dot{background:var(--green)}
+
+.school{font-family:'Exo 2',sans-serif;font-size:12px;font-weight:600;color:var(--text);letter-spacing:.06em;text-align:right}
+.uni{font-family:'Exo 2',sans-serif;font-size:10px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-top:3px;text-align:right}
+
+@media print{
+  body{padding:0;background:white}
+  .poster{width:297mm;box-shadow:none;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+</style>
+</head>
+<body>
+<div class="poster">
+
+  <!-- ══ HEADER ══ -->
+  <div class="header">
+    <div class="hring1"></div>
+    <div class="hring2"></div>
+
+    <div class="header-left">
+      <div class="badge-row">
+        <div class="badge">Course Brief</div>
+        <div class="badge">Summer 2026</div>
+        <div class="institution">SCA · SIST · ShanghaiTech University</div>
+      </div>
+      <div class="badge-row" style="margin-bottom:10px">
+        <div class="institution" style="font-size:9px;color:rgba(255,255,255,0.38);letter-spacing:.08em">🌐 Instruction: Chinese &amp; English</div>
+      </div>
+      <h1 class="title">MAKER<span class="ac">-X</span></h1>
+      <p class="tagline">"To Infinity and Beyond"</p>
+      <div class="verbs">
+        <span class="verb v1">Conceive&nbsp;it</span>
+        <span class="vsep">→</span>
+        <span class="verb v2">Design&nbsp;it</span>
+        <span class="vsep">→</span>
+        <span class="verb v3">Build&nbsp;it</span>
+        <span class="vsep">→</span>
+        <span class="verb v4">Sell&nbsp;it</span>
+      </div>
+    </div>
+
+    <!-- ══ MINI REACHY–INSPIRED LINE SKETCH (single color: white) ══ -->
+    <svg width="215" height="278" viewBox="0 0 190 275"
+         fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round"
+         xmlns="http://www.w3.org/2000/svg">
+
+      <!-- ANTENNA -->
+      <line x1="95" y1="0" x2="95" y2="18" stroke-width="1.5" opacity="0.7"/>
+      <circle cx="95" cy="0" r="4" stroke-width="1.5" opacity="0.7" fill="rgba(255,255,255,0.15)"/>
+      <!-- small horizontal tick on antenna -->
+      <line x1="90" y1="10" x2="100" y2="10" stroke-width="1" opacity="0.4"/>
+
+      <!-- HEAD — large sphere, dominant like Mini Reachy -->
+      <circle cx="95" cy="70" r="50" stroke-width="1.8" fill="rgba(255,255,255,0.04)"/>
+
+      <!-- Eye / camera housing ring (large, centered on head face) -->
+      <circle cx="95" cy="70" r="34" stroke-width="1.4"/>
+
+      <!-- Lens ring 1 -->
+      <circle cx="95" cy="70" r="24" stroke-width="1.2" opacity="0.7"/>
+
+      <!-- Lens ring 2 (innermost) -->
+      <circle cx="95" cy="70" r="14" stroke-width="2" fill="rgba(255,255,255,0.1)"/>
+
+      <!-- Lens center dot -->
+      <circle cx="95" cy="70" r="5" stroke-width="1.2" fill="rgba(255,255,255,0.25)"/>
+
+      <!-- Lens highlight (upper-left) -->
+      <circle cx="80" cy="57" r="5" stroke-width="1" opacity="0.5" fill="rgba(255,255,255,0.2)"/>
+
+      <!-- Crosshair guides on eye (subtle) -->
+      <line x1="95" y1="38" x2="95" y2="43" stroke-width="0.8" opacity="0.3"/>
+      <line x1="95" y1="97" x2="95" y2="102" stroke-width="0.8" opacity="0.3"/>
+      <line x1="63" y1="70" x2="58" y2="70" stroke-width="0.8" opacity="0.3"/>
+      <line x1="132" y1="70" x2="127" y2="70" stroke-width="0.8" opacity="0.3"/>
+
+      <!-- Side ear sensors / head bumpers -->
+      <circle cx="47" cy="70" r="6" stroke-width="1.2" fill="rgba(255,255,255,0.06)" opacity="0.7"/>
+      <circle cx="143" cy="70" r="6" stroke-width="1.2" fill="rgba(255,255,255,0.06)" opacity="0.7"/>
+
+      <!-- NECK — two lines + collar ring -->
+      <line x1="80" y1="118" x2="74" y2="134" stroke-width="1.5"/>
+      <line x1="110" y1="118" x2="116" y2="134" stroke-width="1.5"/>
+      <!-- collar -->
+      <ellipse cx="95" cy="134" rx="21" ry="6" stroke-width="1.2" fill="rgba(255,255,255,0.05)"/>
+
+      <!-- TORSO / BODY — compact box with rounded corners -->
+      <rect x="54" y="134" width="82" height="55" rx="11" stroke-width="1.8" fill="rgba(255,255,255,0.04)"/>
+
+      <!-- Body screen / panel inset -->
+      <rect x="64" y="143" width="62" height="34" rx="5" stroke-width="1" opacity="0.5"/>
+
+      <!-- Status indicator lights on body -->
+      <circle cx="77" cy="161" r="3.5" stroke-width="1.2" fill="rgba(255,255,255,0.15)"/>
+      <circle cx="95" cy="161" r="3.5" stroke-width="1.2" fill="rgba(255,255,255,0.15)"/>
+      <circle cx="113" cy="161" r="3.5" stroke-width="1.2" fill="rgba(255,255,255,0.15)"/>
+
+      <!-- Body vent lines -->
+      <line x1="66" y1="171" x2="124" y2="171" stroke-width="0.75" opacity="0.35"/>
+      <line x1="66" y1="175" x2="124" y2="175" stroke-width="0.75" opacity="0.25"/>
+
+      <!-- ════ LEFT ARM (Reachy-style: 3-segment articulated) ════ -->
+      <!-- Shoulder joint ball -->
+      <circle cx="54" cy="147" r="8" stroke-width="1.8" fill="rgba(255,255,255,0.07)"/>
+      <!-- Upper arm -->
+      <line x1="47" y1="152" x2="20" y2="172" stroke-width="2.2"/>
+      <!-- Elbow joint ball -->
+      <circle cx="20" cy="172" r="7" stroke-width="1.6" fill="rgba(255,255,255,0.07)"/>
+      <!-- Forearm -->
+      <line x1="14" y1="178" x2="8" y2="210" stroke-width="1.8"/>
+      <!-- Wrist joint -->
+      <circle cx="8" cy="210" r="5.5" stroke-width="1.4" fill="rgba(255,255,255,0.07)"/>
+      <!-- Hand / gripper — open two-finger style -->
+      <line x1="4"  y1="215" x2="0"  y2="228" stroke-width="1.4"/>
+      <line x1="13" y1="215" x2="16" y2="228" stroke-width="1.4"/>
+      <!-- Gripper cross bar -->
+      <line x1="0" y1="222" x2="16" y2="222" stroke-width="1" opacity="0.5"/>
+
+      <!-- ════ RIGHT ARM (mirror) ════ -->
+      <!-- Shoulder joint ball -->
+      <circle cx="136" cy="147" r="8" stroke-width="1.8" fill="rgba(255,255,255,0.07)"/>
+      <!-- Upper arm -->
+      <line x1="143" y1="152" x2="170" y2="172" stroke-width="2.2"/>
+      <!-- Elbow joint ball -->
+      <circle cx="170" cy="172" r="7" stroke-width="1.6" fill="rgba(255,255,255,0.07)"/>
+      <!-- Forearm -->
+      <line x1="176" y1="178" x2="182" y2="210" stroke-width="1.8"/>
+      <!-- Wrist joint -->
+      <circle cx="182" cy="210" r="5.5" stroke-width="1.4" fill="rgba(255,255,255,0.07)"/>
+      <!-- Hand / gripper -->
+      <line x1="177" y1="215" x2="174" y2="228" stroke-width="1.4"/>
+      <line x1="186" y1="215" x2="190" y2="228" stroke-width="1.4"/>
+      <!-- Gripper cross bar -->
+      <line x1="174" y1="222" x2="190" y2="222" stroke-width="1" opacity="0.5"/>
+
+      <!-- BASE PLATFORM -->
+      <rect x="36" y="189" width="118" height="14" rx="6" stroke-width="1.5" fill="rgba(255,255,255,0.05)"/>
+      <!-- Base mount holes -->
+      <circle cx="52" cy="196" r="3" stroke-width="1" opacity="0.45"/>
+      <circle cx="95" cy="196" r="3" stroke-width="1" opacity="0.45"/>
+      <circle cx="138" cy="196" r="3" stroke-width="1" opacity="0.45"/>
+      <!-- Ground shadow ellipse -->
+      <ellipse cx="95" cy="210" rx="54" ry="7" stroke-width="1" opacity="0.25"/>
+    </svg>
+  </div>
+
+  <!-- ══ STATS BAR ══ -->
+  <div class="stats-bar">
+    <div class="stat"><span class="stat-num">4</span><span class="stat-label">Weeks</span></div>
+    <div class="stat"><span class="stat-num">12h</span><span class="stat-label">Per Week</span></div>
+    <div class="stat"><span class="stat-num">¥600</span><span class="stat-label">Per Team</span></div>
+    <div class="stat"><span class="stat-num">2–3</span><span class="stat-label">Students / Team</span></div>
+  </div>
+
+  <!-- ══ BODY (dot-grid pattern zone) ══ -->
+  <div class="body-zone">
+
+    <!-- MISSION -->
+    <div class="mission">
+      <div class="sl">// The Mission</div>
+      <p class="mission-text">
+        You don't just <strong>build</strong> a robot — you <strong>conceive</strong> the idea,
+        <strong>design</strong> the personality and the body, <strong>build</strong> the electronics and firmware,
+        and then <em>pitch and sell</em> it. Four weeks. One team. One product you own end-to-end.
+      </p>
+      <!-- 4-action flow -->
+      <div class="action-flow">
+        <div class="action-step">
+          <span class="action-verb">Conceive</span>
+          <span class="action-sub">Identify a real user &amp; need</span>
+        </div>
+        <div class="action-step">
+          <span class="action-verb">Design</span>
+          <span class="action-sub">Personality, form &amp; interaction</span>
+        </div>
+        <div class="action-step">
+          <span class="action-verb">Build</span>
+          <span class="action-sub">Electronics, firmware &amp; enclosure</span>
+        </div>
+        <div class="action-step">
+          <span class="action-verb">Sell</span>
+          <span class="action-sub">Pitch &amp; present to real guests</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- PHOTO STRIP -->
+    <div class="photo-strip">
+      <div class="photo-card">
+        <img src="https://images.unsplash.com/photo-1555664424-778a1e5e1b48?w=400&fit=crop&auto=format&q=80" alt="Electronics circuit board"/>
+        <div class="photo-overlay"><span class="photo-label">Electronics &amp; Sensing</span></div>
+      </div>
+      <div class="photo-card">
+        <img src="https://images.unsplash.com/photo-1742971239045-afabc9f7d744?w=400&fit=crop&auto=format&q=80" alt="Colorful 3D printing filament"/>
+        <div class="photo-overlay"><span class="photo-label">3D-Print the Body</span></div>
+      </div>
+      <div class="photo-card">
+        <img src="https://images.unsplash.com/photo-1543512214-318c7553f230?w=400&fit=crop&auto=format&q=80" alt="Voice assistant device"/>
+        <div class="photo-overlay"><span class="photo-label">Voice &amp; AI Interaction</span></div>
+      </div>
+    </div>
+
+    <!-- TWO-COL -->
+    <div class="two-col">
+      <div class="col">
+        <div class="col-title">Core Systems</div>
+        <ul class="tech-list">
+          <li class="tech-item"><div class="ti-icon">🧠</div><span class="ti-label">Brain</span><span class="ti-val">ESP32-S3 with integrated LCD display</span></li>
+          <li class="tech-item"><div class="ti-icon">📡</div><span class="ti-label">Connect</span><span class="ti-val">Bluetooth / WiFi → cloud LLM API</span></li>
+          <li class="tech-item"><div class="ti-icon">👁️</div><span class="ti-label">Sense</span><span class="ti-val">Camera, heart rate, GSR — or your choice</span></li>
+          <li class="tech-item"><div class="ti-icon">🔊</div><span class="ti-label">Speak</span><span class="ti-val">Voice synthesis + on-screen display</span></li>
+          <li class="tech-item"><div class="ti-icon">🎤</div><span class="ti-label">Listen</span><span class="ti-val">Natural voice input from your user</span></li>
+          <li class="tech-item"><div class="ti-icon">📦</div><span class="ti-label">Body</span><span class="ti-val">3D-printed shell · max 180 × 180 × 180 mm</span></li>
+        </ul>
+      </div>
+
+      <div class="col right">
+        <div class="col-title">Design Your Robot's Soul</div>
+        <p class="p-blurb">Your robot isn't just a device — it has a personality. Before you solder a wire, ask: <em style="font-style:italic">who is this robot?</em> What does it feel like to talk to it? Shape, sound, language, and expression should all answer that question.</p>
+        <div class="tags">
+          <span class="tag t-cute">Cute</span>
+          <span class="tag t-cool">Cool</span>
+          <span class="tag t-techy">Techy</span>
+          <span class="tag t-warm">Warm</span>
+          <span class="tag t-robot">Robotic</span>
+          <span class="tag t-open">...yours</span>
+        </div>
+        <div class="method-box">Jump first. Swim later. Prototype fast, break things often, and let iteration be your method.</div>
+      </div>
+    </div>
+
+    <!-- SCENARIOS -->
+    <div class="scenarios">
+      <div class="sl">// Inspiration Missions — choose one, remix one, or invent your own</div>
+      <div class="cards">
+        <div class="card c-blue">
+          <div class="card-head">
+            <span class="card-icon">🌅</span>
+            <div class="card-name">The Gentle Waker</div>
+          </div>
+          <div class="card-body">
+            <div class="card-desc">Replaces a bedside alarm clock. Wakes you softly, lets you dictate notes by voice, and greets your morning with intention.</div>
+          </div>
+        </div>
+        <div class="card c-green">
+          <div class="card-head">
+            <span class="card-icon">💬</span>
+            <div class="card-name">The Companion</div>
+          </div>
+          <div class="card-body">
+            <div class="card-desc">Your always-on AI friend. Ask it anything, think out loud, get a thoughtful response. A friendly face for talking to a language model.</div>
+          </div>
+        </div>
+        <div class="card c-gold">
+          <div class="card-head">
+            <span class="card-icon">✦</span>
+            <div class="card-name">Your Mission</div>
+          </div>
+          <div class="card-body">
+            <div class="card-desc">Define your own user, context, and scenario. The constraints are the box — the idea is entirely yours. Conceive it. Own it.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TIMELINE -->
+    <div class="timeline-sec">
+      <div class="sl">// Mission Timeline</div>
+      <div class="track">
+        <div class="wk">
+          <div class="wk-dot">W1</div>
+          <div class="wk-name">Conceive</div>
+          <div class="wk-desc">User research, concept selection, personality brief</div>
+          <div class="wk-date">[Date TBD]</div>
+        </div>
+        <div class="wk">
+          <div class="wk-dot">W2</div>
+          <div class="wk-name">Design</div>
+          <div class="wk-desc">Prototyping, firmware, form &amp; character</div>
+          <div class="wk-date">[Date TBD]</div>
+        </div>
+        <div class="wk">
+          <div class="wk-dot">W3</div>
+          <div class="wk-name">Build</div>
+          <div class="wk-desc">User testing, refinement, 3D print enclosure</div>
+          <div class="wk-date">[Date TBD]</div>
+        </div>
+        <div class="wk">
+          <div class="wk-dot">W4</div>
+          <div class="wk-name">Sell ★</div>
+          <div class="wk-desc">Demo &amp; pitch to university guests. Poster presentation.</div>
+          <div class="wk-date">[Date TBD] ★</div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end body-zone -->
+
+  <!-- ══ FOOTER ══ -->
+  <div class="footer-bar">
+    <div>
+      <div class="sl" style="margin-bottom:9px">// Deliverables</div>
+      <div class="delivs">
+        <div class="deliv"><div class="d-dot"></div>Working Robot Prototype</div>
+        <div class="deliv"><div class="d-dot"></div>Poster Presentation</div>
+        <div class="deliv"><div class="d-dot"></div>In-Class Demo &amp; Pitch</div>
+      </div>
+    </div>
+    <div>
+      <div class="school">Maker-X · Summer 2026</div>
+      <div class="uni">ShanghaiTech University · SCA &amp; SIST</div>
+      <div style="margin-top:6px;font-family:'Exo 2',sans-serif;font-size:10px;color:var(--muted);text-align:right;line-height:1.7">
+        Shimon Shmueli <span style="color:var(--border)">SCA</span> &nbsp;·&nbsp;
+        Daniel Koo <span style="color:var(--border)">SCA</span> &nbsp;·&nbsp;
+        梁俊睿 <span style="color:var(--border)">SIST</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
