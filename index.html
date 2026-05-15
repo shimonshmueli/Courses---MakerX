@@ -199,7 +199,7 @@ h1.hero-title .accent { color: #93C5FD; }
    STATS STRIP
 ════════════════════════════════ */
 .stats-strip {
-  display: grid; grid-template-columns: repeat(4,1fr);
+  display: grid; grid-template-columns: repeat(5,1fr);
   border-top: 1px solid rgba(255,255,255,0.07);
   border-bottom: 1px solid rgba(255,255,255,0.07);
   background: rgba(255,255,255,0.03);
@@ -218,6 +218,7 @@ h1.hero-title .accent { color: #93C5FD; }
 .stat:nth-child(2)::before { background: var(--purple); }
 .stat:nth-child(3)::before { background: var(--coral); }
 .stat:nth-child(4)::before { background: var(--green); }
+.stat:nth-child(5)::before { background: var(--teal); }
 
 .stat-num {
   font-family: 'Audiowide', sans-serif; font-size: 36px;
@@ -227,6 +228,7 @@ h1.hero-title .accent { color: #93C5FD; }
 .stat:nth-child(2) .stat-num { color: #A78BFA; }
 .stat:nth-child(3) .stat-num { color: #FB923C; }
 .stat:nth-child(4) .stat-num { color: #34D399; }
+.stat:nth-child(5) .stat-num { color: #22D3EE; font-size: 24px; }
 
 .stat-label {
   font-family: 'Exo 2', sans-serif; font-size: 9px;
@@ -241,7 +243,7 @@ section { position: relative; z-index: 1; }
 
 .section-inner {
   max-width: 1080px; margin: 0 auto;
-  padding: 96px 48px;
+  padding: 56px 48px;
 }
 
 .sl {
@@ -261,7 +263,7 @@ h2.section-title {
 
 .section-lead {
   font-size: 17px; font-weight: 300; line-height: 1.7;
-  color: rgba(255,255,255,0.60); max-width: 640px; margin-bottom: 56px;
+  color: rgba(255,255,255,0.60); max-width: 640px; margin-bottom: 32px;
 }
 .section-lead strong { color: #fff; font-weight: 600; }
 
@@ -309,6 +311,43 @@ h2.section-title {
   font-size: 12.5px; line-height: 1.6;
   color: rgba(255,255,255,0.45);
   font-family: 'Exo 2', sans-serif;
+}
+
+/* ════════════════════════════════
+   OBJECTIVES
+════════════════════════════════ */
+.objectives-section { background: #0A0F1E; }
+
+.objectives-grid {
+  display: grid; grid-template-columns: repeat(3,1fr); gap: 20px;
+}
+
+.obj-card {
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.07);
+  background: rgba(255,255,255,0.025);
+  padding: 32px 28px;
+  transition: border-color .2s, transform .2s;
+  position: relative; overflow: hidden;
+}
+.obj-card:hover { border-color: rgba(255,255,255,0.15); transform: translateY(-3px); }
+.obj-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+}
+.obj-1::before { background: var(--blue); }
+.obj-2::before { background: var(--purple); }
+.obj-3::before { background: var(--green); }
+
+.obj-icon { font-size: 32px; margin-bottom: 16px; display: block; }
+
+.obj-title {
+  font-family: 'Exo 2', sans-serif; font-size: 14px; font-weight: 700;
+  color: #fff; margin-bottom: 10px; line-height: 1.3;
+}
+
+.obj-desc {
+  font-size: 13px; line-height: 1.7;
+  color: rgba(255,255,255,0.45);
 }
 
 /* ════════════════════════════════
@@ -463,7 +502,7 @@ h2.section-title {
 
 .cta-inner {
   max-width: 780px; margin: 0 auto;
-  padding: 96px 48px; text-align: center;
+  padding: 56px 48px; text-align: center;
 }
 
 .cta-inner h2 {
@@ -537,6 +576,20 @@ footer {
 }
 .footer-right a:hover { color: rgba(255,255,255,0.7); }
 
+/* ── LOGOS ── */
+.logo-top {
+  display: block; margin: 0 auto 32px;
+  height: 72px; width: auto;
+  opacity: 0.92;
+  filter: brightness(1.05);
+}
+.logo-footer {
+  height: 36px; width: auto;
+  opacity: 0.55;
+  filter: brightness(1.1);
+  flex-shrink: 0;
+}
+
 /* rainbow footer border */
 footer::before {
   content: ''; display: block;
@@ -551,6 +604,7 @@ footer::before {
   <a class="nav-logo" href="#">MAKER<span>-X</span></a>
   <ul class="nav-links">
     <li><a href="#mission">Mission</a></li>
+    <li><a href="#objectives">Objectives</a></li>
     <li><a href="#tech">Technology</a></li>
     <li><a href="#timeline">Timeline</a></li>
     <li><a href="#instructors">Instructors</a></li>
@@ -560,9 +614,10 @@ footer::before {
 <!-- HERO -->
 <section class="hero">
   <div class="hero-content">
+    <img src="logo.png" alt="ShanghaiTech University · Kedao College" class="logo-top">
     <div class="hero-badge">
       <div class="hero-badge-dot"></div>
-      Summer 2026 &nbsp;·&nbsp; ShanghaiTech University
+      Summer 2026
     </div>
 
     <h1 class="hero-title">MAKER<span class="accent">-X</span></h1>
@@ -573,7 +628,7 @@ footer::before {
     <p class="hero-tagline">
       You don't just <strong>build</strong> a robot — you conceive the idea,
       design its personality, build the electronics, and then
-      <strong>pitch and sell</strong> it. Four weeks. One team. One product you own end-to-end.
+      <strong>pitch it</strong>. Four weeks. One team. One product you own end-to-end.
     </p>
 
     <div class="hero-actions">
@@ -610,13 +665,17 @@ footer::before {
     <span class="stat-num">2–3</span>
     <span class="stat-label">Students / Team</span>
   </div>
+  <div class="stat">
+    <span class="stat-num">Pass / No Pass</span>
+    <span class="stat-label">Grading</span>
+  </div>
 </div>
 
 <!-- MISSION -->
 <section class="mission-section" id="mission">
   <div class="section-inner">
     <span class="sl sl-blue">// The Mission</span>
-    <h2 class="section-title">Conceive it. Design it.<br>Build it. Sell it.</h2>
+    <h2 class="section-title">Conceive it. Design it.<br>Build it. Pitch it.</h2>
     <p class="section-lead">
       Maker-X is an intensive <strong>4-week project course</strong> where cross-disciplinary teams
       build AI-powered robotic companions from scratch — hardware, firmware, personality, and pitch.
@@ -644,9 +703,39 @@ footer::before {
       </div>
       <div class="verb-card vc-4">
         <span class="verb-num">04</span>
-        <span class="verb-icon">🚀</span>
-        <span class="verb-name">Sell</span>
-        <span class="verb-desc">Demo and pitch to real university guests. A poster, a product, a story — this is your public debut.</span>
+        <span class="verb-icon">🎤</span>
+        <span class="verb-name">Pitch It</span>
+        <span class="verb-desc">Present your product to real university guests. A working demo, a poster, a story — this is your public debut.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OBJECTIVES -->
+<section class="objectives-section" id="objectives">
+  <div class="section-inner">
+    <span class="sl sl-blue">// Course Objectives</span>
+    <h2 class="section-title">What you'll walk away with</h2>
+    <p class="section-lead">
+      Maker-X is about more than building a robot. It's about becoming someone who can
+      <strong>think, collaborate, and create</strong> at the intersection of technology and design.
+    </p>
+
+    <div class="objectives-grid">
+      <div class="obj-card obj-1">
+        <span class="obj-icon">🤝</span>
+        <div class="obj-title">Cross-discipline Collaboration</div>
+        <div class="obj-desc">Work in teams that span engineering, design, and beyond. Learn to communicate across disciplines, divide work strategically, and ship something greater than the sum of its parts.</div>
+      </div>
+      <div class="obj-card obj-2">
+        <span class="obj-icon">🧠</span>
+        <div class="obj-title">Confidence with AI &amp; LLM Tools</div>
+        <div class="obj-desc">Go from curious to capable. You'll integrate large language models into real hardware — learning how to prompt, tune, and deploy AI as a core part of a product.</div>
+      </div>
+      <div class="obj-card obj-3">
+        <span class="obj-icon">🎨</span>
+        <div class="obj-title">Design Thinking in Practice</div>
+        <div class="obj-desc">Empathy, creativity, rapid prototyping, iteration, and communication — not as theory, but as daily practice. You'll learn by doing, and the product is the proof.</div>
       </div>
     </div>
   </div>
@@ -663,34 +752,30 @@ footer::before {
 
     <div class="tech-grid">
       <div class="tech-card tc-blue">
-        <span class="tech-card-icon">🧠</span>
-        <div class="tech-card-title">Brain — ESP32-S3</div>
-        <div class="tech-card-desc">Microcontroller with integrated LCD display, Wi-Fi, Bluetooth, and enough compute to run the whole show.</div>
+        <span class="tech-card-icon">🔩</span>
+        <div class="tech-card-title">Hardware</div>
+        <div class="tech-card-desc">
+          <strong style="color:rgba(255,255,255,0.75)">ESP32-based boards</strong> as the brain — Wi-Fi, Bluetooth, and enough compute for real-time AI interaction.<br><br>
+          Paired with <strong style="color:rgba(255,255,255,0.75)">displays, sensors, cameras, and motors</strong> to give your robot awareness and expression.<br><br>
+          The body? <strong style="color:rgba(255,255,255,0.75)">3D-modeled and printed</strong> — designed by you, from scratch.
+        </div>
       </div>
       <div class="tech-card tc-teal">
-        <span class="tech-card-icon">☁️</span>
-        <div class="tech-card-title">Cloud LLM API</div>
-        <div class="tech-card-desc">Connect your robot to a large language model over Wi-Fi. Your robot isn't scripted — it thinks.</div>
+        <span class="tech-card-icon">⚙️</span>
+        <div class="tech-card-title">Frameworks</div>
+        <div class="tech-card-desc">
+          <a href="https://esp-claw.com/en/" target="_blank" style="color:#22D3EE;font-weight:700;text-decoration:none">ESP-Claw</a> — a purpose-built firmware framework for ESP32 AI robots, handling voice, display, and LLM integration so you can focus on what matters: your idea.<br><br>
+          <a href="https://openrouter.ai/" target="_blank" style="color:#22D3EE;font-weight:700;text-decoration:none">OpenRouter</a> — a unified API gateway that lets you switch between any LLM with a single interface, no vendor lock-in.
+        </div>
       </div>
       <div class="tech-card tc-purple">
-        <span class="tech-card-icon">👁️</span>
-        <div class="tech-card-title">Sensing</div>
-        <div class="tech-card-desc">Camera, heart rate, GSR — or whatever makes your concept real. Pick the sensors that fit your user story.</div>
-      </div>
-      <div class="tech-card tc-green">
-        <span class="tech-card-icon">🔊</span>
-        <div class="tech-card-title">Voice I/O</div>
-        <div class="tech-card-desc">Speech synthesis and natural voice input. Your robot speaks, listens, and responds in real time.</div>
-      </div>
-      <div class="tech-card tc-coral">
-        <span class="tech-card-icon">🖨️</span>
-        <div class="tech-card-title">3D-Printed Body</div>
-        <div class="tech-card-desc">Design and print a custom enclosure — up to 180 × 180 × 180 mm. Shape is part of the personality.</div>
-      </div>
-      <div class="tech-card tc-gold">
-        <span class="tech-card-icon">✦</span>
-        <div class="tech-card-title">Your X Factor</div>
-        <div class="tech-card-desc">Maker-X leaves room for the unexpected. If it makes your robot more yours, it's fair game.</div>
+        <span class="tech-card-icon">🤖</span>
+        <div class="tech-card-title">Large Language Models</div>
+        <div class="tech-card-desc">
+          Your robot's intelligence comes from state-of-the-art LLMs. We'll work with leading models including:<br><br>
+          <span style="color:#C4B5FD;font-weight:700">Qwen &nbsp;·&nbsp; DeepSeek &nbsp;·&nbsp; Claude</span><br><br>
+          …and others. You'll learn how to prompt, tune, and integrate them into real hardware products.
+        </div>
       </div>
     </div>
   </div>
@@ -727,7 +812,7 @@ footer::before {
       <div class="tl-item tl-4">
         <div class="tl-dot">W4 ★</div>
         <div class="tl-week">Week Four</div>
-        <div class="tl-label">Sell ★</div>
+        <div class="tl-label">Pitch It ★</div>
         <div class="tl-desc">Demo &amp; pitch to university guests — poster presentation</div>
       </div>
     </div>
@@ -740,8 +825,7 @@ footer::before {
     <span class="sl sl-gold">// Instructors</span>
     <h2 class="section-title">Meet your team</h2>
     <p class="section-lead">
-      A joint offering from <strong>SCA</strong> (School of Creativity and Art) and <strong>SIST</strong>
-      (School of Information Science and Technology).
+      A joint offering from <strong>Kedao College</strong>, <strong>SCA</strong> (School of Creativity and Art), and <strong>SIST</strong> (School of Information Science and Technology).
     </p>
 
     <div class="instructors-grid">
@@ -751,6 +835,7 @@ footer::before {
           <div class="instructor-name">Shimon Shmueli</div>
           <div class="instructor-role">Instructor</div>
           <span class="instructor-tag tag-sca">SCA</span>
+          <div style="margin-top:8px"><a href="mailto:sshmueli@shanghaitech.edu.cn" style="font-family:'Exo 2',sans-serif;font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,0.35);text-decoration:none;border:1px solid rgba(255,255,255,0.15);padding:3px 10px;border-radius:20px">Email</a></div>
         </div>
       </div>
       <div class="instructor-card">
@@ -777,6 +862,10 @@ footer::before {
 <section class="cta-section">
   <div class="cta-inner">
     <h2>Ready to build<br>something <span>real</span>?</h2>
+    <p style="font-size:16px;font-weight:300;line-height:1.65;color:rgba(255,255,255,0.55);margin-bottom:32px">
+      Let us know if you are interested in taking the course in Summer 2026.<br>
+      Include your <strong style="color:rgba(255,255,255,0.8)">school name</strong>, <strong style="color:rgba(255,255,255,0.8)">year</strong>, and <strong style="color:rgba(255,255,255,0.8)">name</strong>.
+    </p>
     <div class="cta-buttons">
       <a class="btn-lg btn-lg-interested" href="mailto:sshmueli@shanghaitech.edu.cn?subject=I%20am%20interested">✉️ &nbsp;I Am Interested</a>
     </div>
@@ -785,11 +874,14 @@ footer::before {
 
 <!-- FOOTER -->
 <footer>
+  <img src="logo.png" alt="ShanghaiTech University · Kedao College" class="logo-footer">
   <div class="footer-left">
-    MAKER-X &nbsp;<span>·&nbsp; Summer 2026 &nbsp;·&nbsp; ShanghaiTech University</span>
+    MAKER-X &nbsp;<span>·&nbsp; Summer 2026</span>
   </div>
   <div class="footer-right">
 <a href="#mission">Mission</a>
+    <a href="#objectives">Objectives</a>
+    <a href="#tech">Technology</a>
     <a href="#instructors">Instructors</a>
   </div>
 </footer>
