@@ -710,6 +710,23 @@ footer::before {
   </div>
 </section>
 
+<!-- ROBOT PHOTO -->
+<div style="position:relative;background:#0A0F1E;display:flex;justify-content:center;align-items:center;padding:0;overflow:hidden">
+  <!-- left + right dark panels -->
+  <div style="flex:1;min-width:80px;background:linear-gradient(to right,#0A0F1E,rgba(10,15,30,0.6));z-index:1;align-self:stretch"></div>
+  <!-- image: natural size, full vertical -->
+  <div style="position:relative;flex-shrink:0">
+    <img src="robot.png" alt="Maker-X Robot"
+      style="display:block;max-height:520px;width:auto;filter:brightness(0.82) saturate(1.2)">
+    <!-- top fade -->
+    <div style="position:absolute;top:0;left:0;right:0;height:80px;background:linear-gradient(to bottom,#0A0F1E,transparent)"></div>
+    <!-- bottom fade -->
+    <div style="position:absolute;bottom:0;left:0;right:0;height:100px;background:linear-gradient(to top,#0A0F1E,transparent)"></div>
+  </div>
+  <!-- right dark panel -->
+  <div style="flex:1;min-width:80px;background:linear-gradient(to left,#0A0F1E,rgba(10,15,30,0.6));z-index:1;align-self:stretch"></div>
+</div>
+
 <!-- OBJECTIVES -->
 <section class="objectives-section" id="objectives">
   <div class="section-inner">
@@ -747,6 +764,9 @@ footer::before {
     <h2 class="section-title">What you'll build with</h2>
     <p class="section-lead">
       Every team gets the same foundation. What you build on top of it is entirely yours.
+    </p>
+    <p style="font-size:17px;font-weight:300;color:rgba(255,255,255,0.60);margin-bottom:32px;margin-top:-16px;white-space:nowrap">
+      You will use a variety of AI coding tools: <strong style="color:#fff;font-weight:600">Claude Code</strong>, <strong style="color:#fff;font-weight:600">Codex</strong>, and others.
     </p>
 
     <div class="tech-grid">
