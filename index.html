@@ -267,6 +267,12 @@ h2.section-title {
 }
 .section-lead strong { color: #fff; font-weight: 600; }
 
+.section-zh {
+  font-family: 'Exo 2', sans-serif; font-size: 36px; font-weight: 800;
+  color: rgba(255,255,255,0.35); line-height: 1.15;
+  margin-bottom: 16px; margin-top: -4px;
+}
+
 /* ════════════════════════════════
    MISSION — FOUR VERBS
 ════════════════════════════════ */
@@ -605,6 +611,7 @@ footer::before {
   <ul class="nav-links">
     <li><a href="#mission">Mission</a></li>
     <li><a href="#objectives">Objectives</a></li>
+    <li><a href="#prerequisites">Who</a></li>
     <li><a href="#tech">Technology</a></li>
     <li><a href="#timeline">Timeline</a></li>
     <li><a href="#instructors">Instructors</a></li>
@@ -673,8 +680,9 @@ footer::before {
 <!-- MISSION -->
 <section class="mission-section" id="mission">
   <div class="section-inner">
-    <span class="sl sl-blue">// The Mission</span>
+    <span class="sl sl-blue">// The Mission &nbsp;·&nbsp; 课程使命</span>
     <h2 class="section-title">Conceive it. Design it.<br>Build it. Pitch it.</h2>
+    <p class="section-zh">构思 · 设计 · 制造 · 展示</p>
     <p class="section-lead">
       Maker-X is an intensive <strong>4-week project course</strong> where cross-disciplinary teams
       build AI-powered robotic companions from scratch — hardware, firmware, personality, and pitch.
@@ -730,8 +738,9 @@ footer::before {
 <!-- OBJECTIVES -->
 <section class="objectives-section" id="objectives">
   <div class="section-inner">
-    <span class="sl sl-blue">// Course Objectives</span>
+    <span class="sl sl-blue">// Course Objectives &nbsp;·&nbsp; 课程目标</span>
     <h2 class="section-title">What you'll walk away with</h2>
+    <p class="section-zh">你将收获什么</p>
     <p class="section-lead">
       Maker-X is about more than building a robot. It's about becoming someone who can
       <strong>think, collaborate, and create</strong> at the intersection of technology and design.
@@ -757,11 +766,33 @@ footer::before {
   </div>
 </section>
 
+<!-- PREREQUISITES -->
+<section style="background:#0D1221" id="prerequisites">
+  <div class="section-inner">
+    <span class="sl sl-green">// Who Should Join &nbsp;·&nbsp; 招生对象</span>
+    <h2 class="section-title">All are welcome</h2>
+    <p class="section-zh">招生对象</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+      <div style="border-radius:12px;border:1px solid rgba(255,255,255,0.07);background:rgba(255,255,255,0.025);padding:28px;border-top:3px solid var(--green)">
+        <span style="font-size:28px;display:block;margin-bottom:12px">🎓</span>
+        <div style="font-family:'Exo 2',sans-serif;font-size:13px;font-weight:700;color:#fff;margin-bottom:8px">All ShanghaiTech Students</div>
+        <div style="font-size:12.5px;line-height:1.7;color:rgba(255,255,255,0.45)">The course is open to all students across all schools and majors. No prior experience or knowledge in programming, design, robotics, or AI is needed.</div>
+      </div>
+      <div style="border-radius:12px;border:1px solid rgba(255,255,255,0.07);background:rgba(255,255,255,0.025);padding:28px;border-top:3px solid var(--teal)">
+        <span style="font-size:28px;display:block;margin-bottom:12px">🌐</span>
+        <div style="font-family:'Exo 2',sans-serif;font-size:13px;font-weight:700;color:#fff;margin-bottom:8px">Diversified Teams</div>
+        <div style="font-size:12.5px;line-height:1.7;color:rgba(255,255,255,0.45)">We will organize groups where different skills and backgrounds complement each other — so every student can contribute meaningfully and learn most effectively.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- TECHNOLOGY -->
 <section class="tech-section" id="tech">
   <div class="section-inner">
-    <span class="sl sl-purple">// Core Technology</span>
+    <span class="sl sl-purple">// Core Technology &nbsp;·&nbsp; 核心技术</span>
     <h2 class="section-title">What you'll build with</h2>
+    <p class="section-zh">你将使用的技术与工具</p>
     <p class="section-lead">
       Every team gets the same foundation. What you build on top of it is entirely yours.
     </p>
@@ -803,8 +834,9 @@ footer::before {
 <!-- TIMELINE -->
 <section class="timeline-section" id="timeline">
   <div class="section-inner">
-    <span class="sl sl-coral">// Mission Timeline</span>
+    <span class="sl sl-coral">// Mission Timeline &nbsp;·&nbsp; 课程时间线</span>
     <h2 class="section-title">Four weeks.<br>One product.</h2>
+    <p class="section-zh">四周时间，一件作品</p>
     <p class="section-lead">
       The course runs at <strong>12 hours per week</strong> — enough time to go deep, not enough time to hesitate.
     </p>
@@ -841,8 +873,9 @@ footer::before {
 <!-- INSTRUCTORS -->
 <section class="instructors-section" id="instructors">
   <div class="section-inner">
-    <span class="sl sl-gold">// Instructors</span>
+    <span class="sl sl-gold">// Instructors &nbsp;·&nbsp; 教师团队</span>
     <h2 class="section-title">Meet your team</h2>
+    <p class="section-zh">认识你的团队</p>
     <p class="section-lead">
       A joint offering from <strong>Kedao College</strong>, <strong>SCA</strong> (School of Creativity and Art), and <strong>SIST</strong> (School of Information Science and Technology).
     </p>
@@ -906,6 +939,7 @@ footer::before {
 <section class="cta-section">
   <div class="cta-inner">
     <h2>Ready to build<br>something <span>real</span>?</h2>
+    <p class="section-zh" style="text-align:center;margin-bottom:16px">准备好打造真实作品了吗？</p>
     <p style="font-size:16px;font-weight:300;line-height:1.65;color:rgba(255,255,255,0.55);margin-bottom:32px">
       Let us know if you are interested in taking the course in Summer 2026.<br>
       Include your <strong style="color:rgba(255,255,255,0.8)">school name</strong>, <strong style="color:rgba(255,255,255,0.8)">year</strong>, and <strong style="color:rgba(255,255,255,0.8)">name</strong>.
