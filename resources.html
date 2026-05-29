@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="AI-Powered Robotics · Summer 2026 · ShanghaiTech University">
+<meta name="description" content="Technology stack, tools, and learning materials for Maker-X">
 
-<title>MAKER-X</title>
+<title>Resources – MAKER-X</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -23,6 +23,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -79,9 +114,7 @@ ul.task-list li input[type="checkbox"] {
 
 <meta property="og:title" content="MAKER-X — AI-Powered Robotics">
 <meta property="og:description" content="Conceive · Design · Build · Pitch It — An intensive 4-week course at ShanghaiTech University">
-<meta property="og:image" content="images/logo.png">
 <meta property="og:site_name" content="MAKER-X">
-<meta property="og:image:alt" content="ShanghaiTech · Kedao College">
 </head>
 
 <body class="nav-sidebar floating nav-fixed quarto-light">
@@ -154,21 +187,21 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">MAKER-X</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./resources.html">Resources</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">MAKER-X</span></a>
   </div>
 </li>
@@ -209,7 +242,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./resources.html" class="sidebar-item-text sidebar-link">
+  <a href="./resources.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Resources</span></a>
   </div>
 </li>
@@ -224,23 +257,47 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#hardware" id="toc-hardware" class="nav-link active" data-scroll-target="#hardware">Hardware</a>
+  <ul class="collapse">
+  <li><a href="#esp32-based-boards" id="toc-esp32-based-boards" class="nav-link" data-scroll-target="#esp32-based-boards">ESP32-Based Boards</a></li>
+  <li><a href="#peripherals" id="toc-peripherals" class="nav-link" data-scroll-target="#peripherals">Peripherals</a></li>
+  </ul></li>
+  <li><a href="#frameworks" id="toc-frameworks" class="nav-link" data-scroll-target="#frameworks">Frameworks</a>
+  <ul class="collapse">
+  <li><a href="#esp-claw" id="toc-esp-claw" class="nav-link" data-scroll-target="#esp-claw">ESP-Claw</a></li>
+  <li><a href="#openrouter" id="toc-openrouter" class="nav-link" data-scroll-target="#openrouter">OpenRouter</a></li>
+  </ul></li>
+  <li><a href="#large-language-models" id="toc-large-language-models" class="nav-link" data-scroll-target="#large-language-models">Large Language Models</a>
+  <ul class="collapse">
+  <li><a href="#models-well-work-with" id="toc-models-well-work-with" class="nav-link" data-scroll-target="#models-well-work-with">Models we’ll work with</a></li>
+  </ul></li>
+  <li><a href="#ai-coding-tools" id="toc-ai-coding-tools" class="nav-link" data-scroll-target="#ai-coding-tools">AI Coding Tools</a></li>
+  <li><a href="#design-fabrication" id="toc-design-fabrication" class="nav-link" data-scroll-target="#design-fabrication">Design &amp; Fabrication</a></li>
+  <li><a href="#version-control" id="toc-version-control" class="nav-link" data-scroll-target="#version-control">Version Control</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content column-page-right" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">MAKER-X</h1>
+<h1 class="title">Resources</h1>
 </div>
 
 <div>
   <div class="description">
-    AI-Powered Robotics · Summer 2026 · ShanghaiTech University
+    Technology stack, tools, and learning materials for Maker-X
   </div>
 </div>
 
 
-<div class="quarto-title-meta column-page-right">
+<div class="quarto-title-meta">
 
     
   
@@ -252,171 +309,241 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<!-- HERO -->
-<section class="hero">
-  <div style="max-width:860px; margin:0 auto;">
-    <img src="images/logo.png" alt="ShanghaiTech · Kedao College" style="height:64px; width:auto; margin-bottom:2rem; opacity:0.92;">
-    <div class="badge-pill">
-      <div class="badge-dot"></div>
-      Summer 2026 &nbsp;·&nbsp; ShanghaiTech University
-    </div>
-    <h1 class="hero-title">MAKER<span class="accent">-X</span></h1>
-    <p style="font-family:'Exo 2',sans-serif; font-size:0.78rem; font-weight:300; letter-spacing:0.22em; text-transform:uppercase; color:rgba(255,255,255,0.4); margin-bottom:1.2rem;">
-      School of Creativity &amp; Art &nbsp;·&nbsp; SIST &nbsp;·&nbsp; Kedao College
-    </p>
-    <div class="rainbow-bar"></div>
-    <p class="hero-tagline">
-      You don't just <strong style="color:#FCD34D">build</strong> a robot — you conceive the idea,
-      design its personality, build the electronics, and
-      <strong style="color:#FCD34D">pitch it</strong>.
-      Four weeks. One team. One product you own end-to-end.
-    </p>
-    <p style="font-size:0.9rem; color:rgba(255,255,255,0.38); margin-bottom:2rem; letter-spacing:0.04em;">
-      你不只是在制造机器人——你要<strong style="color:rgba(255,255,255,0.55)">构思创意</strong>、设计个性、搭建电路，最终<strong style="color:rgba(255,255,255,0.55)">登台展示</strong>。
-    </p>
-    <a class="btn-interested" href="mailto:sshmueli@shanghaitech.edu.cn?subject=I%20am%20interested">✉ &nbsp;I Am Interested</a>
-  </div>
-</section>
-
-<!-- STATS STRIP -->
-<div class="stats-strip">
-  <div class="stat-cell">
-    <span class="stat-num">4</span>
-    <span class="stat-label">Weeks</span>
-  </div>
-  <div class="stat-cell">
-    <span class="stat-num">12h</span>
-    <span class="stat-label">Per Week</span>
-  </div>
-  <div class="stat-cell">
-    <span class="stat-num">2–3</span>
-    <span class="stat-label">Students / Team</span>
-  </div>
-  <div class="stat-cell">
-    <span class="stat-num" style="font-size:1.2rem; padding-top:.4rem; display:block;">Pass / No Pass</span>
-    <span class="stat-label">Grading</span>
-  </div>
-</div>
-<section id="the-mission-课程使命" class="level2 mt-5">
-<h2 class="mt-5 anchored" data-anchor-id="the-mission-课程使命">The Mission · 课程使命</h2>
-<p>Maker-X is an intensive <strong>4-week project course</strong> where cross-disciplinary teams build AI-powered robotic companions from scratch — hardware, firmware, personality, and pitch. Instruction in <strong>Chinese &amp; English</strong>.</p>
-<div class="grid">
-<div class="g-col-12 g-col-md-3">
-<div class="card card-blue">
-<p><span class="sl" style="color:#60A5FA">01</span> ### Conceive Identify a real user and a genuine need. Define the personality and purpose of your robot before touching any hardware.</p>
-</div>
-</div>
-<div class="g-col-12 g-col-md-3">
-<div class="card card-purple">
-<p><span class="sl" style="color:#A78BFA">02</span> ### Design Shape, sound, language, expression — every detail of the robot’s soul. Prototype rapidly and iterate without fear.</p>
-</div>
-</div>
-<div class="g-col-12 g-col-md-3">
-<div class="card card-coral">
-<p><span class="sl" style="color:#FB923C">03</span> ### Build Solder, code, 3D-print, and integrate. Electronics, firmware, enclosure — one complete, working product.</p>
-</div>
-</div>
-<div class="g-col-12 g-col-md-3">
-<div class="card card-green">
-<p><span class="sl" style="color:#34D399">04</span> ### Pitch It ★ Present your product to real university guests. A working demo, a poster, a story — your public debut.</p>
-</div>
-</div>
-</div>
+<p><span class="sl" style="color:#A78BFA">// CORE TECHNOLOGY &nbsp;·&nbsp; 核心技术</span></p>
+<p>Everything your team needs to build an AI-powered robot. Every team gets the same foundation — what you build on top of it is entirely yours.</p>
 <hr>
+<section id="hardware" class="level2">
+<h2 class="anchored" data-anchor-id="hardware">Hardware</h2>
+<section id="esp32-based-boards" class="level3 card card-blue">
+<h3 class="anchored" data-anchor-id="esp32-based-boards">ESP32-Based Boards</h3>
+<p>The <strong>ESP32</strong> is the brain of your robot: dual-core 240 MHz processor, built-in Wi-Fi and Bluetooth, and enough compute for real-time AI interaction.</p>
+<p>We use ESP32-based development boards (e.g.&nbsp;ESP32-S3, ESP32-CAM variants depending on your project).</p>
+<p><strong>Specifications relevant to this course:</strong> - Dual-core Xtensa LX7 @ 240 MHz - 512 KB SRAM + up to 16 MB Flash (module-dependent) - Wi-Fi 802.11 b/g/n (essential for LLM API calls) - I2C, SPI, UART, PWM, ADC — all the interfaces you’ll need</p>
+<p><strong>Resources:</strong> - <a href="https://www.espressif.com/en/products/socs/esp32">Official ESP32 Datasheet</a> - <a href="https://docs.espressif.com/projects/esp-idf/en/stable/esp32/index.html">ESP-IDF Documentation</a> - <a href="https://platformio.org/platforms/espressif32">PlatformIO ESP32 platform</a></p>
 </section>
-<section id="course-objectives-课程目标" class="level2">
-<h2 class="anchored" data-anchor-id="course-objectives-课程目标">Course Objectives · 课程目标</h2>
-<p>Maker-X is about more than building a robot. It’s about becoming someone who can <strong>think, collaborate, and create</strong> at the intersection of technology and design.</p>
-<div class="grid">
-<div class="g-col-12 g-col-md-4">
-<div class="card card-blue">
-<p><strong>🤝 Cross-discipline Collaboration</strong></p>
-<p>Work in teams spanning engineering, design, and beyond. Learn to communicate across disciplines and ship something greater than the sum of its parts.</p>
-</div>
-</div>
-<div class="g-col-12 g-col-md-4">
-<div class="card card-purple">
-<p><strong>🧠 Confidence with AI &amp; LLMs</strong></p>
-<p>Go from curious to capable. You’ll integrate large language models into real hardware — learning to prompt, tune, and deploy AI as a core part of a product.</p>
-</div>
-</div>
-<div class="g-col-12 g-col-md-4">
-<div class="card card-coral">
-<p><strong>🎨 Design Thinking in Practice</strong></p>
-<p>Empathy, creativity, rapid prototyping, iteration, and communication — not as theory, but as daily practice. The product is the proof.</p>
-</div>
-</div>
-</div>
-<hr>
-</section>
-<section id="who-should-join-招生对象" class="level2">
-<h2 class="anchored" data-anchor-id="who-should-join-招生对象">Who Should Join · 招生对象</h2>
-<div class="grid">
-<div class="g-col-12 g-col-md-6">
-<section id="all-shanghaitech-students" class="level3 card card-green">
-<h3 class="anchored" data-anchor-id="all-shanghaitech-students">🎓 All ShanghaiTech Students</h3>
-<p>The course is open to <strong>all students across all schools and majors</strong>. No prior experience or knowledge in programming, design, robotics, or AI is needed.</p>
-</section>
-</div>
-<div class="g-col-12 g-col-md-6">
-<section id="diversified-teams" class="level3 card card-teal">
-<h3 class="anchored" data-anchor-id="diversified-teams">🌐 Diversified Teams</h3>
-<p>We organize groups where different skills and backgrounds complement each other — so every student can <strong>contribute meaningfully</strong> and learn most effectively.</p>
-</section>
-</div>
-</div>
-<hr>
-</section>
-<section id="four-week-schedule-课程时间线" class="level2">
-<h2 class="anchored" data-anchor-id="four-week-schedule-课程时间线">Four-Week Schedule · 课程时间线</h2>
+<section id="peripherals" class="level3 card card-blue">
+<h3 class="anchored" data-anchor-id="peripherals">Peripherals</h3>
+<p>Teams will work with a subset of these components depending on their concept:</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
-<th></th>
-<th>Week</th>
-<th>Theme</th>
-<th>Key Deliverable</th>
+<th>Component</th>
+<th>Purpose</th>
+<th>Interface</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>🔵</td>
-<td><a href="./week1.html">Week 1 — Conceive</a></td>
-<td>User research · Concept selection · Personality brief</td>
-<td>Concept brief</td>
+<td>OLED display (SSD1306, 128×64)</td>
+<td>Text / emotion display</td>
+<td>I2C</td>
 </tr>
 <tr class="even">
-<td>🟣</td>
-<td><a href="./week2.html">Week 2 — Design</a></td>
-<td>Prototyping · Firmware · Form &amp; character</td>
-<td>Working prototype</td>
+<td>LCD display (ST7789, 240×240)</td>
+<td>Color display</td>
+<td>SPI</td>
 </tr>
 <tr class="odd">
-<td>🟠</td>
-<td><a href="./week3.html">Week 3 — Build</a></td>
-<td>User testing · Refinement · 3D-print enclosure</td>
-<td>Integrated product</td>
+<td>Microphone (INMP441)</td>
+<td>Voice input</td>
+<td>I2S</td>
 </tr>
 <tr class="even">
-<td>🟢</td>
-<td><a href="./week4.html">Week 4 — Pitch It ★</a></td>
-<td>Demo day · Poster · Public pitch</td>
-<td>Presentation + demo</td>
+<td>Speaker + amplifier (MAX98357)</td>
+<td>Voice output</td>
+<td>I2S</td>
+</tr>
+<tr class="odd">
+<td>Camera (OV2640)</td>
+<td>Visual awareness</td>
+<td>SCCB/I2C + parallel</td>
+</tr>
+<tr class="even">
+<td>Servo / DC motor + driver</td>
+<td>Movement, expression</td>
+<td>PWM</td>
+</tr>
+<tr class="odd">
+<td>Ultrasonic sensor (HC-SR04)</td>
+<td>Distance / presence</td>
+<td>GPIO</td>
+</tr>
+<tr class="even">
+<td>Capacitive touch sensor</td>
+<td>Touch interaction</td>
+<td>GPIO/ADC</td>
 </tr>
 </tbody>
 </table>
-<p>The course runs at <strong>12 hours per week</strong> — enough time to go deep, not enough time to hesitate.</p>
+<p><strong>3D Fabrication:</strong></p>
+<p>Your robot’s enclosure will be <strong>3D-modeled and printed</strong>. The physical form is part of the design — it communicates personality before the robot says a word.</p>
+<p>Recommended modeling tools: <a href="https://www.tinkercad.com">TinkerCAD</a> (beginner), <a href="https://www.autodesk.com/education">Fusion 360</a> (advanced, free for students).</p>
+</section>
 <hr>
-<div class="cta-band">
-  <h2 style="font-family:'Audiowide',sans-serif; font-size:2rem; color:#fff; margin-bottom:.5rem;" class="anchored">
-    Ready to build something real?
-  </h2>
-  <p style="color:rgba(255,255,255,0.4); font-size:1rem; margin-bottom:.5rem;">准备好打造真实作品了吗？</p>
-  <p style="color:rgba(255,255,255,0.5); font-size:0.95rem; max-width:500px; margin:0 auto 1.5rem;">
-    Let us know you're interested in Summer 2026.<br>
-    Include your <strong style="color:rgba(255,255,255,0.75)">school name</strong>, <strong style="color:rgba(255,255,255,0.75)">year</strong>, and <strong style="color:rgba(255,255,255,0.75)">name</strong>.
-  </p>
-  <a class="btn-interested" href="mailto:sshmueli@shanghaitech.edu.cn?subject=I%20am%20interested">✉ &nbsp;I Am Interested</a>
+</section>
+<section id="frameworks" class="level2">
+<h2 class="anchored" data-anchor-id="frameworks">Frameworks</h2>
+<section id="esp-claw" class="level3 card card-teal">
+<h3 class="anchored" data-anchor-id="esp-claw">ESP-Claw</h3>
+<p><a href="https://esp-claw.com/en/">ESP-Claw</a> is a purpose-built firmware framework for ESP32 AI robots. It abstracts the complex integration of voice, display, and LLM calls so you can focus on your idea rather than low-level plumbing.</p>
+<p><strong>What ESP-Claw handles for you:</strong> - Wi-Fi connection management - HTTP/HTTPS requests to LLM APIs - Audio capture and playback pipeline - Display rendering (text, icons, animations) - OTA firmware updates</p>
+<p><strong>Espressif engineers</strong> will give a guest lecture on ESP32 hardware and the ESP-Claw framework in Week 1.</p>
+<p>→ <a href="https://esp-claw.com/en/">ESP-Claw Documentation</a></p>
+</section>
+<section id="openrouter" class="level3 card card-teal">
+<h3 class="anchored" data-anchor-id="openrouter">OpenRouter</h3>
+<p><a href="https://openrouter.ai">OpenRouter</a> is a unified API gateway for large language models. Instead of integrating each model vendor separately, you write <strong>one API call</strong> and can switch between Qwen, DeepSeek, Claude, and dozens of others by changing a single parameter.</p>
+<p><strong>Why this matters for hardware:</strong> - Your ESP32 speaks to one endpoint — simpler networking code - Test multiple models without re-engineering your firmware - Manage costs across models in one dashboard - Automatic fallbacks if a model is unavailable</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Example: same call, different model</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>curl https:<span class="op">//</span>openrouter.ai<span class="op">/</span>api<span class="op">/</span>v1<span class="op">/</span>chat<span class="op">/</span>completions <span class="op">\</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="op">-</span>H <span class="st">"Authorization: Bearer $OPENROUTER_KEY"</span> <span class="op">\</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="op">-</span>d <span class="st">'{"model": "qwen/qwen-2.5-72b-instruct", "messages": [...]}'</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Switch to DeepSeek: change one field</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="op">-</span>d <span class="st">'{"model": "deepseek/deepseek-chat", "messages": [...]}'</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>→ <a href="https://openrouter.ai/docs">OpenRouter Documentation</a> · <a href="https://openrouter.ai/models">Model list &amp; pricing</a></p>
+</section>
+<hr>
+</section>
+<section id="large-language-models" class="level2">
+<h2 class="anchored" data-anchor-id="large-language-models">Large Language Models</h2>
+<section id="models-well-work-with" class="level3 card card-purple">
+<h3 class="anchored" data-anchor-id="models-well-work-with">Models we’ll work with</h3>
+<p>Your robot’s intelligence comes from LLMs. We’ll use models accessible via OpenRouter:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Model</th>
+<th>Strengths</th>
+<th>Use when</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Qwen 2.5</strong></td>
+<td>Excellent Chinese + English, fast</td>
+<td>Bilingual interactions, speed matters</td>
+</tr>
+<tr class="even">
+<td><strong>DeepSeek Chat</strong></td>
+<td>Strong reasoning, very cost-effective</td>
+<td>Logic-heavy interactions, budget-conscious</td>
+</tr>
+<tr class="odd">
+<td><strong>Claude (Haiku / Sonnet)</strong></td>
+<td>Best instruction-following, nuanced responses</td>
+<td>Complex personality, careful tone</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Choosing a model for your robot:</strong> - Response speed matters on embedded hardware — test latency with your Wi-Fi - Cost matters if your demo runs many queries — check OpenRouter’s per-token pricing - Language quality matters for personality — do a side-by-side with your system prompt</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Model selection isn't permanent">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Model selection isn’t permanent
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Your system prompt and model choice are both adjustable throughout the course. Design your firmware so swapping models is a one-line change.</p>
+</div>
+</div>
+</section>
+<hr>
+</section>
+<section id="ai-coding-tools" class="level2">
+<h2 class="anchored" data-anchor-id="ai-coding-tools">AI Coding Tools</h2>
+<p>Writing embedded firmware is faster with AI assistance. You will use:</p>
+<div class="grid">
+<div class="g-col-12 g-col-md-6">
+<section id="claude-code" class="level3 card card-gold">
+<h3 class="anchored" data-anchor-id="claude-code">Claude Code</h3>
+<p>Anthropic’s AI pair programmer in your terminal. Understands your full codebase and can write, debug, and explain C++ / Arduino / ESP-IDF code.</p>
+<p><code>npm install -g @anthropic-ai/claude-code</code></p>
+<p>→ <a href="https://docs.anthropic.com/claude-code">Claude Code docs</a></p>
+</section>
+</div>
+<div class="g-col-12 g-col-md-6">
+<section id="github-copilot-codex" class="level3 card card-gold">
+<h3 class="anchored" data-anchor-id="github-copilot-codex">GitHub Copilot / Codex</h3>
+<p>In-editor code completion and generation. Excellent for boilerplate, API integration, and explaining unfamiliar code.</p>
+<p>→ <a href="https://education.github.com/pack">GitHub Copilot for students</a> (free)</p>
+</section>
+</div>
+</div>
+<hr>
+</section>
+<section id="design-fabrication" class="level2">
+<h2 class="anchored" data-anchor-id="design-fabrication">Design &amp; Fabrication</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Tool</th>
+<th>Purpose</th>
+<th>Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://figma.com">Figma</a></td>
+<td>UI mockups, personality moodboards</td>
+<td>Free (education)</td>
+</tr>
+<tr class="even">
+<td><a href="https://tinkercad.com">TinkerCAD</a></td>
+<td>Simple 3D modeling, browser-based</td>
+<td>Free</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.autodesk.com/education">Fusion 360</a></td>
+<td>Parametric CAD</td>
+<td>Free (student)</td>
+</tr>
+<tr class="even">
+<td><a href="https://blender.org">Blender</a></td>
+<td>Organic / sculpted forms</td>
+<td>Free</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.prusa3d.com/prusaslicer/">Prusa Slicer</a></td>
+<td>3D print slicing</td>
+<td>Free</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="version-control" class="level2">
+<h2 class="anchored" data-anchor-id="version-control">Version Control</h2>
+<p>All teams must maintain a <strong>GitHub repository</strong> throughout the course.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Suggested repo structure</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">your-robot/</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="ex">├──</span> firmware/          <span class="co"># ESP32 code</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>   ├── src/</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="ex">│</span>   └── platformio.ini</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="ex">├──</span> design/            <span class="co"># 3D files, schematics, mockups</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="ex">├──</span> research/          <span class="co"># User interview notes, concept brief</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="ex">├──</span> poster/            <span class="co"># Poster source file</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="ex">└──</span> README.md          <span class="co"># Project description + demo photo/video</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Your GitHub repo is a deliverable. Commit regularly. Write commit messages that would make sense to a stranger.</p>
+</div>
 </div>
 
 
