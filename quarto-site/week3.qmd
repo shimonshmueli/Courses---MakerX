@@ -1,0 +1,130 @@
+---
+title: "Week 3 — Build"
+description: "Full integration, 3D printing, and user testing"
+---
+
+```{=html}
+<div class="week-hero week-hero-w3">
+  <div class="week-num" style="color:#FB923C">// WEEK THREE &nbsp;·&nbsp; 第三周</div>
+  <div class="week-title">Build</div>
+  <div class="week-zh">制造</div>
+  <p class="week-desc">
+    The pieces exist. Now you make them into a product.
+    Week 3 is the most intense week: soldering, firmware integration, 3D printing, and relentless user testing.
+    By Friday you should have a <strong>working robot in an enclosure</strong>.
+  </p>
+</div>
+```
+
+## Learning Objectives
+
+By the end of Week 3 you will be able to:
+
+- Integrate all hardware components (sensors, display, motor/speaker) into a unified system
+- Print and assemble a 3D-modeled enclosure
+- Run structured user tests and incorporate feedback into the product
+- Use Claude Code, Codex, or other AI tools to accelerate firmware development
+- Prepare a working demo for Week 4
+
+---
+
+## Sessions
+
+### Session 7 — Full Hardware Integration
+
+Everything on the breadboard; make it work together.
+
+**Agenda:**
+- Solder your circuit (move off the breadboard if components are confirmed)
+- Integrate all sensors and actuators: camera, motor, speaker, display
+- Firmware: handle all hardware in one ESP-Claw sketch
+- Stress test: run continuously for 10 minutes — what breaks?
+- Bug triage with instructors
+
+::: {.callout-warning title="The integration wall"}
+Most teams hit a wall here — something that worked separately breaks when combined. **This is normal.** Budget 50% of this session for debugging. The debugging is the learning.
+:::
+
+**Common integration issues to watch for:**
+
+| Symptom | Likely cause |
+|---|---|
+| Device crashes on startup | Power rail can't supply enough current |
+| Display garbled | I2C address conflict |
+| LLM calls time out | Wi-Fi and heavy compute conflict |
+| Motor causes resets | Motor driver needs separate power |
+
+---
+
+### Session 8 — 3D Print & Assemble
+
+Your robot gets a body.
+
+::: {.callout-tip title="Design for printability"}
+The best enclosure is the one that actually prints. Design with **0.2mm layer height** in mind, avoid overhangs greater than 45°, and add clearance for USB ports and cables.
+:::
+
+**Agenda:**
+- Finalize enclosure design in Fusion 360 / TinkerCAD / Blender
+- Submit print jobs (prints typically take 3–8 hours)
+- While printing: refine firmware, document wiring
+- Assemble when print is complete: mount board, route cables, close enclosure
+- Reality check: does it still feel like your concept brief?
+
+**3D modeling tools:**
+
+| Tool | Best for | Free? |
+|---|---|---|
+| TinkerCAD | Simple shapes, beginners | ✅ Yes |
+| Fusion 360 | Parametric design, precise fits | ✅ Student/edu |
+| Blender | Organic/sculpted shapes | ✅ Yes |
+| SolidWorks | Professional mechanical design | ❌ License needed |
+
+---
+
+### Session 9 — User Testing & Iteration
+
+Put the product in front of real people. Fix what matters.
+
+::: {.callout-note title="Structured user testing"}
+A good user test takes 15 minutes per person. Give them a task, watch silently, take notes. Don't explain or defend — just observe.
+:::
+
+**Agenda:**
+- Each team runs 3–4 user tests (find people outside the class)
+- Observe: what confuses people? What delights them? What do they ignore?
+- Debrief: what are the top 3 things to fix before Week 4?
+- Sprint: make the 3 fixes (if more than a day of work, scope them down)
+- Final hardware check with instructor sign-off
+
+**What to test:**
+- Can a new user figure out how to interact with the robot without explanation?
+- Does the robot's personality come through clearly?
+- Is the physical form coherent with the personality?
+- Does it work reliably for 5 minutes straight?
+
+---
+
+::: {.deliverables}
+#### ✓ Week 3 Deliverables
+
+- [ ] **Working robot in enclosure** — fully integrated, reliable, battery/USB powered
+- [ ] **User test report** — 3–4 testers, observations, top changes made
+- [ ] **Source code** — commented, committed to GitHub
+- [ ] **Wiring diagram** — documented schematic
+- [ ] **Demo-ready** — 2-minute rehearsed demo of the robot's key interaction
+:::
+
+---
+
+## Resources for Week 3
+
+- [ESP-Claw hardware integration guide](https://esp-claw.com/en/) — multi-component examples
+- [Claude Code](https://claude.ai/code) — AI pair programmer in your terminal
+- [TinkerCAD](https://www.tinkercad.com) — web-based 3D modeling (free)
+- [Fusion 360 for students](https://www.autodesk.com/education) — professional-grade free license
+- [Prusa Slicer](https://www.prusa3d.com/prusaslicer/) — open source slicer for most printers
+
+---
+
+*← [Week 2 — Design](week2.qmd) &nbsp;|&nbsp; [Week 4 — Pitch It →](week4.qmd)*

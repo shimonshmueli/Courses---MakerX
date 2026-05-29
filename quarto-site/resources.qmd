@@ -1,0 +1,188 @@
+---
+title: "Resources"
+description: "Technology stack, tools, and learning materials for Maker-X"
+---
+
+<span class="sl" style="color:#A78BFA">// CORE TECHNOLOGY &nbsp;·&nbsp; 核心技术</span>
+
+Everything your team needs to build an AI-powered robot. Every team gets the same foundation — what you build on top of it is entirely yours.
+
+---
+
+## Hardware
+
+::: {.card .card-blue}
+### ESP32-Based Boards
+
+The **ESP32** is the brain of your robot: dual-core 240 MHz processor, built-in Wi-Fi and Bluetooth, and enough compute for real-time AI interaction.
+
+We use ESP32-based development boards (e.g. ESP32-S3, ESP32-CAM variants depending on your project).
+
+**Specifications relevant to this course:**
+- Dual-core Xtensa LX7 @ 240 MHz
+- 512 KB SRAM + up to 16 MB Flash (module-dependent)
+- Wi-Fi 802.11 b/g/n (essential for LLM API calls)
+- I2C, SPI, UART, PWM, ADC — all the interfaces you'll need
+
+**Resources:**
+- [Official ESP32 Datasheet](https://www.espressif.com/en/products/socs/esp32)
+- [ESP-IDF Documentation](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/index.html)
+- [PlatformIO ESP32 platform](https://platformio.org/platforms/espressif32)
+:::
+
+::: {.card .card-blue}
+### Peripherals
+
+Teams will work with a subset of these components depending on their concept:
+
+| Component | Purpose | Interface |
+|---|---|---|
+| OLED display (SSD1306, 128×64) | Text / emotion display | I2C |
+| LCD display (ST7789, 240×240) | Color display | SPI |
+| Microphone (INMP441) | Voice input | I2S |
+| Speaker + amplifier (MAX98357) | Voice output | I2S |
+| Camera (OV2640) | Visual awareness | SCCB/I2C + parallel |
+| Servo / DC motor + driver | Movement, expression | PWM |
+| Ultrasonic sensor (HC-SR04) | Distance / presence | GPIO |
+| Capacitive touch sensor | Touch interaction | GPIO/ADC |
+
+**3D Fabrication:**
+
+Your robot's enclosure will be **3D-modeled and printed**. The physical form is part of the design — it communicates personality before the robot says a word.
+
+Recommended modeling tools: [TinkerCAD](https://www.tinkercad.com) (beginner), [Fusion 360](https://www.autodesk.com/education) (advanced, free for students).
+:::
+
+---
+
+## Frameworks
+
+::: {.card .card-teal}
+### ESP-Claw
+
+[ESP-Claw](https://esp-claw.com/en/) is a purpose-built firmware framework for ESP32 AI robots. It abstracts the complex integration of voice, display, and LLM calls so you can focus on your idea rather than low-level plumbing.
+
+**What ESP-Claw handles for you:**
+- Wi-Fi connection management
+- HTTP/HTTPS requests to LLM APIs
+- Audio capture and playback pipeline
+- Display rendering (text, icons, animations)
+- OTA firmware updates
+
+**Espressif engineers** will give a guest lecture on ESP32 hardware and the ESP-Claw framework in Week 1.
+
+→ [ESP-Claw Documentation](https://esp-claw.com/en/)
+:::
+
+::: {.card .card-teal}
+### OpenRouter
+
+[OpenRouter](https://openrouter.ai) is a unified API gateway for large language models. Instead of integrating each model vendor separately, you write **one API call** and can switch between Qwen, DeepSeek, Claude, and dozens of others by changing a single parameter.
+
+**Why this matters for hardware:**
+- Your ESP32 speaks to one endpoint — simpler networking code
+- Test multiple models without re-engineering your firmware
+- Manage costs across models in one dashboard
+- Automatic fallbacks if a model is unavailable
+
+```python
+# Example: same call, different model
+curl https://openrouter.ai/api/v1/chat/completions \
+  -H "Authorization: Bearer $OPENROUTER_KEY" \
+  -d '{"model": "qwen/qwen-2.5-72b-instruct", "messages": [...]}'
+
+# Switch to DeepSeek: change one field
+  -d '{"model": "deepseek/deepseek-chat", "messages": [...]}'
+```
+
+→ [OpenRouter Documentation](https://openrouter.ai/docs) · [Model list & pricing](https://openrouter.ai/models)
+:::
+
+---
+
+## Large Language Models
+
+::: {.card .card-purple}
+### Models we'll work with
+
+Your robot's intelligence comes from LLMs. We'll use models accessible via OpenRouter:
+
+| Model | Strengths | Use when |
+|---|---|---|
+| **Qwen 2.5** | Excellent Chinese + English, fast | Bilingual interactions, speed matters |
+| **DeepSeek Chat** | Strong reasoning, very cost-effective | Logic-heavy interactions, budget-conscious |
+| **Claude (Haiku / Sonnet)** | Best instruction-following, nuanced responses | Complex personality, careful tone |
+
+**Choosing a model for your robot:**
+- Response speed matters on embedded hardware — test latency with your Wi-Fi
+- Cost matters if your demo runs many queries — check OpenRouter's per-token pricing
+- Language quality matters for personality — do a side-by-side with your system prompt
+
+::: {.callout-tip title="Model selection isn't permanent"}
+Your system prompt and model choice are both adjustable throughout the course. Design your firmware so swapping models is a one-line change.
+:::
+:::
+
+---
+
+## AI Coding Tools
+
+Writing embedded firmware is faster with AI assistance. You will use:
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-6}
+::: {.card .card-gold}
+### Claude Code
+Anthropic's AI pair programmer in your terminal. Understands your full codebase and can write, debug, and explain C++ / Arduino / ESP-IDF code.
+
+`npm install -g @anthropic-ai/claude-code`
+
+→ [Claude Code docs](https://docs.anthropic.com/claude-code)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6}
+::: {.card .card-gold}
+### GitHub Copilot / Codex
+In-editor code completion and generation. Excellent for boilerplate, API integration, and explaining unfamiliar code.
+
+→ [GitHub Copilot for students](https://education.github.com/pack) (free)
+:::
+:::
+
+:::
+
+---
+
+## Design & Fabrication
+
+| Tool | Purpose | Cost |
+|---|---|---|
+| [Figma](https://figma.com) | UI mockups, personality moodboards | Free (education) |
+| [TinkerCAD](https://tinkercad.com) | Simple 3D modeling, browser-based | Free |
+| [Fusion 360](https://www.autodesk.com/education) | Parametric CAD | Free (student) |
+| [Blender](https://blender.org) | Organic / sculpted forms | Free |
+| [Prusa Slicer](https://www.prusa3d.com/prusaslicer/) | 3D print slicing | Free |
+
+---
+
+## Version Control
+
+All teams must maintain a **GitHub repository** throughout the course.
+
+```bash
+# Suggested repo structure
+your-robot/
+├── firmware/          # ESP32 code
+│   ├── src/
+│   └── platformio.ini
+├── design/            # 3D files, schematics, mockups
+├── research/          # User interview notes, concept brief
+├── poster/            # Poster source file
+└── README.md          # Project description + demo photo/video
+```
+
+::: {.callout-note}
+Your GitHub repo is a deliverable. Commit regularly. Write commit messages that would make sense to a stranger.
+:::

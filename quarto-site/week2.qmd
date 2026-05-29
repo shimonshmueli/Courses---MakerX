@@ -1,0 +1,126 @@
+---
+title: "Week 2 — Design"
+description: "Prototyping, firmware setup, and character development"
+---
+
+```{=html}
+<div class="week-hero week-hero-w2">
+  <div class="week-num" style="color:#A78BFA">// WEEK TWO &nbsp;·&nbsp; 第二周</div>
+  <div class="week-title">Design</div>
+  <div class="week-zh">设计</div>
+  <p class="week-desc">
+    You have a concept. Now make it real — at low fidelity first, then higher.
+    Week 2 is about <strong>rapid prototyping and fearless iteration</strong>:
+    electronics on a breadboard, firmware running hello-world, and a 3D sketch of the body.
+  </p>
+</div>
+```
+
+## Learning Objectives
+
+By the end of Week 2 you will be able to:
+
+- Wire a basic ESP32 circuit with a display or sensor
+- Flash firmware using the ESP-Claw framework
+- Send your first message to an LLM via OpenRouter and receive a response
+- Sketch and prototype the robot's physical form
+- Run a first user test (lo-fi prototype, real feedback)
+
+---
+
+## Sessions
+
+### Session 4 — Electronics & Firmware First Contact
+
+Get the hardware talking.
+
+::: {.callout-note}
+This is often the most intimidating session. Don't worry — by the end of it your board will be blinking, displaying text, or responding to a button press. That's real.
+:::
+
+**Agenda:**
+- Intro to ESP32 GPIO, I2C, and SPI interfaces
+- Wire up a display (OLED or LCD) on a breadboard
+- Flash a starter ESP-Claw sketch
+- Make the display show your robot's name
+- Troubleshooting time with instructors
+
+**Tools needed:**
+```
+ESP32 dev board + USB cable
+Breadboard + jumper wires
+OLED display (SSD1306) or LCD
+Arduino IDE or VS Code + PlatformIO
+```
+
+---
+
+### Session 5 — LLM Integration via OpenRouter
+
+Connect your robot's brain to an AI model.
+
+::: {.callout-tip title="Why OpenRouter?"}
+OpenRouter provides a **single API** that routes to any LLM — Qwen, DeepSeek, Claude, and others. You write one integration and can swap models with a single parameter change. No re-wiring required.
+:::
+
+**Agenda:**
+- OpenRouter account setup + API key
+- HTTP request from ESP32 to OpenRouter API
+- Parse JSON response and display reply on screen
+- Prompt engineering: write a system prompt that gives your robot its personality
+- Compare two models (e.g. Qwen vs DeepSeek) — what's different?
+
+**Starter prompt template:**
+```
+You are [robot name], a [personality adjective] AI companion
+designed for [target user].
+
+You respond in [language preference], in [tone] — no more than
+2 sentences per reply. You never break character.
+
+When someone says hello, you respond with your signature greeting.
+```
+
+---
+
+### Session 6 — Form & Character Development
+
+Guest lecture: **JunJun Shi 史珺珺** on *"Empathy as the starting point for designing robot personality."*
+
+**Agenda:**
+- Guest lecture: how human insight shapes a robot's soul
+- Workshop: translate your personality brief into physical form
+- Sketch 3 body shapes — which one *feels* like your robot?
+- Rapid paper prototype: cut, fold, tape — 30 minutes
+- First user test: show the paper prototype to someone outside your team
+- Iterate: one change based on feedback
+
+::: {.callout-important title="Lo-fi is the point"}
+Paper prototypes aren't "not done yet." They're a tool. The goal is to **learn fast and cheaply** before committing to 3D printing.
+:::
+
+---
+
+::: {.deliverables}
+#### ✓ Week 2 Deliverables
+
+- [ ] **Working hardware sketch** — ESP32 + display showing robot name / first response
+- [ ] **LLM integration demo** — robot sends a prompt and displays the reply
+- [ ] **3D sketch / paper prototype** of the robot's enclosure
+- [ ] **Personality system prompt** — documented, tested, iterable
+- [ ] **User test notes** — what you showed, who you showed it to, what you learned
+:::
+
+---
+
+## Resources for Week 2
+
+- [ESP-Claw Getting Started](https://esp-claw.com/en/) — official docs
+- [OpenRouter API docs](https://openrouter.ai/docs) — model list, pricing, API reference
+- [Qwen model card](https://huggingface.co/Qwen) — capabilities and prompting tips
+- [DeepSeek documentation](https://platform.deepseek.com/docs) — Chinese-language model strengths
+- [Claude API docs](https://docs.anthropic.com) — for Claude-specific prompting
+
+---
+
+*← [Week 1 — Conceive](week1.qmd) &nbsp;|&nbsp; [Week 3 — Build →](week3.qmd)*

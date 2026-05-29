@@ -1,0 +1,371 @@
+[
+  {
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Resources",
+    "section": "",
+    "text": "// CORE TECHNOLOGY  ·  核心技术\nEverything your team needs to build an AI-powered robot. Every team gets the same foundation — what you build on top of it is entirely yours.",
+    "crumbs": [
+      "Overview",
+      "Resources"
+    ]
+  },
+  {
+    "objectID": "resources.html#hardware",
+    "href": "resources.html#hardware",
+    "title": "Resources",
+    "section": "Hardware",
+    "text": "Hardware\n\nESP32-Based Boards\nThe ESP32 is the brain of your robot: dual-core 240 MHz processor, built-in Wi-Fi and Bluetooth, and enough compute for real-time AI interaction.\nWe use ESP32-based development boards (e.g. ESP32-S3, ESP32-CAM variants depending on your project).\nSpecifications relevant to this course: - Dual-core Xtensa LX7 @ 240 MHz - 512 KB SRAM + up to 16 MB Flash (module-dependent) - Wi-Fi 802.11 b/g/n (essential for LLM API calls) - I2C, SPI, UART, PWM, ADC — all the interfaces you’ll need\nResources: - Official ESP32 Datasheet - ESP-IDF Documentation - PlatformIO ESP32 platform\n\n\nPeripherals\nTeams will work with a subset of these components depending on their concept:\n\n\n\nComponent\nPurpose\nInterface\n\n\n\n\nOLED display (SSD1306, 128×64)\nText / emotion display\nI2C\n\n\nLCD display (ST7789, 240×240)\nColor display\nSPI\n\n\nMicrophone (INMP441)\nVoice input\nI2S\n\n\nSpeaker + amplifier (MAX98357)\nVoice output\nI2S\n\n\nCamera (OV2640)\nVisual awareness\nSCCB/I2C + parallel\n\n\nServo / DC motor + driver\nMovement, expression\nPWM\n\n\nUltrasonic sensor (HC-SR04)\nDistance / presence\nGPIO\n\n\nCapacitive touch sensor\nTouch interaction\nGPIO/ADC\n\n\n\n3D Fabrication:\nYour robot’s enclosure will be 3D-modeled and printed. The physical form is part of the design — it communicates personality before the robot says a word.\nRecommended modeling tools: TinkerCAD (beginner), Fusion 360 (advanced, free for students).",
+    "crumbs": [
+      "Overview",
+      "Resources"
+    ]
+  },
+  {
+    "objectID": "resources.html#frameworks",
+    "href": "resources.html#frameworks",
+    "title": "Resources",
+    "section": "Frameworks",
+    "text": "Frameworks\n\nESP-Claw\nESP-Claw is a purpose-built firmware framework for ESP32 AI robots. It abstracts the complex integration of voice, display, and LLM calls so you can focus on your idea rather than low-level plumbing.\nWhat ESP-Claw handles for you: - Wi-Fi connection management - HTTP/HTTPS requests to LLM APIs - Audio capture and playback pipeline - Display rendering (text, icons, animations) - OTA firmware updates\nEspressif engineers will give a guest lecture on ESP32 hardware and the ESP-Claw framework in Week 1.\n→ ESP-Claw Documentation\n\n\nOpenRouter\nOpenRouter is a unified API gateway for large language models. Instead of integrating each model vendor separately, you write one API call and can switch between Qwen, DeepSeek, Claude, and dozens of others by changing a single parameter.\nWhy this matters for hardware: - Your ESP32 speaks to one endpoint — simpler networking code - Test multiple models without re-engineering your firmware - Manage costs across models in one dashboard - Automatic fallbacks if a model is unavailable\n# Example: same call, different model\ncurl https://openrouter.ai/api/v1/chat/completions \\\n  -H \"Authorization: Bearer $OPENROUTER_KEY\" \\\n  -d '{\"model\": \"qwen/qwen-2.5-72b-instruct\", \"messages\": [...]}'\n\n# Switch to DeepSeek: change one field\n  -d '{\"model\": \"deepseek/deepseek-chat\", \"messages\": [...]}'\n→ OpenRouter Documentation · Model list & pricing",
+    "crumbs": [
+      "Overview",
+      "Resources"
+    ]
+  },
+  {
+    "objectID": "resources.html#large-language-models",
+    "href": "resources.html#large-language-models",
+    "title": "Resources",
+    "section": "Large Language Models",
+    "text": "Large Language Models\n\nModels we’ll work with\nYour robot’s intelligence comes from LLMs. We’ll use models accessible via OpenRouter:\n\n\n\n\n\n\n\n\nModel\nStrengths\nUse when\n\n\n\n\nQwen 2.5\nExcellent Chinese + English, fast\nBilingual interactions, speed matters\n\n\nDeepSeek Chat\nStrong reasoning, very cost-effective\nLogic-heavy interactions, budget-conscious\n\n\nClaude (Haiku / Sonnet)\nBest instruction-following, nuanced responses\nComplex personality, careful tone\n\n\n\nChoosing a model for your robot: - Response speed matters on embedded hardware — test latency with your Wi-Fi - Cost matters if your demo runs many queries — check OpenRouter’s per-token pricing - Language quality matters for personality — do a side-by-side with your system prompt\n\n\n\n\n\n\nTipModel selection isn’t permanent\n\n\n\nYour system prompt and model choice are both adjustable throughout the course. Design your firmware so swapping models is a one-line change.",
+    "crumbs": [
+      "Overview",
+      "Resources"
+    ]
+  },
+  {
+    "objectID": "resources.html#ai-coding-tools",
+    "href": "resources.html#ai-coding-tools",
+    "title": "Resources",
+    "section": "AI Coding Tools",
+    "text": "AI Coding Tools\nWriting embedded firmware is faster with AI assistance. You will use:\n\n\n\nClaude Code\nAnthropic’s AI pair programmer in your terminal. Understands your full codebase and can write, debug, and explain C++ / Arduino / ESP-IDF code.\nnpm install -g @anthropic-ai/claude-code\n→ Claude Code docs\n\n\n\n\nGitHub Copilot / Codex\nIn-editor code completion and generation. Excellent for boilerplate, API integration, and explaining unfamiliar code.\n→ GitHub Copilot for students (free)",
+    "crumbs": [
+      "Overview",
+      "Resources"
+    ]
+  },
+  {
+    "objectID": "resources.html#design-fabrication",
+    "href": "resources.html#design-fabrication",
+    "title": "Resources",
+    "section": "Design & Fabrication",
+    "text": "Design & Fabrication\n\n\n\nTool\nPurpose\nCost\n\n\n\n\nFigma\nUI mockups, personality moodboards\nFree (education)\n\n\nTinkerCAD\nSimple 3D modeling, browser-based\nFree\n\n\nFusion 360\nParametric CAD\nFree (student)\n\n\nBlender\nOrganic / sculpted forms\nFree\n\n\nPrusa Slicer\n3D print slicing\nFree",
+    "crumbs": [
+      "Overview",
+      "Resources"
+    ]
+  },
+  {
+    "objectID": "resources.html#version-control",
+    "href": "resources.html#version-control",
+    "title": "Resources",
+    "section": "Version Control",
+    "text": "Version Control\nAll teams must maintain a GitHub repository throughout the course.\n# Suggested repo structure\nyour-robot/\n├── firmware/          # ESP32 code\n│   ├── src/\n│   └── platformio.ini\n├── design/            # 3D files, schematics, mockups\n├── research/          # User interview notes, concept brief\n├── poster/            # Poster source file\n└── README.md          # Project description + demo photo/video\n\n\n\n\n\n\nNote\n\n\n\nYour GitHub repo is a deliverable. Commit regularly. Write commit messages that would make sense to a stranger.",
+    "crumbs": [
+      "Overview",
+      "Resources"
+    ]
+  },
+  {
+    "objectID": "week3.html",
+    "href": "week3.html",
+    "title": "Week 3 — Build",
+    "section": "",
+    "text": "// WEEK THREE  ·  第三周\n  Build\n  制造\n  \n    The pieces exist. Now you make them into a product.\n    Week 3 is the most intense week: soldering, firmware integration, 3D printing, and relentless user testing.\n    By Friday you should have a working robot in an enclosure.",
+    "crumbs": [
+      "Overview",
+      "Weekly Schedule",
+      "Week 3 — Build"
+    ]
+  },
+  {
+    "objectID": "week3.html#learning-objectives",
+    "href": "week3.html#learning-objectives",
+    "title": "Week 3 — Build",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nBy the end of Week 3 you will be able to:\n\nIntegrate all hardware components (sensors, display, motor/speaker) into a unified system\nPrint and assemble a 3D-modeled enclosure\nRun structured user tests and incorporate feedback into the product\nUse Claude Code, Codex, or other AI tools to accelerate firmware development\nPrepare a working demo for Week 4",
+    "crumbs": [
+      "Overview",
+      "Weekly Schedule",
+      "Week 3 — Build"
+    ]
+  },
+  {
+    "objectID": "week3.html#sessions",
+    "href": "week3.html#sessions",
+    "title": "Week 3 — Build",
+    "section": "Sessions",
+    "text": "Sessions\n\nSession 7 — Full Hardware Integration\nEverything on the breadboard; make it work together.\nAgenda: - Solder your circuit (move off the breadboard if components are confirmed) - Integrate all sensors and actuators: camera, motor, speaker, display - Firmware: handle all hardware in one ESP-Claw sketch - Stress test: run continuously for 10 minutes — what breaks? - Bug triage with instructors\n\n\n\n\n\n\nWarningThe integration wall\n\n\n\nMost teams hit a wall here — something that worked separately breaks when combined. This is normal. Budget 50% of this session for debugging. The debugging is the learning.\n\n\nCommon integration issues to watch for:\n\n\n\nSymptom\nLikely cause\n\n\n\n\nDevice crashes on startup\nPower rail can’t supply enough current\n\n\nDisplay garbled\nI2C address conflict\n\n\nLLM calls time out\nWi-Fi and heavy compute conflict\n\n\nMotor causes resets\nMotor driver needs separate power\n\n\n\n\n\n\nSession 8 — 3D Print & Assemble\nYour robot gets a body.\n\n\n\n\n\n\nTipDesign for printability\n\n\n\nThe best enclosure is the one that actually prints. Design with 0.2mm layer height in mind, avoid overhangs greater than 45°, and add clearance for USB ports and cables.\n\n\nAgenda: - Finalize enclosure design in Fusion 360 / TinkerCAD / Blender - Submit print jobs (prints typically take 3–8 hours) - While printing: refine firmware, document wiring - Assemble when print is complete: mount board, route cables, close enclosure - Reality check: does it still feel like your concept brief?\n3D modeling tools:\n\n\n\nTool\nBest for\nFree?\n\n\n\n\nTinkerCAD\nSimple shapes, beginners\n✅ Yes\n\n\nFusion 360\nParametric design, precise fits\n✅ Student/edu\n\n\nBlender\nOrganic/sculpted shapes\n✅ Yes\n\n\nSolidWorks\nProfessional mechanical design\n❌ License needed\n\n\n\n\n\n\nSession 9 — User Testing & Iteration\nPut the product in front of real people. Fix what matters.\n\n\n\n\n\n\nNoteStructured user testing\n\n\n\nA good user test takes 15 minutes per person. Give them a task, watch silently, take notes. Don’t explain or defend — just observe.\n\n\nAgenda: - Each team runs 3–4 user tests (find people outside the class) - Observe: what confuses people? What delights them? What do they ignore? - Debrief: what are the top 3 things to fix before Week 4? - Sprint: make the 3 fixes (if more than a day of work, scope them down) - Final hardware check with instructor sign-off\nWhat to test: - Can a new user figure out how to interact with the robot without explanation? - Does the robot’s personality come through clearly? - Is the physical form coherent with the personality? - Does it work reliably for 5 minutes straight?\n\n\n✓ Week 3 Deliverables\n\nWorking robot in enclosure — fully integrated, reliable, battery/USB powered\nUser test report — 3–4 testers, observations, top changes made\nSource code — commented, committed to GitHub\nWiring diagram — documented schematic\nDemo-ready — 2-minute rehearsed demo of the robot’s key interaction",
+    "crumbs": [
+      "Overview",
+      "Weekly Schedule",
+      "Week 3 — Build"
+    ]
+  },
+  {
+    "objectID": "week3.html#resources-for-week-3",
+    "href": "week3.html#resources-for-week-3",
+    "title": "Week 3 — Build",
+    "section": "Resources for Week 3",
+    "text": "Resources for Week 3\n\nESP-Claw hardware integration guide — multi-component examples\nClaude Code — AI pair programmer in your terminal\nTinkerCAD — web-based 3D modeling (free)\nFusion 360 for students — professional-grade free license\nPrusa Slicer — open source slicer for most printers\n\n\n← Week 2 — Design  |  Week 4 — Pitch It →",
+    "crumbs": [
+      "Overview",
+      "Weekly Schedule",
+      "Week 3 — Build"
+    ]
+  },
+  {
+    "objectID": "week1.html",
+    "href": "week1.html",
+    "title": "Week 1 — Conceive",
+    "section": "",
+    "text": "// WEEK ONE  ·  第一周\n  Conceive\n  构思\n  \n    Before you touch a single component, you need to understand the person your robot will serve.\n    Week 1 is about listening, asking, and imagining — turning a vague idea into a focused concept.",
+    "crumbs": [
+      "Overview",
+      "Weekly Schedule",
+      "Week 1 — Conceive"
+    ]
+  },
+  {
+    "objectID": "week1.html#learning-objectives",
+    "href": "week1.html#learning-objectives",
+    "title": "Week 1 — Conceive",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nBy the end of Week 1 you will be able to:\n\nConduct basic user research interviews and synthesize findings\nDefine a target user and a genuine unmet need\nArticulate the personality and purpose of your robot in a one-page concept brief\nSketch interaction scenarios and rough form factors\nPresent your concept for peer critique and iteration",
+    "crumbs": [
+      "Overview",
+      "Weekly Schedule",
+      "Week 1 — Conceive"
+    ]
+  },
+  {
+    "objectID": "week1.html#sessions",
+    "href": "week1.html#sessions",
+    "title": "Week 1 — Conceive",
+    "section": "Sessions",
+    "text": "Sessions\n\nSession 1 — Kick-off & Team Formation\nThe course begins. Teams are formed across disciplines — you may not know your teammates yet, and that’s by design.\n\n\n\n\n\n\nNote\n\n\n\nWhat happens: Course introduction, team assignments, overview of the 4-week arc. First look at the ESP32 hardware and ESP-Claw framework.\n\n\nAgenda: - Course overview and grading (Pass / No Pass) - Meet your team — skills mapping exercise - Hardware unboxing: ESP32 board, sensors, displays - Guest overview: Espressif introduction to ESP-Claw - Assignment: individual user interview before Session 2\n\n\n\nSession 2 — User Research & Empathy\nYou’ve each spoken to a potential user. Now you share what you heard.\n\n\n\n\n\n\nTipDesign Thinking in action\n\n\n\nThe goal of user research is not to confirm your assumptions — it’s to break them. The most interesting insights come from unexpected answers.\n\n\nAgenda: - Share interview findings in your team (5 min each) - Affinity mapping: cluster insights into themes - Identify the top 2–3 user needs worth solving - Define your target user persona - Sketch 3 possible robot concepts (rough, fast, no judgment)\n\n\n\nSession 3 — Concept Selection & Personality Brief\nYour team converges on one direction.\nAgenda: - Dot voting: which concept is most feasible and most meaningful? - Concept refinement: what does the robot do, say, and feel like? - Write the Robot Personality Brief (see deliverable below) - Technical feasibility check with instructors - Peer critique round: 3-minute pitches, feedback cards",
+    "crumbs": [
+      "Overview",
+      "Weekly Schedule",
+      "Week 1 — Conceive"
+    ]
+  },
+  {
+    "objectID": "week1.html#the-robot-personality-brief",
+    "href": "week1.html#the-robot-personality-brief",
+    "title": "Week 1 — Conceive",
+    "section": "The Robot Personality Brief",
+    "text": "The Robot Personality Brief\nThis is the key output of Week 1. It answers these questions in one page:\n\n\n\n\n\n\n\nQuestion\nWhat to define\n\n\n\n\nWho is it for?\nSpecific user + context\n\n\nWhat problem does it solve?\nThe core unmet need\n\n\nWhat does it feel like to interact with?\nPersonality adjectives (3–5)\n\n\nWhat does it say / how does it speak?\nTone, language, style\n\n\nWhat does it look like?\nSketch or moodboard\n\n\nWhat does it not do?\nExplicit non-goals\n\n\n\n\n\n\n\n\n\nImportantKeep it on one page\n\n\n\nThe constraint is intentional. If you can’t summarize your concept in one page, you don’t have a concept yet — you have a wish list.\n\n\n\n\n✓ Week 1 Deliverables\n\nUser Persona — one documented user with a real need (from your interview)\nRobot Concept Brief — 1-page: user, need, personality, rough form factor\n3 concept sketches — rough drawings, one per team member\nTeam roles defined — who leads design, firmware, fabrication, pitch",
+    "crumbs": [
+      "Overview",
+      "Weekly Schedule",
+      "Week 1 — Conceive"
+    ]
+  },
+  {
+    "objectID": "week1.html#resources-for-week-1",
+    "href": "week1.html#resources-for-week-1",
+    "title": "Week 1 — Conceive",
+    "section": "Resources for Week 1",
+    "text": "Resources for Week 1\n\nStanford d.school Design Thinking Bootcamp Bootleg — the canonical guide to empathy and concept work\nIDEO Human-Centered Design toolkit — interview and synthesis methods\nESP-Claw documentation — start getting familiar early\n\n\nNext: Week 2 — Design →",
+    "crumbs": [
+      "Overview",
+      "Weekly Schedule",
+      "Week 1 — Conceive"
+    ]
+  },
+  {
+    "objectID": "team.html",
+    "href": "team.html",
+    "title": "Team",
+    "section": "",
+    "text": "// INSTRUCTORS  ·  教师团队",
+    "crumbs": [
+      "Overview",
+      "Team"
+    ]
+  },
+  {
+    "objectID": "team.html#meet-your-team-认识你的团队",
+    "href": "team.html#meet-your-team-认识你的团队",
+    "title": "Team",
+    "section": "Meet your team · 认识你的团队",
+    "text": "Meet your team · 认识你的团队\nA joint offering of Kedao College, SCA (School of Creativity and Art), and SIST (School of Information Science and Technology) at ShanghaiTech University.\n\n\nInstructors\n\n  S\n  \n    Shimon Shmueli\n    Instructor  ·  SCA\n    \n      Interdisciplinary educator and practitioner at the intersection of technology, design, and creativity.\n      Leads the Maker-X course design and overall program direction.\n    \n    \n      ✉ Email\n    \n  \n\n\n\n  D\n  \n    Daniel Koo\n    Instructor  ·  SCA\n    \n      Designer and educator at SCA, bringing expertise in creative processes, form development,\n      and human-centered design to the course.\n    \n  \n\n\n\n  梁\n  \n    梁俊睿\n    Instructor  ·  SIST\n    \n      Faculty at SIST bringing technical depth in embedded systems, AI, and hardware integration —\n      the engineering backbone of the course.\n    \n  \n\n\n\n\nGuest Lecturers\n// GUEST LECTURES  ·  特邀讲座\n\n  ESP\n  \n    Espressif Engineers\n    Guest Lecture — Week 1\n    \n      Engineers from Espressif Systems — the company behind the ESP32 — give a deep dive\n      into the hardware platform and the ESP-Claw framework,\n      straight from the people who built it.\n    \n    Topics: ESP32 architecture · Wi-Fi & Bluetooth · ESP-Claw internals · AI integration patterns\n  \n\n\n\n  史\n  \n    JunJun Shi  史珺珺\n    Guest Lecture — Week 2\n    \n      \"Empathy as the starting point for designing robot personality\" — how human insight\n      shapes the soul of a machine. A lecture and workshop that bridges design thinking and character design\n      in the context of AI-powered physical products.\n    \n    Topics: Empathy mapping · Character archetypes · Personality-first design · Robot affect",
+    "crumbs": [
+      "Overview",
+      "Team"
+    ]
+  },
+  {
+    "objectID": "team.html#contact",
+    "href": "team.html#contact",
+    "title": "Team",
+    "section": "Contact",
+    "text": "Contact\nFor course enquiries, expressions of interest, or collaboration:\n\n\n\nShimon Shmueli\nsshmueli@shanghaitech.edu.cn\n\n\nInterested in taking the course?\nSend an email →\n\n\n\n\n  \n    Include your school name,\n    year, and\n    name.\n  \n  ✉  I Am Interested",
+    "crumbs": [
+      "Overview",
+      "Team"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "MAKER-X",
+    "section": "",
+    "text": "Summer 2026  ·  ShanghaiTech University\n    \n    \n    \n      School of Creativity & Art  ·  SIST  ·  Kedao College\n    \n    \n    \n      You don't just build a robot — you conceive the idea,\n      design its personality, build the electronics, and\n      pitch it.\n      Four weeks. One team. One product you own end-to-end.\n    \n    \n      你不只是在制造机器人——你要构思创意、设计个性、搭建电路，最终登台展示。\n    \n    ✉  I Am Interested",
+    "crumbs": [
+      "Overview",
+      "MAKER-X"
+    ]
+  },
+  {
+    "objectID": "index.html#the-mission-课程使命",
+    "href": "index.html#the-mission-课程使命",
+    "title": "MAKER-X",
+    "section": "The Mission · 课程使命",
+    "text": "The Mission · 课程使命\nMaker-X is an intensive 4-week project course where cross-disciplinary teams build AI-powered robotic companions from scratch — hardware, firmware, personality, and pitch. Instruction in Chinese & English.\n\n\n\n01 ### Conceive Identify a real user and a genuine need. Define the personality and purpose of your robot before touching any hardware.\n\n\n\n\n02 ### Design Shape, sound, language, expression — every detail of the robot’s soul. Prototype rapidly and iterate without fear.\n\n\n\n\n03 ### Build Solder, code, 3D-print, and integrate. Electronics, firmware, enclosure — one complete, working product.\n\n\n\n\n04 ### Pitch It ★ Present your product to real university guests. A working demo, a poster, a story — your public debut.",
+    "crumbs": [
+      "Overview",
+      "MAKER-X"
+    ]
+  },
+  {
+    "objectID": "index.html#course-objectives-课程目标",
+    "href": "index.html#course-objectives-课程目标",
+    "title": "MAKER-X",
+    "section": "Course Objectives · 课程目标",
+    "text": "Course Objectives · 课程目标\nMaker-X is about more than building a robot. It’s about becoming someone who can think, collaborate, and create at the intersection of technology and design.\n\n\n\n🤝 Cross-discipline Collaboration\nWork in teams spanning engineering, design, and beyond. Learn to communicate across disciplines and ship something greater than the sum of its parts.\n\n\n\n\n🧠 Confidence with AI & LLMs\nGo from curious to capable. You’ll integrate large language models into real hardware — learning to prompt, tune, and deploy AI as a core part of a product.\n\n\n\n\n🎨 Design Thinking in Practice\nEmpathy, creativity, rapid prototyping, iteration, and communication — not as theory, but as daily practice. The product is the proof.",
+    "crumbs": [
+      "Overview",
+      "MAKER-X"
+    ]
+  },
+  {
+    "objectID": "index.html#who-should-join-招生对象",
+    "href": "index.html#who-should-join-招生对象",
+    "title": "MAKER-X",
+    "section": "Who Should Join · 招生对象",
+    "text": "Who Should Join · 招生对象\n\n\n\n🎓 All ShanghaiTech Students\nThe course is open to all students across all schools and majors. No prior experience or knowledge in programming, design, robotics, or AI is needed.\n\n\n\n\n🌐 Diversified Teams\nWe organize groups where different skills and backgrounds complement each other — so every student can contribute meaningfully and learn most effectively.",
+    "crumbs": [
+      "Overview",
+      "MAKER-X"
+    ]
+  },
+  {
+    "objectID": "index.html#four-week-schedule-课程时间线",
+    "href": "index.html#four-week-schedule-课程时间线",
+    "title": "MAKER-X",
+    "section": "Four-Week Schedule · 课程时间线",
+    "text": "Four-Week Schedule · 课程时间线\n\n\n\n\nWeek\nTheme\nKey Deliverable\n\n\n\n\n🔵\nWeek 1 — Conceive\nUser research · Concept selection · Personality brief\nConcept brief\n\n\n🟣\nWeek 2 — Design\nPrototyping · Firmware · Form & character\nWorking prototype\n\n\n🟠\nWeek 3 — Build\nUser testing · Refinement · 3D-print enclosure\nIntegrated product\n\n\n🟢\nWeek 4 — Pitch It ★\nDemo day · Poster · Public pitch\nPresentation + demo\n\n\n\nThe course runs at 12 hours per week — enough time to go deep, not enough time to hesitate.\n\n\n  \n    Ready to build something real?\n  \n  准备好打造真实作品了吗？\n  \n    Let us know you're interested in Summer 2026.\n    Include your school name, year, and name.\n  \n  ✉  I Am Interested",
+    "crumbs": [
+      "Overview",
+      "MAKER-X"
+    ]
+  },
+  {
+    "objectID": "week2.html",
+    "href": "week2.html",
+    "title": "Week 2 — Design",
+    "section": "",
+    "text": "// WEEK TWO  ·  第二周\n  Design\n  设计\n  \n    You have a concept. Now make it real — at low fidelity first, then higher.\n    Week 2 is about rapid prototyping and fearless iteration:\n    electronics on a breadboard, firmware running hello-world, and a 3D sketch of the body.",
+    "crumbs": [
+      "Overview",
+      "Weekly Schedule",
+      "Week 2 — Design"
+    ]
+  },
+  {
+    "objectID": "week2.html#learning-objectives",
+    "href": "week2.html#learning-objectives",
+    "title": "Week 2 — Design",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nBy the end of Week 2 you will be able to:\n\nWire a basic ESP32 circuit with a display or sensor\nFlash firmware using the ESP-Claw framework\nSend your first message to an LLM via OpenRouter and receive a response\nSketch and prototype the robot’s physical form\nRun a first user test (lo-fi prototype, real feedback)",
+    "crumbs": [
+      "Overview",
+      "Weekly Schedule",
+      "Week 2 — Design"
+    ]
+  },
+  {
+    "objectID": "week2.html#sessions",
+    "href": "week2.html#sessions",
+    "title": "Week 2 — Design",
+    "section": "Sessions",
+    "text": "Sessions\n\nSession 4 — Electronics & Firmware First Contact\nGet the hardware talking.\n\n\n\n\n\n\nNote\n\n\n\nThis is often the most intimidating session. Don’t worry — by the end of it your board will be blinking, displaying text, or responding to a button press. That’s real.\n\n\nAgenda: - Intro to ESP32 GPIO, I2C, and SPI interfaces - Wire up a display (OLED or LCD) on a breadboard - Flash a starter ESP-Claw sketch - Make the display show your robot’s name - Troubleshooting time with instructors\nTools needed:\nESP32 dev board + USB cable\nBreadboard + jumper wires\nOLED display (SSD1306) or LCD\nArduino IDE or VS Code + PlatformIO\n\n\n\nSession 5 — LLM Integration via OpenRouter\nConnect your robot’s brain to an AI model.\n\n\n\n\n\n\nTipWhy OpenRouter?\n\n\n\nOpenRouter provides a single API that routes to any LLM — Qwen, DeepSeek, Claude, and others. You write one integration and can swap models with a single parameter change. No re-wiring required.\n\n\nAgenda: - OpenRouter account setup + API key - HTTP request from ESP32 to OpenRouter API - Parse JSON response and display reply on screen - Prompt engineering: write a system prompt that gives your robot its personality - Compare two models (e.g. Qwen vs DeepSeek) — what’s different?\nStarter prompt template:\nYou are [robot name], a [personality adjective] AI companion\ndesigned for [target user].\n\nYou respond in [language preference], in [tone] — no more than\n2 sentences per reply. You never break character.\n\nWhen someone says hello, you respond with your signature greeting.\n\n\n\nSession 6 — Form & Character Development\nGuest lecture: JunJun Shi 史珺珺 on “Empathy as the starting point for designing robot personality.”\nAgenda: - Guest lecture: how human insight shapes a robot’s soul - Workshop: translate your personality brief into physical form - Sketch 3 body shapes — which one feels like your robot? - Rapid paper prototype: cut, fold, tape — 30 minutes - First user test: show the paper prototype to someone outside your team - Iterate: one change based on feedback\n\n\n\n\n\n\nImportantLo-fi is the point\n\n\n\nPaper prototypes aren’t “not done yet.” They’re a tool. The goal is to learn fast and cheaply before committing to 3D printing.\n\n\n\n\n✓ Week 2 Deliverables\n\nWorking hardware sketch — ESP32 + display showing robot name / first response\nLLM integration demo — robot sends a prompt and displays the reply\n3D sketch / paper prototype of the robot’s enclosure\nPersonality system prompt — documented, tested, iterable\nUser test notes — what you showed, who you showed it to, what you learned",
+    "crumbs": [
+      "Overview",
+      "Weekly Schedule",
+      "Week 2 — Design"
+    ]
+  },
+  {
+    "objectID": "week2.html#resources-for-week-2",
+    "href": "week2.html#resources-for-week-2",
+    "title": "Week 2 — Design",
+    "section": "Resources for Week 2",
+    "text": "Resources for Week 2\n\nESP-Claw Getting Started — official docs\nOpenRouter API docs — model list, pricing, API reference\nQwen model card — capabilities and prompting tips\nDeepSeek documentation — Chinese-language model strengths\nClaude API docs — for Claude-specific prompting\n\n\n← Week 1 — Conceive  |  Week 3 — Build →",
+    "crumbs": [
+      "Overview",
+      "Weekly Schedule",
+      "Week 2 — Design"
+    ]
+  },
+  {
+    "objectID": "week4.html",
+    "href": "week4.html",
+    "title": "Week 4 — Pitch It ★",
+    "section": "",
+    "text": "// WEEK FOUR ★  ·  第四周\n  Pitch It\n  展示\n  \n    You've built something real. Now tell its story.\n    Week 4 is your public debut: a poster, a live demo, and a 5-minute presentation\n    to university guests, instructors, and peers.",
+    "crumbs": [
+      "Overview",
+      "Weekly Schedule",
+      "Week 4 — Pitch It ★"
+    ]
+  },
+  {
+    "objectID": "week4.html#learning-objectives",
+    "href": "week4.html#learning-objectives",
+    "title": "Week 4 — Pitch It ★",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nBy the end of Week 4 you will be able to:\n\nCommunicate a product’s value clearly to a non-technical audience\nCreate a professional academic poster\nGive a confident live demo under pressure\nSynthesize 4 weeks of work into a coherent narrative\nReceive and respond to critical questions gracefully",
+    "crumbs": [
+      "Overview",
+      "Weekly Schedule",
+      "Week 4 — Pitch It ★"
+    ]
+  },
+  {
+    "objectID": "week4.html#the-final-deliverables",
+    "href": "week4.html#the-final-deliverables",
+    "title": "Week 4 — Pitch It ★",
+    "section": "The Final Deliverables",
+    "text": "The Final Deliverables\nThree things are due on Demo Day:\n\n1. Live Demo (2 min)\nA rehearsed, working demo of your robot’s key interaction. Not a video — the robot itself, running live.\n\n\n\n\n\n\nImportantMurphy’s Law\n\n\n\nSomething will go wrong during the demo. Prepare for it: have a backup power source, know how to reboot quickly, and have a “graceful failure” script ready (“Let me restart — while it boots, let me tell you what it just did…”).\n\n\n\n\n\n2. Academic Poster (A1 or A0)\nYour poster is a standalone artifact that tells the full story of your project. It should be readable without you standing next to it.\nPoster structure:\n\n\n\nSection\nContent\nSize\n\n\n\n\nTitle\nRobot name + one-line description\nLarge\n\n\nThe Problem\nWho is the user? What’s the need?\nMedium\n\n\nOur Solution\nWhat the robot does and how\nMedium\n\n\nTechnology\nHardware stack + LLM integration diagram\nMedium\n\n\nDesign Process\nKey decisions and iterations\nMedium\n\n\nResults\nUser test findings, what worked\nMedium\n\n\nLessons Learned\nWhat you’d do differently\nSmall\n\n\nQR Code\nLinks to GitHub repo or demo video\nSmall\n\n\n\n\n\n\n\n\n\nTipPoster design advice\n\n\n\n\nOne key image per section — photos of your robot, circuit, or users testing it\nLimit text: captions and bullets, not paragraphs\nUse your brand colors consistently\nPrint at least one day early — printers break\n\n\n\n\n\n\n3. Pitch Presentation (5 min + Q&A)\nA 5-minute structured pitch to university guests.\nRecommended structure:\n00:00 — Hook (30 sec): Open with the user's problem. Make it vivid.\n00:30 — Solution (1 min): Introduce the robot. What does it do?\n01:30 — Demo (2 min): Live demonstration. Let the robot speak.\n03:30 — Under the hood (45 sec): How it works — ESP32, ESP-Claw, LLM.\n04:15 — What we learned (30 sec): One design insight, one technical lesson.\n04:45 — Close (15 sec): Who should use this. Why it matters.\n\n\n\n\n\n\nNoteQ&A is part of the evaluation\n\n\n\nGuests will ask real questions. Don’t be defensive — say “that’s a good question, here’s what we found” or “we don’t know yet, but our hypothesis is…” Intellectual honesty is respected more than false confidence.",
+    "crumbs": [
+      "Overview",
+      "Weekly Schedule",
+      "Week 4 — Pitch It ★"
+    ]
+  },
+  {
+    "objectID": "week4.html#sessions",
+    "href": "week4.html#sessions",
+    "title": "Week 4 — Pitch It ★",
+    "section": "Sessions",
+    "text": "Sessions\n\nSession 10 — Prep & Polish\nOne session dedicated to hardening the demo, finalizing the poster, and rehearsing the pitch.\nAgenda: - Demo run-through × 3 (rotate presenters) - Poster final review — peer feedback, one round of edits - Submit print file for poster - Instructor rehearsal: 5-minute pitch + Q&A practice\n\n\n\nSession 11 — Demo Day ★\nThe main event. University guests, all teams presenting simultaneously (poster session format).\nSchedule: - Setup: 30 minutes before guests arrive - Poster session: 90 minutes (guests circulate freely) - Full-group pitches: each team 5 min + 5 min Q&A - Reflection: what would you build next?\n\n\n\n\n\n\nTipDuring the poster session\n\n\n\nAt least one team member should always be at the poster to engage with guests. Rotate so everyone gets to walk around and see other teams’ work.\n\n\n\n\n✓ Final Deliverables (Demo Day)\n\nWorking robot demo — live, rehearsed, reliable\nPrinted A1/A0 poster — follows the poster structure above\n5-minute pitch — all team members participate\nGitHub repo — clean code, README, photos, short video\nReflection document (1 page) — what you built, what you learned, what’s next\n\n\n\n\n  \n    🏆 Four weeks. One product. All yours.\n  \n  \n    Everything you conceive, design, build, and pitch in Maker-X is your work.\n    Take it further after the course ends.\n  \n\n← Week 3 — Build",
+    "crumbs": [
+      "Overview",
+      "Weekly Schedule",
+      "Week 4 — Pitch It ★"
+    ]
+  }
+]

@@ -1,0 +1,82 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "MAKER-X"
+  description: "AI-Powered Robotics · Conceive · Design · Build · Pitch It · Summer 2026 · ShanghaiTech"
+  favicon: images/logo.png
+
+  navbar:
+    background: "#0A0F1E"
+    foreground: light
+    logo: images/logo.png
+    logo-alt: "MAKER-X"
+    logo-href: index.qmd
+    title: false
+    left:
+      - text: "Overview"
+        href: index.qmd
+      - text: "Schedule"
+        menu:
+          - text: "Week 1 — Conceive"
+            href: week1.qmd
+          - text: "Week 2 — Design"
+            href: week2.qmd
+          - text: "Week 3 — Build"
+            href: week3.qmd
+          - text: "Week 4 — Pitch It ★"
+            href: week4.qmd
+      - text: "Resources"
+        href: resources.qmd
+      - text: "Team"
+        href: team.qmd
+    right:
+      - text: "✉ I Am Interested"
+        href: "mailto:sshmueli@shanghaitech.edu.cn?subject=I%20am%20interested"
+
+  page-footer:
+    background: "#070C1A"
+    border: true
+    left: "MAKER-X · Summer 2026 · ShanghaiTech University · SCA & SIST & Kedao College"
+    right:
+      - text: "sshmueli@shanghaitech.edu.cn"
+        href: "mailto:sshmueli@shanghaitech.edu.cn"
+
+  open-graph:
+    title: "MAKER-X — AI-Powered Robotics"
+    description: "Conceive · Design · Build · Pitch It — An intensive 4-week course at ShanghaiTech University"
+
+  # Sidebar for week pages
+  sidebar:
+    - id: course
+      title: "Course"
+      style: "floating"
+      collapse-level: 1
+      contents:
+        - index.qmd
+        - section: "Weekly Schedule"
+          contents:
+            - week1.qmd
+            - week2.qmd
+            - week3.qmd
+            - week4.qmd
+        - resources.qmd
+        - team.qmd
+
+format:
+  html:
+    theme:
+      - darkly
+      - custom.scss
+    toc: true
+    toc-depth: 3
+    toc-title: "On this page"
+    code-fold: false
+    highlight-style: github-dark
+    link-external-newwindow: true
+    include-in-header:
+      text: |
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Exo+2:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">

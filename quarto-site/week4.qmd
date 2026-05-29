@@ -1,0 +1,146 @@
+---
+title: "Week 4 — Pitch It ★"
+description: "Demo day, poster presentation, and public pitch"
+---
+
+```{=html}
+<div class="week-hero week-hero-w4">
+  <div class="week-num" style="color:#34D399">// WEEK FOUR ★ &nbsp;·&nbsp; 第四周</div>
+  <div class="week-title">Pitch It</div>
+  <div class="week-zh">展示</div>
+  <p class="week-desc">
+    You've built something real. Now tell its story.
+    Week 4 is your <strong>public debut</strong>: a poster, a live demo, and a 5-minute presentation
+    to university guests, instructors, and peers.
+  </p>
+</div>
+```
+
+## Learning Objectives
+
+By the end of Week 4 you will be able to:
+
+- Communicate a product's value clearly to a non-technical audience
+- Create a professional academic poster
+- Give a confident live demo under pressure
+- Synthesize 4 weeks of work into a coherent narrative
+- Receive and respond to critical questions gracefully
+
+---
+
+## The Final Deliverables
+
+Three things are due on Demo Day:
+
+### 1. Live Demo (2 min)
+
+A **rehearsed, working demo** of your robot's key interaction. Not a video — the robot itself, running live.
+
+::: {.callout-important title="Murphy's Law"}
+Something will go wrong during the demo. Prepare for it: have a backup power source, know how to reboot quickly, and have a "graceful failure" script ready ("Let me restart — while it boots, let me tell you what it just did...").
+:::
+
+---
+
+### 2. Academic Poster (A1 or A0)
+
+Your poster is a standalone artifact that tells the full story of your project. It should be readable without you standing next to it.
+
+**Poster structure:**
+
+| Section | Content | Size |
+|---|---|---|
+| **Title** | Robot name + one-line description | Large |
+| **The Problem** | Who is the user? What's the need? | Medium |
+| **Our Solution** | What the robot does and how | Medium |
+| **Technology** | Hardware stack + LLM integration diagram | Medium |
+| **Design Process** | Key decisions and iterations | Medium |
+| **Results** | User test findings, what worked | Medium |
+| **Lessons Learned** | What you'd do differently | Small |
+| **QR Code** | Links to GitHub repo or demo video | Small |
+
+::: {.callout-tip title="Poster design advice"}
+- One key image per section — photos of your robot, circuit, or users testing it
+- Limit text: captions and bullets, not paragraphs
+- Use your brand colors consistently
+- Print at least one day early — printers break
+:::
+
+---
+
+### 3. Pitch Presentation (5 min + Q&A)
+
+A 5-minute structured pitch to university guests.
+
+**Recommended structure:**
+
+```
+00:00 — Hook (30 sec): Open with the user's problem. Make it vivid.
+00:30 — Solution (1 min): Introduce the robot. What does it do?
+01:30 — Demo (2 min): Live demonstration. Let the robot speak.
+03:30 — Under the hood (45 sec): How it works — ESP32, ESP-Claw, LLM.
+04:15 — What we learned (30 sec): One design insight, one technical lesson.
+04:45 — Close (15 sec): Who should use this. Why it matters.
+```
+
+::: {.callout-note title="Q&A is part of the evaluation"}
+Guests will ask real questions. Don't be defensive — say "that's a good question, here's what we found" or "we don't know yet, but our hypothesis is..." Intellectual honesty is respected more than false confidence.
+:::
+
+---
+
+## Sessions
+
+### Session 10 — Prep & Polish
+
+One session dedicated to hardening the demo, finalizing the poster, and rehearsing the pitch.
+
+**Agenda:**
+- Demo run-through × 3 (rotate presenters)
+- Poster final review — peer feedback, one round of edits
+- Submit print file for poster
+- Instructor rehearsal: 5-minute pitch + Q&A practice
+
+---
+
+### Session 11 — Demo Day ★
+
+The main event. University guests, all teams presenting simultaneously (poster session format).
+
+**Schedule:**
+- Setup: 30 minutes before guests arrive
+- Poster session: 90 minutes (guests circulate freely)
+- Full-group pitches: each team 5 min + 5 min Q&A
+- Reflection: what would you build next?
+
+::: {.callout-tip title="During the poster session"}
+At least one team member should always be at the poster to engage with guests. Rotate so everyone gets to walk around and see other teams' work.
+:::
+
+---
+
+::: {.deliverables}
+#### ✓ Final Deliverables (Demo Day)
+
+- [ ] **Working robot demo** — live, rehearsed, reliable
+- [ ] **Printed A1/A0 poster** — follows the poster structure above
+- [ ] **5-minute pitch** — all team members participate
+- [ ] **GitHub repo** — clean code, README, photos, short video
+- [ ] **Reflection document** (1 page) — what you built, what you learned, what's next
+:::
+
+---
+
+```{=html}
+<div class="cta-band">
+  <h2 style="font-family:'Exo 2',sans-serif; font-size:1.6rem; color:#fff; font-weight:800; margin-bottom:.5rem;">
+    🏆 Four weeks. One product. All yours.
+  </h2>
+  <p style="color:rgba(255,255,255,0.5); max-width:500px; margin:0 auto 1.2rem; font-size:0.95rem;">
+    Everything you conceive, design, build, and pitch in Maker-X is your work.<br>
+    Take it further after the course ends.
+  </p>
+</div>
+```
+
+*← [Week 3 — Build](week3.qmd)*

@@ -1,0 +1,118 @@
+---
+title: "Week 1 — Conceive"
+description: "User research, concept selection, and personality brief"
+---
+
+```{=html}
+<div class="week-hero week-hero-w1">
+  <div class="week-num" style="color:#60A5FA">// WEEK ONE &nbsp;·&nbsp; 第一周</div>
+  <div class="week-title">Conceive</div>
+  <div class="week-zh">构思</div>
+  <p class="week-desc">
+    Before you touch a single component, you need to understand the person your robot will serve.
+    Week 1 is about <strong>listening, asking, and imagining</strong> — turning a vague idea into a focused concept.
+  </p>
+</div>
+```
+
+## Learning Objectives
+
+By the end of Week 1 you will be able to:
+
+- Conduct basic user research interviews and synthesize findings
+- Define a target user and a genuine unmet need
+- Articulate the **personality** and **purpose** of your robot in a one-page concept brief
+- Sketch interaction scenarios and rough form factors
+- Present your concept for peer critique and iteration
+
+---
+
+## Sessions
+
+### Session 1 — Kick-off & Team Formation
+
+The course begins. Teams are formed across disciplines — you may not know your teammates yet, and that's by design.
+
+::: {.callout-note}
+**What happens:**
+Course introduction, team assignments, overview of the 4-week arc. First look at the ESP32 hardware and ESP-Claw framework.
+:::
+
+**Agenda:**
+- Course overview and grading (Pass / No Pass)
+- Meet your team — skills mapping exercise
+- Hardware unboxing: ESP32 board, sensors, displays
+- Guest overview: Espressif introduction to ESP-Claw
+- Assignment: individual user interview before Session 2
+
+---
+
+### Session 2 — User Research & Empathy
+
+You've each spoken to a potential user. Now you share what you heard.
+
+::: {.callout-tip title="Design Thinking in action"}
+The goal of user research is not to confirm your assumptions — it's to **break them**. The most interesting insights come from unexpected answers.
+:::
+
+**Agenda:**
+- Share interview findings in your team (5 min each)
+- Affinity mapping: cluster insights into themes
+- Identify the top 2–3 user needs worth solving
+- Define your **target user persona**
+- Sketch 3 possible robot concepts (rough, fast, no judgment)
+
+---
+
+### Session 3 — Concept Selection & Personality Brief
+
+Your team converges on one direction.
+
+**Agenda:**
+- Dot voting: which concept is most feasible *and* most meaningful?
+- Concept refinement: what does the robot *do*, *say*, and *feel like*?
+- Write the **Robot Personality Brief** (see deliverable below)
+- Technical feasibility check with instructors
+- Peer critique round: 3-minute pitches, feedback cards
+
+---
+
+## The Robot Personality Brief
+
+This is the key output of Week 1. It answers these questions in one page:
+
+| Question | What to define |
+|---|---|
+| Who is it for? | Specific user + context |
+| What problem does it solve? | The core unmet need |
+| What does it *feel* like to interact with? | Personality adjectives (3–5) |
+| What does it say / how does it speak? | Tone, language, style |
+| What does it look like? | Sketch or moodboard |
+| What does it *not* do? | Explicit non-goals |
+
+::: {.callout-important title="Keep it on one page"}
+The constraint is intentional. If you can't summarize your concept in one page, you don't have a concept yet — you have a wish list.
+:::
+
+---
+
+::: {.deliverables}
+#### ✓ Week 1 Deliverables
+
+- [ ] **User Persona** — one documented user with a real need (from your interview)
+- [ ] **Robot Concept Brief** — 1-page: user, need, personality, rough form factor
+- [ ] **3 concept sketches** — rough drawings, one per team member
+- [ ] **Team roles defined** — who leads design, firmware, fabrication, pitch
+:::
+
+---
+
+## Resources for Week 1
+
+- [Stanford d.school Design Thinking Bootcamp Bootleg](https://dschool.stanford.edu/resources/the-bootcamp-bootleg) — the canonical guide to empathy and concept work
+- [IDEO Human-Centered Design toolkit](https://www.designkit.org) — interview and synthesis methods
+- [ESP-Claw documentation](https://esp-claw.com/en/) — start getting familiar early
+
+---
+
+*Next: [Week 2 — Design →](week2.qmd)*

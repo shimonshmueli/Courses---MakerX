@@ -1,0 +1,181 @@
+---
+title: "MAKER-X"
+description: "AI-Powered Robotics · Summer 2026 · ShanghaiTech University"
+page-layout: full
+toc: false
+---
+
+```{=html}
+<!-- HERO -->
+<section class="hero">
+  <div style="max-width:860px; margin:0 auto;">
+    <img src="images/logo.png" alt="ShanghaiTech · Kedao College" style="height:64px; width:auto; margin-bottom:2rem; opacity:0.92;">
+    <div class="badge-pill">
+      <div class="badge-dot"></div>
+      Summer 2026 &nbsp;·&nbsp; ShanghaiTech University
+    </div>
+    <h1 class="hero-title">MAKER<span class="accent">-X</span></h1>
+    <p style="font-family:'Exo 2',sans-serif; font-size:0.78rem; font-weight:300; letter-spacing:0.22em; text-transform:uppercase; color:rgba(255,255,255,0.4); margin-bottom:1.2rem;">
+      School of Creativity &amp; Art &nbsp;·&nbsp; SIST &nbsp;·&nbsp; Kedao College
+    </p>
+    <div class="rainbow-bar"></div>
+    <p class="hero-tagline">
+      You don't just <strong style="color:#FCD34D">build</strong> a robot — you conceive the idea,
+      design its personality, build the electronics, and
+      <strong style="color:#FCD34D">pitch it</strong>.
+      Four weeks. One team. One product you own end-to-end.
+    </p>
+    <p style="font-size:0.9rem; color:rgba(255,255,255,0.38); margin-bottom:2rem; letter-spacing:0.04em;">
+      你不只是在制造机器人——你要<strong style="color:rgba(255,255,255,0.55)">构思创意</strong>、设计个性、搭建电路，最终<strong style="color:rgba(255,255,255,0.55)">登台展示</strong>。
+    </p>
+    <a class="btn-interested" href="mailto:sshmueli@shanghaitech.edu.cn?subject=I%20am%20interested">✉ &nbsp;I Am Interested</a>
+  </div>
+</section>
+
+<!-- STATS STRIP -->
+<div class="stats-strip">
+  <div class="stat-cell">
+    <span class="stat-num">4</span>
+    <span class="stat-label">Weeks</span>
+  </div>
+  <div class="stat-cell">
+    <span class="stat-num">12h</span>
+    <span class="stat-label">Per Week</span>
+  </div>
+  <div class="stat-cell">
+    <span class="stat-num">2–3</span>
+    <span class="stat-label">Students / Team</span>
+  </div>
+  <div class="stat-cell">
+    <span class="stat-num" style="font-size:1.2rem; padding-top:.4rem; display:block;">Pass / No Pass</span>
+    <span class="stat-label">Grading</span>
+  </div>
+</div>
+```
+
+## The Mission · 课程使命 {.mt-5}
+
+Maker-X is an intensive **4-week project course** where cross-disciplinary teams build AI-powered robotic companions from scratch — hardware, firmware, personality, and pitch. Instruction in **Chinese & English**.
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-3}
+::: {.card .card-blue}
+<span class="sl" style="color:#60A5FA">01</span>
+### Conceive
+Identify a real user and a genuine need. Define the personality and purpose of your robot before touching any hardware.
+:::
+:::
+
+::: {.g-col-12 .g-col-md-3}
+::: {.card .card-purple}
+<span class="sl" style="color:#A78BFA">02</span>
+### Design
+Shape, sound, language, expression — every detail of the robot's soul. Prototype rapidly and iterate without fear.
+:::
+:::
+
+::: {.g-col-12 .g-col-md-3}
+::: {.card .card-coral}
+<span class="sl" style="color:#FB923C">03</span>
+### Build
+Solder, code, 3D-print, and integrate. Electronics, firmware, enclosure — one complete, working product.
+:::
+:::
+
+::: {.g-col-12 .g-col-md-3}
+::: {.card .card-green}
+<span class="sl" style="color:#34D399">04</span>
+### Pitch It ★
+Present your product to real university guests. A working demo, a poster, a story — your public debut.
+:::
+:::
+
+:::
+
+---
+
+## Course Objectives · 课程目标
+
+Maker-X is about more than building a robot. It's about becoming someone who can **think, collaborate, and create** at the intersection of technology and design.
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+::: {.card .card-blue}
+**🤝 Cross-discipline Collaboration**
+
+Work in teams spanning engineering, design, and beyond. Learn to communicate across disciplines and ship something greater than the sum of its parts.
+:::
+:::
+
+::: {.g-col-12 .g-col-md-4}
+::: {.card .card-purple}
+**🧠 Confidence with AI & LLMs**
+
+Go from curious to capable. You'll integrate large language models into real hardware — learning to prompt, tune, and deploy AI as a core part of a product.
+:::
+:::
+
+::: {.g-col-12 .g-col-md-4}
+::: {.card .card-coral}
+**🎨 Design Thinking in Practice**
+
+Empathy, creativity, rapid prototyping, iteration, and communication — not as theory, but as daily practice. The product is the proof.
+:::
+:::
+
+:::
+
+---
+
+## Who Should Join · 招生对象
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-6}
+::: {.card .card-green}
+### 🎓 All ShanghaiTech Students
+
+The course is open to **all students across all schools and majors**. No prior experience or knowledge in programming, design, robotics, or AI is needed.
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6}
+::: {.card .card-teal}
+### 🌐 Diversified Teams
+
+We organize groups where different skills and backgrounds complement each other — so every student can **contribute meaningfully** and learn most effectively.
+:::
+:::
+
+:::
+
+---
+
+## Four-Week Schedule · 课程时间线
+
+| | Week | Theme | Key Deliverable |
+|---|---|---|---|
+| 🔵 | [Week 1 — Conceive](week1.qmd) | User research · Concept selection · Personality brief | Concept brief |
+| 🟣 | [Week 2 — Design](week2.qmd) | Prototyping · Firmware · Form & character | Working prototype |
+| 🟠 | [Week 3 — Build](week3.qmd) | User testing · Refinement · 3D-print enclosure | Integrated product |
+| 🟢 | [Week 4 — Pitch It ★](week4.qmd) | Demo day · Poster · Public pitch | Presentation + demo |
+
+The course runs at **12 hours per week** — enough time to go deep, not enough time to hesitate.
+
+---
+
+```{=html}
+<div class="cta-band">
+  <h2 style="font-family:'Audiowide',sans-serif; font-size:2rem; color:#fff; margin-bottom:.5rem;">
+    Ready to build something real?
+  </h2>
+  <p style="color:rgba(255,255,255,0.4); font-size:1rem; margin-bottom:.5rem;">准备好打造真实作品了吗？</p>
+  <p style="color:rgba(255,255,255,0.5); font-size:0.95rem; max-width:500px; margin:0 auto 1.5rem;">
+    Let us know you're interested in Summer 2026.<br>
+    Include your <strong style="color:rgba(255,255,255,0.75)">school name</strong>, <strong style="color:rgba(255,255,255,0.75)">year</strong>, and <strong style="color:rgba(255,255,255,0.75)">name</strong>.
+  </p>
+  <a class="btn-interested" href="mailto:sshmueli@shanghaitech.edu.cn?subject=I%20am%20interested">✉ &nbsp;I Am Interested</a>
+</div>
+```
