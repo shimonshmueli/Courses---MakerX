@@ -87,6 +87,14 @@ code {
   font-family: 'Audiowide', sans-serif;
   font-size: 1.1rem;
   letter-spacing: 0.04em;
+
+  img.navbar-logo {
+    height: 2.9rem; // ~50% larger than Bootstrap default ~1.9rem
+  }
+}
+
+.navbar-nav.me-auto {
+  margin-left: 20px;
 }
 
 .navbar-nav .nav-link {
