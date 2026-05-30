@@ -9,7 +9,6 @@ toc: false
 <!-- HERO -->
 <section class="hero">
   <div style="max-width:860px; margin:0 auto;">
-    <img src="images/logo.png" alt="ShanghaiTech · Kedao College" style="height:64px; width:auto; margin-bottom:2rem; opacity:0.92;">
     <div class="badge-pill">
       <div class="badge-dot"></div>
       Summer 2026 &nbsp;·&nbsp; ShanghaiTech University
@@ -28,7 +27,6 @@ toc: false
     <p style="font-size:0.9rem; color:rgba(255,255,255,0.38); margin-bottom:2rem; letter-spacing:0.04em;">
       你不只是在制造机器人——你要<strong style="color:rgba(255,255,255,0.55)">构思创意</strong>、设计个性、搭建电路，最终<strong style="color:rgba(255,255,255,0.55)">登台展示</strong>。
     </p>
-    <a class="btn-interested" href="mailto:sshmueli@shanghaitech.edu.cn?subject=I%20am%20interested">✉ &nbsp;I Am Interested</a>
   </div>
 </section>
 
