@@ -89,7 +89,7 @@ code {
   letter-spacing: 0.04em;
 
   img.navbar-logo {
-    height: 2.9rem; // ~50% larger than Bootstrap default ~1.9rem
+    height: 2.9rem !important;
   }
 }
 
