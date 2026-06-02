@@ -507,22 +507,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </div>
 <hr>
-<div class="callout callout-style-default callout-tip callout-titled" title="Already done? Try a hello world.">
+<div class="callout callout-style-default callout-tip callout-titled" title="Already done? Try a hello world with Claude Code.">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Already done? Try a hello world.
+<span class="screen-reader-only">Tip</span>Already done? Try a hello world with Claude Code.
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Flash the built-in LED on your ESP32 before class. If you can get a blink running, you’re ahead of the game.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">// paste this into a PlatformIO project's src/main.cpp</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;Arduino.h&gt;</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> setup<span class="op">()</span> <span class="op">{</span> pinMode<span class="op">(</span><span class="dv">2</span><span class="op">,</span> OUTPUT<span class="op">);</span> <span class="op">}</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> loop<span class="op">()</span>  <span class="op">{</span> digitalWrite<span class="op">(</span><span class="dv">2</span><span class="op">,</span> HIGH<span class="op">);</span> delay<span class="op">(</span><span class="dv">500</span><span class="op">);</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>               digitalWrite<span class="op">(</span><span class="dv">2</span><span class="op">,</span> LOW<span class="op">);</span>  delay<span class="op">(</span><span class="dv">500</span><span class="op">);</span> <span class="op">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>All five tools installed? Let Claude Code write your first firmware. Here’s how:</p>
+<p><strong>1. Create a PlatformIO project in VS Code</strong></p>
+<p>Open VS Code → PlatformIO icon → New Project → Board: <code>Espressif ESP32 Dev Module</code> → Framework: <code>Arduino</code> → Finish.</p>
+<p><strong>2. Open Claude Code in the project folder</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> your-project-folder</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">claude</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>3. Tell Claude Code what you want</strong></p>
+<pre><code>Write an Arduino sketch for ESP32 that blinks the built-in LED on pin 2
+every 500ms. Put it in src/main.cpp. Then tell me the PlatformIO command
+to build and upload it.</code></pre>
+<p>Claude Code writes the code, places it in the right file, and gives you the exact command to flash it. If something fails, paste the error back and ask it to fix it — that loop is the core skill you’ll use all course.</p>
 </div>
 </div>
 
