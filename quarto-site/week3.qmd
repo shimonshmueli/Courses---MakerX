@@ -100,11 +100,22 @@ A good user test takes 15 minutes per person. Give them a task, watch silently, 
 
 ## Resources for Week 3
 
-- [ESP-Claw hardware integration guide](https://esp-claw.com/en/) — multi-component examples
-- [Claude Code](https://claude.ai/code) — AI pair programmer in your terminal
-- [TinkerCAD](https://www.tinkercad.com) — web-based 3D modeling (free)
-- [Fusion 360 for students](https://www.autodesk.com/education) — professional-grade free license
-- [Prusa Slicer](https://www.prusa3d.com/prusaslicer/) — open source slicer for most printers
+**Hardware Integration & Debugging**
+
+- [ESP-Claw hardware integration guide](https://esp-claw.com/en/) — multi-component examples and wiring reference
+- [ESP32 Troubleshooting Guide — Random Nerd Tutorials](https://randomnerdtutorials.com/esp32-troubleshooting-guide/) — the most comprehensive community reference for upload errors, brownouts, and boot issues
+- [Troubleshooting — Arduino ESP32 (Espressif official)](https://docs.espressif.com/projects/arduino-esp32/en/latest/troubleshooting.html) — official troubleshooting for the Arduino-ESP32 framework
+
+**AI Coding Tools**
+
+- [Claude Code Overview — Anthropic](https://docs.anthropic.com/en/docs/claude-code/overview) — official Claude Code documentation
+- [GitHub Copilot Quickstart](https://docs.github.com/en/copilot/quickstart) — set up Copilot in VS Code in minutes
+- [Get Started with GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/getting-started) — Microsoft's official VS Code + Copilot tutorial
+
+**User Testing**
+
+- [Usability Testing 101 — Nielsen Norman Group](https://www.nngroup.com/articles/usability-testing-101/) — how to structure and run a usability test session
+- [Qualitative Usability Testing: Study Guide — NNGroup](https://www.nngroup.com/articles/qual-usability-testing-study-guide/) — full lifecycle: planning, facilitation, synthesis
 
 ---
 

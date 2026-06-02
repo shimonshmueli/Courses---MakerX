@@ -94,8 +94,22 @@ The constraint is intentional. If you can't summarize your concept in one page, 
 
 ## Resources for Week 1
 
+**Design Thinking & User Research**
+
 - [Stanford d.school Design Thinking Bootcamp Bootleg](https://dschool.stanford.edu/resources/the-bootcamp-bootleg) — the canonical guide to empathy and concept work
-- [IDEO Human-Centered Design toolkit](https://www.designkit.org) — interview and synthesis methods
+- [Interview for Empathy — Stanford d.school method card](http://dschool-old.stanford.edu/wp-content/themes/dschool/method-cards/interview-for-empathy.pdf) — one-page field-ready guide for empathy interviews
+- [User Interviews 101 — Nielsen Norman Group](https://www.nngroup.com/articles/user-interviews/) — planning, conducting, and extracting insight from user interviews
+- [IDEO Human-Centered Design toolkit](https://www.designkit.org) — broader design research methods
+
+**Robot Character & Personality**
+
+- [Almost Human: How to Write Robot and AI Characters](https://www.servicescape.com/blog/almost-human-how-to-write-robot-and-ai-characters) — personality traits, speech patterns, and belief systems for AI characters
+- [Designing Personas for Expressive Robots — ACM THRI](https://dl.acm.org/doi/10.1145/3424153) — peer-reviewed research on building robot personas through speech, color, and movement
+
+**Getting Started with ESP32**
+
+- [Getting Started — Arduino ESP32 (Espressif official)](https://docs.espressif.com/projects/arduino-esp32/en/latest/getting_started.html) — easiest on-ramp for students new to ESP32
+- [Getting Started with ESP32 — Random Nerd Tutorials](https://randomnerdtutorials.com/getting-started-with-esp32/) — step-by-step setup, pinout, and first sketch
 - [ESP-Claw documentation](https://esp-claw.com/en/) — start getting familiar early
 
 ---

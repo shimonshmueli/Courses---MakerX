@@ -177,18 +177,6 @@ Free, open-source 3D creation suite used for sculpting and modeling organic robo
 
 ---
 
-## Design & Fabrication
-
-| Tool | Purpose | Cost |
-|---|---|---|
-| [Figma](https://figma.com) | UI mockups, personality moodboards | Free (education) |
-| [TinkerCAD](https://tinkercad.com) | Simple 3D modeling, browser-based | Free |
-| [Fusion 360](https://www.autodesk.com/education) | Parametric CAD | Free (student) |
-| [Blender](https://blender.org) | Organic / sculpted forms | Free |
-| [Prusa Slicer](https://www.prusa3d.com/prusaslicer/) | 3D print slicing | Free |
-
----
-
 ## Version Control
 
 All teams must maintain a **GitHub repository** throughout the course.

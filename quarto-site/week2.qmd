@@ -96,11 +96,24 @@ Paper prototypes aren't "not done yet." They're a tool. The goal is to **learn f
 
 ## Resources for Week 2
 
-- [ESP-Claw Getting Started](https://esp-claw.com/en/) — official docs
-- [OpenRouter API docs](https://openrouter.ai/docs) — model list, pricing, API reference
-- [Qwen model card](https://huggingface.co/Qwen) — capabilities and prompting tips
-- [DeepSeek documentation](https://platform.deepseek.com/docs) — Chinese-language model strengths
-- [Claude API docs](https://docs.anthropic.com) — for Claude-specific prompting
+**Firmware & Hardware**
+
+- [ESP-Claw Getting Started](https://esp-claw.com/en/) — official ESP-Claw docs and examples
+- [PlatformIO + ESP-IDF setup](https://docs.platformio.org/en/latest/frameworks/espidf.html) — PlatformIO's ESP-IDF framework integration guide
+- [VS Code + PlatformIO + ESP32 setup — SunFounder](https://www.sunfounder.com/blogs/news/how-to-set-up-esp32-on-platformio-with-vs-code-complete-step-by-step-guide) — illustrated step-by-step guide for the recommended IDE setup
+
+**LLM Integration & Prompt Engineering**
+
+- [OpenRouter Quickstart](https://openrouter.ai/docs/quickstart) — API key setup and first call in minutes
+- [OpenRouter Models list & pricing](https://openrouter.ai/models) — compare Qwen, DeepSeek, Claude and others
+- [Prompt Engineering Overview — Anthropic](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview) — structured guide to writing effective prompts
+- [Keep Claude in Character — Anthropic](https://docs.anthropic.com/en/docs/test-and-evaluate/strengthen-guardrails/keep-claude-in-character) — how to maintain robot personality consistency
+- [Anthropic Prompt Engineering Interactive Tutorial](https://github.com/anthropics/prompt-eng-interactive-tutorial) — hands-on Jupyter notebook course from Anthropic
+
+**3D Modeling with Blender**
+
+- [Beginner Blender 5.0 Donut Tutorial — Blender Guru](https://www.blenderguru.com/posts/blender-donut-v5-tutorial) — the most-watched Blender beginner series, updated for 2025
+- [Official Blender Tutorials — Blender.org](https://www.blender.org/support/tutorials/) — curated official tutorial index
 
 ---
 

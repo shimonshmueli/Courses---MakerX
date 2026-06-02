@@ -51,7 +51,19 @@
     "href": "week4.html#sessions",
     "title": "Week 4 — Pitch It ★",
     "section": "Sessions",
-    "text": "Sessions\n→ View period-by-period schedule\n\nSession 7 — Monday · Presentation Coaching & Final Prep\nProf. Zhou runs two periods of presentation coaching in the morning. The afternoon is for hardening everything.\nAgenda: - Guest: Prof. Zhou — presentation coaching: story, structure & slide design (Part 1) - Guest: Prof. Zhou — presentation coaching: Q&A prep & live feedback (Part 2) - Poster review: content, layout & print finalization · Shimon + Daniel - Demo hardening: run-throughs, backup power, reboot plan · Shimon + Daniel - Full pitch rehearsal with instructor feedback (5 min + Q&A) · Shimon + Daniel - Last design polish · submit poster print file · Daniel\n\n\n\nSession 8 — Wednesday · ★ Demo Day\nThe main event. University guests, all teams presenting simultaneously (poster session format).\nSchedule: - Morning (periods 1–2): open preparation, last fixes, rehearsal - Period 3–4: setup — tables, displays, power, poster mounting - Period 5: ★ Poster session & live robot demos (guests circulate freely, ~45 min) - Period 6: ★ Full-group pitches — each team 5 min + 5 min Q&A\n\n\n\n\n\n\nTipDuring the poster session\n\n\n\nAt least one team member should always be at the poster to engage with guests. Rotate so everyone gets to walk around and see other teams’ work.\n\n\n\n\n✓ Final Deliverables (Demo Day)\n\nWorking robot demo — live, rehearsed, reliable\nPrinted A1/A0 poster — follows the poster structure above\n5-minute pitch — all team members participate\nGitHub repo — clean code, README, photos, short video\nReflection document (1 page) — what you built, what you learned, what’s next\n\n\n\n\n  \n    🏆 Four weeks. One product. All yours.\n  \n  \n    Everything you conceive, design, build, and pitch in Maker-X is your work.\n    Take it further after the course ends.\n  \n\n← Week 3 — Build",
+    "text": "Sessions\n→ View period-by-period schedule\n\nSession 7 — Monday · Presentation Coaching & Final Prep\nProf. Zhou runs two periods of presentation coaching in the morning. The afternoon is for hardening everything.\nAgenda: - Guest: Prof. Zhou — presentation coaching: story, structure & slide design (Part 1) - Guest: Prof. Zhou — presentation coaching: Q&A prep & live feedback (Part 2) - Poster review: content, layout & print finalization · Shimon + Daniel - Demo hardening: run-throughs, backup power, reboot plan · Shimon + Daniel - Full pitch rehearsal with instructor feedback (5 min + Q&A) · Shimon + Daniel - Last design polish · submit poster print file · Daniel\n\n\n\nSession 8 — Wednesday · ★ Demo Day\nThe main event. University guests, all teams presenting simultaneously (poster session format).\nSchedule: - Morning (periods 1–2): open preparation, last fixes, rehearsal - Period 3–4: setup — tables, displays, power, poster mounting - Period 5: ★ Poster session & live robot demos (guests circulate freely, ~45 min) - Period 6: ★ Full-group pitches — each team 5 min + 5 min Q&A\n\n\n\n\n\n\nTipDuring the poster session\n\n\n\nAt least one team member should always be at the poster to engage with guests. Rotate so everyone gets to walk around and see other teams’ work.\n\n\n\n\n✓ Final Deliverables (Demo Day)\n\nWorking robot demo — live, rehearsed, reliable\nPrinted A1/A0 poster — follows the poster structure above\n5-minute pitch — all team members participate\nGitHub repo — clean code, README, photos, short video\nReflection document (1 page) — what you built, what you learned, what’s next",
+    "crumbs": [
+      "Overview",
+      "Weekly Schedule",
+      "Week 4 — Pitch It ★"
+    ]
+  },
+  {
+    "objectID": "week4.html#resources-for-week-4",
+    "href": "week4.html#resources-for-week-4",
+    "title": "Week 4 — Pitch It ★",
+    "section": "Resources for Week 4",
+    "text": "Resources for Week 4\nPoster Design\n\n#BetterPoster Template — Mike Morrison (OSF) — the influential “single big finding in plain language” poster format, free to download\nTen Simple Rules for a Good Poster Presentation — PLOS — peer-reviewed, evidence-based rules for effective scientific poster communication\nCreating a Scientific Poster — NIH — layout ratios, typography, and content hierarchy from NIH’s training office\nHow to Make a Scientific Poster — FourWaves — practical step-by-step with software recommendations\n\nPitching & Presentations\n\nHow to Build Your Seed Round Pitch Deck — Y Combinator — YC’s canonical slide-by-slide pitch guide (free)\nHow to Design a Better Pitch Deck — Y Combinator — why plain, substance-first decks beat flashy ones\nPublic Speaking Tips — Toastmasters International — body language, vocal variety, managing nerves, and audience engagement\nTop TED Talks on Public Speaking — TED — learn from master communicators by watching them\n\n\n\n  \n    🏆 Four weeks. One product. All yours.\n  \n  \n    Everything you conceive, design, build, and pitch in Maker-X is your work.\n    Take it further after the course ends.\n  \n\n← Week 3 — Build",
     "crumbs": [
       "Overview",
       "Weekly Schedule",
@@ -99,7 +111,7 @@
     "href": "week2.html#resources-for-week-2",
     "title": "Week 2 — Design",
     "section": "Resources for Week 2",
-    "text": "Resources for Week 2\n\nESP-Claw Getting Started — official docs\nOpenRouter API docs — model list, pricing, API reference\nQwen model card — capabilities and prompting tips\nDeepSeek documentation — Chinese-language model strengths\nClaude API docs — for Claude-specific prompting\n\n\n← Week 1 — Conceive  |  Week 3 — Build →",
+    "text": "Resources for Week 2\nFirmware & Hardware\n\nESP-Claw Getting Started — official ESP-Claw docs and examples\nPlatformIO + ESP-IDF setup — PlatformIO’s ESP-IDF framework integration guide\nVS Code + PlatformIO + ESP32 setup — SunFounder — illustrated step-by-step guide for the recommended IDE setup\n\nLLM Integration & Prompt Engineering\n\nOpenRouter Quickstart — API key setup and first call in minutes\nOpenRouter Models list & pricing — compare Qwen, DeepSeek, Claude and others\nPrompt Engineering Overview — Anthropic — structured guide to writing effective prompts\nKeep Claude in Character — Anthropic — how to maintain robot personality consistency\nAnthropic Prompt Engineering Interactive Tutorial — hands-on Jupyter notebook course from Anthropic\n\n3D Modeling with Blender\n\nBeginner Blender 5.0 Donut Tutorial — Blender Guru — the most-watched Blender beginner series, updated for 2025\nOfficial Blender Tutorials — Blender.org — curated official tutorial index\n\n\n← Week 1 — Conceive  |  Week 3 — Build →",
     "crumbs": [
       "Overview",
       "Weekly Schedule",
@@ -247,7 +259,7 @@
     "href": "week1.html#resources-for-week-1",
     "title": "Week 1 — Conceive",
     "section": "Resources for Week 1",
-    "text": "Resources for Week 1\n\nStanford d.school Design Thinking Bootcamp Bootleg — the canonical guide to empathy and concept work\nIDEO Human-Centered Design toolkit — interview and synthesis methods\nESP-Claw documentation — start getting familiar early\n\n\nNext: Week 2 — Design →",
+    "text": "Resources for Week 1\nDesign Thinking & User Research\n\nStanford d.school Design Thinking Bootcamp Bootleg — the canonical guide to empathy and concept work\nInterview for Empathy — Stanford d.school method card — one-page field-ready guide for empathy interviews\nUser Interviews 101 — Nielsen Norman Group — planning, conducting, and extracting insight from user interviews\nIDEO Human-Centered Design toolkit — broader design research methods\n\nRobot Character & Personality\n\nAlmost Human: How to Write Robot and AI Characters — personality traits, speech patterns, and belief systems for AI characters\nDesigning Personas for Expressive Robots — ACM THRI — peer-reviewed research on building robot personas through speech, color, and movement\n\nGetting Started with ESP32\n\nGetting Started — Arduino ESP32 (Espressif official) — easiest on-ramp for students new to ESP32\nGetting Started with ESP32 — Random Nerd Tutorials — step-by-step setup, pinout, and first sketch\nESP-Claw documentation — start getting familiar early\n\n\nNext: Week 2 — Design →",
     "crumbs": [
       "Overview",
       "Weekly Schedule",
@@ -295,7 +307,7 @@
     "href": "week3.html#resources-for-week-3",
     "title": "Week 3 — Build",
     "section": "Resources for Week 3",
-    "text": "Resources for Week 3\n\nESP-Claw hardware integration guide — multi-component examples\nClaude Code — AI pair programmer in your terminal\nTinkerCAD — web-based 3D modeling (free)\nFusion 360 for students — professional-grade free license\nPrusa Slicer — open source slicer for most printers\n\n\n← Week 2 — Design  |  Week 4 — Pitch It →",
+    "text": "Resources for Week 3\nHardware Integration & Debugging\n\nESP-Claw hardware integration guide — multi-component examples and wiring reference\nESP32 Troubleshooting Guide — Random Nerd Tutorials — the most comprehensive community reference for upload errors, brownouts, and boot issues\nTroubleshooting — Arduino ESP32 (Espressif official) — official troubleshooting for the Arduino-ESP32 framework\n\nAI Coding Tools\n\nClaude Code Overview — Anthropic — official Claude Code documentation\nGitHub Copilot Quickstart — set up Copilot in VS Code in minutes\nGet Started with GitHub Copilot in VS Code — Microsoft’s official VS Code + Copilot tutorial\n\nUser Testing\n\nUsability Testing 101 — Nielsen Norman Group — how to structure and run a usability test session\nQualitative Usability Testing: Study Guide — NNGroup — full lifecycle: planning, facilitation, synthesis\n\n\n← Week 2 — Design  |  Week 4 — Pitch It →",
     "crumbs": [
       "Overview",
       "Weekly Schedule",
@@ -352,17 +364,6 @@
     "title": "Resources",
     "section": "AI Coding Tools",
     "text": "AI Coding Tools\nWriting embedded firmware is faster with AI assistance. You will use:\n\n\n\nClaude Code\nAnthropic’s AI coding agent in your terminal. Understands your full codebase and can write, debug, and explain C++ / Arduino / ESP-IDF code.\nRequires an Anthropic Pro subscription ($20/month — check if your institution has access).\nnpm install -g @anthropic-ai/claude-code\n→ Claude Code docs\n\n\n\n\nGitHub Copilot\nIn-editor AI code completion and generation inside VS Code. Excellent for boilerplate, API calls, and explaining unfamiliar code.\n→ GitHub Copilot for students (free via GitHub Education)\n\n\n\n\nVS Code + PlatformIO + ESP-IDF\nThe recommended IDE setup for ESP32 firmware development. PlatformIO handles board configuration, dependency management, and flashing. ESP-IDF is the official Espressif framework.\nThis setup is optional — Arduino IDE also works for getting started.\n→ PlatformIO for VS Code · ESP-IDF docs\n\n\n\n\nBlender\nFree, open-source 3D creation suite used for sculpting and modeling organic robot enclosures. When your robot’s form needs something beyond simple geometric shapes, Blender is the right tool.\n→ blender.org (free)",
-    "crumbs": [
-      "Overview",
-      "Resources"
-    ]
-  },
-  {
-    "objectID": "resources.html#design-fabrication",
-    "href": "resources.html#design-fabrication",
-    "title": "Resources",
-    "section": "Design & Fabrication",
-    "text": "Design & Fabrication\n\n\n\nTool\nPurpose\nCost\n\n\n\n\nFigma\nUI mockups, personality moodboards\nFree (education)\n\n\nTinkerCAD\nSimple 3D modeling, browser-based\nFree\n\n\nFusion 360\nParametric CAD\nFree (student)\n\n\nBlender\nOrganic / sculpted forms\nFree\n\n\nPrusa Slicer\n3D print slicing\nFree",
     "crumbs": [
       "Overview",
       "Resources"

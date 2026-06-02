@@ -133,6 +133,22 @@ At least one team member should always be at the poster to engage with guests. R
 - [ ] **Reflection document** (1 page) — what you built, what you learned, what's next
 :::
 
+## Resources for Week 4
+
+**Poster Design**
+
+- [#BetterPoster Template — Mike Morrison (OSF)](https://osf.io/ef53g/) — the influential "single big finding in plain language" poster format, free to download
+- [Ten Simple Rules for a Good Poster Presentation — PLOS](https://pmc.ncbi.nlm.nih.gov/articles/PMC1876493/) — peer-reviewed, evidence-based rules for effective scientific poster communication
+- [Creating a Scientific Poster — NIH](https://www.training.nih.gov/creating-a-scientific-poster/) — layout ratios, typography, and content hierarchy from NIH's training office
+- [How to Make a Scientific Poster — FourWaves](https://fourwaves.com/blog/how-to-make-a-scientific-poster/) — practical step-by-step with software recommendations
+
+**Pitching & Presentations**
+
+- [How to Build Your Seed Round Pitch Deck — Y Combinator](https://www.ycombinator.com/library/2u-how-to-build-your-seed-round-pitch-deck) — YC's canonical slide-by-slide pitch guide (free)
+- [How to Design a Better Pitch Deck — Y Combinator](https://www.ycombinator.com/library/4T-how-to-design-a-better-pitch-deck) — why plain, substance-first decks beat flashy ones
+- [Public Speaking Tips — Toastmasters International](https://www.toastmasters.org/resources/public-speaking-tips) — body language, vocal variety, managing nerves, and audience engagement
+- [Top TED Talks on Public Speaking — TED](https://masterclass.ted.com/blog/top-ted-talks-on-public-speaking/) — learn from master communicators by watching them
+
 ---
 
 ```{=html}
