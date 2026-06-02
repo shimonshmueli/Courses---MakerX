@@ -34,9 +34,7 @@ website:
         href: resources.qmd
       - text: "Team"
         href: team.qmd
-    right:
-      - text: "✉ I Am Interested"
-        href: "mailto:sshmueli@shanghaitech.edu.cn?subject=I%20am%20interested"
+    right: []
 
   page-footer:
     background: "#070C1A"

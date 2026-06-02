@@ -7,7 +7,6 @@ toc: false
 <span class="sl" style="color:#FCD34D">// CLASS SCHEDULE &nbsp;·&nbsp; 课程时间表</span>
 
 **2 sessions per week** (Monday + Wednesday) · **6 periods per session** · 48 in-class periods total.
-Shimon is available for **periods 3–5 only**. Daniel is present all sessions. Guest instructors as indicated.
 
 ---
 
@@ -162,7 +161,7 @@ Shimon is available for **periods 3–5 only**. Daniel is present all sessions. 
 <div class="sched-legend">
   <div class="sched-legend-item"><span class="b b-liang">梁俊睿</span> Theory &amp; SW/HW fundamentals</div>
   <div class="sched-legend-item"><span class="b b-daniel">Daniel</span> Design &amp; fabrication — all sessions</div>
-  <div class="sched-legend-item"><span class="b b-shimon">Shimon</span> HW/SW + LLM lab <span class="sched-constraint">(periods 3–5 only)</span></div>
+  <div class="sched-legend-item"><span class="b b-shimon">Shimon</span> HW/SW + LLM lab</div>
   <div class="sched-legend-item"><span class="b b-junjun">JunJun</span> Character design</div>
   <div class="sched-legend-item"><span class="b b-esp">Espressif</span> Guest — ESP32 &amp; ecosystem</div>
   <div class="sched-legend-item"><span class="b b-zhou">Prof. Zhou</span> Entrepreneurship &amp; pitching</div>
@@ -183,7 +182,7 @@ Shimon is available for **periods 3–5 only**. Daniel is present all sessions. 
       <tr>
         <td class="p-num">1</td><td class="p-time">10:15–11:00</td>
         <td class="p-topic">Course introduction · overview of the 4-week arc · team formation</td>
-        <td class="p-who"><span class="b b-liang">梁俊睿</span></td>
+        <td class="p-who"><span class="b b-liang">梁俊睿</span> <span class="b b-shimon">Shimon</span> <span class="b b-daniel">Daniel</span></td>
       </tr>
       <tr>
         <td class="p-num">2</td><td class="p-time">11:10–11:55</td>
@@ -201,10 +200,10 @@ Shimon is available for **periods 3–5 only**. Daniel is present all sessions. 
         <td class="p-topic"><strong>Guest:</strong> Character by design — LLM generative tools workshop (Part 2)</td>
         <td class="p-who"><span class="b b-junjun">JunJun</span></td>
       </tr>
-      <tr class="row-poster">
+      <tr>
         <td class="p-num">5</td><td class="p-time">15:00–15:45</td>
-        <td class="p-topic"><strong>Brief poster session</strong> — all teams present robot concept (3 min each)</td>
-        <td class="p-who"><span class="b b-all">All teams</span></td>
+        <td class="p-topic">Open studio: form exploration · concept sketching</td>
+        <td class="p-who"><span class="b b-daniel">Daniel</span></td>
       </tr>
       <tr>
         <td class="p-num">6</td><td class="p-time">15:55–16:40</td>
@@ -245,10 +244,10 @@ Shimon is available for **periods 3–5 only**. Daniel is present all sessions. 
         <td class="p-topic">Robot concept ideation workshop · user persona · target need</td>
         <td class="p-who"><span class="b b-shimon">Shimon</span> <span class="b b-daniel">Daniel</span></td>
       </tr>
-      <tr>
+      <tr class="row-poster">
         <td class="p-num">6</td><td class="p-time">15:55–16:40</td>
-        <td class="p-topic">Open studio: form exploration &amp; sketching</td>
-        <td class="p-who"><span class="b b-daniel">Daniel</span></td>
+        <td class="p-topic"><strong>Brief poster session</strong> — all teams present robot concept (3 min each)</td>
+        <td class="p-who"><span class="b b-all">All teams</span></td>
       </tr>
     </tbody>
   </table>
