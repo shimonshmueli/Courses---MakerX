@@ -134,20 +134,42 @@ Writing embedded firmware is faster with AI assistance. You will use:
 ::: {.g-col-12 .g-col-md-6}
 ::: {.card .card-gold}
 ### Claude Code
-Anthropic's AI pair programmer in your terminal. Understands your full codebase and can write, debug, and explain C++ / Arduino / ESP-IDF code.
+Anthropic's AI coding agent in your terminal. Understands your full codebase and can write, debug, and explain C++ / Arduino / ESP-IDF code.
+
+**Requires an Anthropic Pro subscription** ($20/month — check if your institution has access).
 
 `npm install -g @anthropic-ai/claude-code`
 
-→ [Claude Code docs](https://docs.anthropic.com/claude-code)
+→ [Claude Code docs](https://docs.anthropic.com/en/docs/claude-code/overview)
 :::
 :::
 
 ::: {.g-col-12 .g-col-md-6}
 ::: {.card .card-gold}
-### GitHub Copilot / Codex
-In-editor code completion and generation. Excellent for boilerplate, API integration, and explaining unfamiliar code.
+### GitHub Copilot
+In-editor AI code completion and generation inside VS Code. Excellent for boilerplate, API calls, and explaining unfamiliar code.
 
-→ [GitHub Copilot for students](https://education.github.com/pack) (free)
+→ [GitHub Copilot for students](https://education.github.com/pack) (free via GitHub Education)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6}
+::: {.card .card-gold}
+### VS Code + PlatformIO + ESP-IDF
+The recommended IDE setup for ESP32 firmware development. PlatformIO handles board configuration, dependency management, and flashing. ESP-IDF is the official Espressif framework.
+
+This setup is **optional** — Arduino IDE also works for getting started.
+
+→ [PlatformIO for VS Code](https://platformio.org/install/ide?install=vscode) · [ESP-IDF docs](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/index.html)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6}
+::: {.card .card-gold}
+### Blender
+Free, open-source 3D creation suite used for sculpting and modeling organic robot enclosures. When your robot's form needs something beyond simple geometric shapes, Blender is the right tool.
+
+→ [blender.org](https://blender.org) (free)
 :::
 :::
 
