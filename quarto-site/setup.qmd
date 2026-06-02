@@ -122,6 +122,10 @@ toc: false
   </div>
 </div>
 
+<p style="font-family:'Audiowide',sans-serif; font-size:1.25rem; color:#FCD34D; text-align:center; margin:0 0 2.5rem; letter-spacing:.03em;">
+  Get ready to break things on Day 1.
+</p>
+
 <!-- Setup checklist -->
 <style>
 .setup-item {
