@@ -91,27 +91,31 @@ Guests will ask real questions. Don't be defensive — say "that's a good questi
 
 ## Sessions
 
-### Session 10 — Prep & Polish
+→ [View period-by-period schedule](schedule.qmd)
 
-One session dedicated to hardening the demo, finalizing the poster, and rehearsing the pitch.
+### Session 7 — Monday · Presentation Coaching & Final Prep
+
+Prof. Zhou runs two periods of presentation coaching in the morning. The afternoon is for hardening everything.
 
 **Agenda:**
-- Demo run-through × 3 (rotate presenters)
-- Poster final review — peer feedback, one round of edits
-- Submit print file for poster
-- Instructor rehearsal: 5-minute pitch + Q&A practice
+- **Guest:** Prof. Zhou — presentation coaching: story, structure & slide design (Part 1)
+- **Guest:** Prof. Zhou — presentation coaching: Q&A prep & live feedback (Part 2)
+- Poster review: content, layout & print finalization · Shimon + Daniel
+- Demo hardening: run-throughs, backup power, reboot plan · Shimon + Daniel
+- Full pitch rehearsal with instructor feedback (5 min + Q&A) · Shimon + Daniel
+- Last design polish · submit poster print file · Daniel
 
 ---
 
-### Session 11 — Demo Day ★
+### Session 8 — Wednesday · ★ Demo Day
 
 The main event. University guests, all teams presenting simultaneously (poster session format).
 
 **Schedule:**
-- Setup: 30 minutes before guests arrive
-- Poster session: 90 minutes (guests circulate freely)
-- Full-group pitches: each team 5 min + 5 min Q&A
-- Reflection: what would you build next?
+- Morning (periods 1–2): open preparation, last fixes, rehearsal
+- Period 3–4: setup — tables, displays, power, poster mounting
+- Period 5: ★ Poster session & live robot demos (guests circulate freely, ~45 min)
+- Period 6: ★ Full-group pitches — each team 5 min + 5 min Q&A
 
 ::: {.callout-tip title="During the poster session"}
 At least one team member should always be at the poster to engage with guests. Rotate so everyone gets to walk around and see other teams' work.

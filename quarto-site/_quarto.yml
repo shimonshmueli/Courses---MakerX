@@ -19,6 +19,9 @@ website:
         href: index.qmd
       - text: "Schedule"
         menu:
+          - text: "Full Class Schedule"
+            href: schedule.qmd
+          - text: "---"
           - text: "Week 1 — Conceive"
             href: week1.qmd
           - text: "Week 2 — Design"
@@ -55,6 +58,7 @@ website:
       collapse-level: 1
       contents:
         - index.qmd
+        - schedule.qmd
         - section: "Weekly Schedule"
           contents:
             - week1.qmd

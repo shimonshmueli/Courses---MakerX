@@ -1,0 +1,507 @@
+---
+title: "Class Schedule"
+description: "Period-by-period schedule · 4 weeks · 8 sessions · 48 periods"
+toc: false
+---
+
+<span class="sl" style="color:#FCD34D">// CLASS SCHEDULE &nbsp;·&nbsp; 课程时间表</span>
+
+**2 sessions per week** (Monday + Wednesday) · **6 periods per session** · 48 in-class periods total.
+Shimon is available for **periods 3–5 only**. Daniel is present all sessions. Guest instructors as indicated.
+
+---
+
+```{=html}
+<style>
+.sched-wrap { display: flex; flex-direction: column; gap: 2.2rem; margin-top: 1.5rem; }
+
+.sched-week-block {
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.sched-week-header {
+  padding: 0.85rem 1.4rem;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #0A0F1E;
+}
+.w1-hdr { background: #60A5FA; }
+.w2-hdr { background: #A78BFA; }
+.w3-hdr { background: #FB923C; }
+.w4-hdr { background: #34D399; }
+
+.sched-session-label {
+  padding: 0.45rem 1.4rem;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.38);
+  background: rgba(255,255,255,0.03);
+  border-top: 1px solid rgba(255,255,255,0.07);
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+
+.sched-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.sched-table thead th {
+  padding: 0.4rem 0.9rem;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.22);
+  background: rgba(0,0,0,0.15);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  text-align: left;
+}
+.sched-table td {
+  padding: 0.5rem 0.9rem;
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.84rem;
+  color: #94A3B8;
+  border-bottom: 1px solid rgba(255,255,255,0.035);
+  vertical-align: middle;
+}
+.sched-table tr:last-child td { border-bottom: none; }
+
+.p-num {
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 700;
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.2);
+  width: 24px;
+  text-align: center;
+}
+.p-time {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.28);
+  white-space: nowrap;
+  width: 100px;
+}
+.p-topic { color: #CBD5E1; }
+.p-topic strong { color: #fff; font-weight: 600; }
+.p-who { width: 140px; white-space: nowrap; }
+
+.block-hdr td {
+  padding: 0.22rem 0.9rem;
+  background: rgba(255,255,255,0.025);
+  font-family: 'Exo 2', sans-serif;
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.18);
+  border-bottom: 1px solid rgba(255,255,255,0.04) !important;
+}
+
+/* Instructor badges */
+.b {
+  display: inline-block;
+  padding: 2px 9px;
+  border-radius: 20px;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  margin: 1px 1px 1px 0;
+  white-space: nowrap;
+}
+.b-liang   { background: rgba(96,165,250,0.18);  color: #60A5FA; }
+.b-daniel  { background: rgba(251,146,60,0.18);  color: #FB923C; }
+.b-shimon  { background: rgba(34,211,238,0.18);  color: #22D3EE; }
+.b-junjun  { background: rgba(167,139,250,0.18); color: #A78BFA; }
+.b-esp     { background: rgba(252,211,77,0.18);  color: #FCD34D; }
+.b-zhou    { background: rgba(52,211,153,0.18);  color: #34D399; }
+.b-demo    { background: rgba(244,114,182,0.18); color: #F472B6; }
+.b-all     { background: rgba(255,255,255,0.1);  color: rgba(255,255,255,0.5); }
+
+/* Special rows */
+.row-guest td    { background: rgba(252,211,77,0.04); }
+.row-poster td   { background: rgba(167,139,250,0.05); }
+.row-demo td     { background: rgba(244,114,182,0.06); }
+.row-zhou td     { background: rgba(52,211,153,0.04); }
+
+/* Legend */
+.sched-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.2rem;
+  margin-bottom: 1.8rem;
+  padding: 1rem 1.2rem;
+  background: rgba(255,255,255,0.025);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 8px;
+}
+.sched-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.45);
+}
+.sched-constraint {
+  font-size: 0.7rem;
+  color: rgba(255,255,255,0.28);
+  font-style: italic;
+}
+</style>
+
+<!-- LEGEND -->
+<div class="sched-legend">
+  <div class="sched-legend-item"><span class="b b-liang">梁俊睿</span> Theory &amp; SW/HW fundamentals</div>
+  <div class="sched-legend-item"><span class="b b-daniel">Daniel</span> Design &amp; fabrication — all sessions</div>
+  <div class="sched-legend-item"><span class="b b-shimon">Shimon</span> HW/SW + LLM lab <span class="sched-constraint">(periods 3–5 only)</span></div>
+  <div class="sched-legend-item"><span class="b b-junjun">JunJun</span> Character design</div>
+  <div class="sched-legend-item"><span class="b b-esp">Espressif</span> Guest — ESP32 &amp; ecosystem</div>
+  <div class="sched-legend-item"><span class="b b-zhou">Prof. Zhou</span> Entrepreneurship &amp; pitching</div>
+  <div class="sched-legend-item"><span class="b b-demo">★ Demo Day</span> Final presentations</div>
+</div>
+
+<div class="sched-wrap">
+
+<!-- ══════════════════════════════════ WEEK 1 -->
+<div class="sched-week-block">
+  <div class="sched-week-header w1-hdr">WEEK 1 &nbsp;·&nbsp; CONCEIVE &nbsp;/&nbsp; 构思</div>
+
+  <div class="sched-session-label">SESSION 1 &nbsp;·&nbsp; MONDAY</div>
+  <table class="sched-table">
+    <thead><tr><th>#</th><th>Time</th><th>Topic</th><th>Instructor(s)</th></tr></thead>
+    <tbody>
+      <tr class="block-hdr"><td colspan="4">▸ Morning</td></tr>
+      <tr>
+        <td class="p-num">1</td><td class="p-time">10:15–11:00</td>
+        <td class="p-topic">Course introduction · overview of the 4-week arc · team formation</td>
+        <td class="p-who"><span class="b b-liang">梁俊睿</span></td>
+      </tr>
+      <tr>
+        <td class="p-num">2</td><td class="p-time">11:10–11:55</td>
+        <td class="p-topic">Embedded systems &amp; IoT fundamentals · meet the ESP32</td>
+        <td class="p-who"><span class="b b-liang">梁俊睿</span></td>
+      </tr>
+      <tr class="block-hdr"><td colspan="4">▸ Afternoon</td></tr>
+      <tr>
+        <td class="p-num">3</td><td class="p-time">13:00–13:45</td>
+        <td class="p-topic">ESP32 first contact: hardware setup, GPIO, breadboard wiring</td>
+        <td class="p-who"><span class="b b-shimon">Shimon</span> <span class="b b-daniel">Daniel</span></td>
+      </tr>
+      <tr>
+        <td class="p-num">4</td><td class="p-time">13:55–14:40</td>
+        <td class="p-topic">Firmware lab: Hello World — display output &amp; LED blink</td>
+        <td class="p-who"><span class="b b-shimon">Shimon</span> <span class="b b-daniel">Daniel</span></td>
+      </tr>
+      <tr>
+        <td class="p-num">5</td><td class="p-time">15:00–15:45</td>
+        <td class="p-topic">Robot concept ideation workshop · user persona · target need</td>
+        <td class="p-who"><span class="b b-shimon">Shimon</span> <span class="b b-daniel">Daniel</span></td>
+      </tr>
+      <tr>
+        <td class="p-num">6</td><td class="p-time">15:55–16:40</td>
+        <td class="p-topic">Industrial design intro: form follows function · sketching exercise</td>
+        <td class="p-who"><span class="b b-daniel">Daniel</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="sched-session-label">SESSION 2 &nbsp;·&nbsp; WEDNESDAY</div>
+  <table class="sched-table">
+    <thead><tr><th>#</th><th>Time</th><th>Topic</th><th>Instructor(s)</th></tr></thead>
+    <tbody>
+      <tr class="block-hdr"><td colspan="4">▸ Morning</td></tr>
+      <tr>
+        <td class="p-num">1</td><td class="p-time">10:15–11:00</td>
+        <td class="p-topic">LLMs &amp; conversational AI fundamentals · how robots "think"</td>
+        <td class="p-who"><span class="b b-liang">梁俊睿</span></td>
+      </tr>
+      <tr>
+        <td class="p-num">2</td><td class="p-time">11:10–11:55</td>
+        <td class="p-topic">ESP-Claw framework overview · architecture &amp; design patterns</td>
+        <td class="p-who"><span class="b b-liang">梁俊睿</span></td>
+      </tr>
+      <tr class="block-hdr"><td colspan="4">▸ Afternoon</td></tr>
+      <tr class="row-guest">
+        <td class="p-num">3</td><td class="p-time">13:00–13:45</td>
+        <td class="p-topic"><strong>Guest:</strong> Character by design — lecture &amp; sketching exercises (Part 1)</td>
+        <td class="p-who"><span class="b b-junjun">JunJun</span></td>
+      </tr>
+      <tr class="row-guest">
+        <td class="p-num">4</td><td class="p-time">13:55–14:40</td>
+        <td class="p-topic"><strong>Guest:</strong> Character by design — LLM generative tools workshop (Part 2)</td>
+        <td class="p-who"><span class="b b-junjun">JunJun</span></td>
+      </tr>
+      <tr class="row-poster">
+        <td class="p-num">5</td><td class="p-time">15:00–15:45</td>
+        <td class="p-topic"><strong>Brief poster session</strong> — all teams present robot concept (3 min each)</td>
+        <td class="p-who"><span class="b b-all">All teams</span></td>
+      </tr>
+      <tr>
+        <td class="p-num">6</td><td class="p-time">15:55–16:40</td>
+        <td class="p-topic">Open studio: form exploration &amp; sketching</td>
+        <td class="p-who"><span class="b b-daniel">Daniel</span></td>
+      </tr>
+    </tbody>
+  </table>
+</div><!-- /week 1 -->
+
+<!-- ══════════════════════════════════ WEEK 2 -->
+<div class="sched-week-block">
+  <div class="sched-week-header w2-hdr">WEEK 2 &nbsp;·&nbsp; DESIGN &nbsp;/&nbsp; 设计</div>
+
+  <div class="sched-session-label">SESSION 3 &nbsp;·&nbsp; MONDAY</div>
+  <table class="sched-table">
+    <thead><tr><th>#</th><th>Time</th><th>Topic</th><th>Instructor(s)</th></tr></thead>
+    <tbody>
+      <tr class="block-hdr"><td colspan="4">▸ Morning</td></tr>
+      <tr>
+        <td class="p-num">1</td><td class="p-time">10:15–11:00</td>
+        <td class="p-topic">OpenRouter, APIs &amp; LLM system architecture</td>
+        <td class="p-who"><span class="b b-liang">梁俊睿</span></td>
+      </tr>
+      <tr>
+        <td class="p-num">2</td><td class="p-time">11:10–11:55</td>
+        <td class="p-topic">MCP protocol · cloud/LLM integration patterns · Xiaozhi</td>
+        <td class="p-who"><span class="b b-liang">梁俊睿</span></td>
+      </tr>
+      <tr class="block-hdr"><td colspan="4">▸ Afternoon</td></tr>
+      <tr>
+        <td class="p-num">3</td><td class="p-time">13:00–13:45</td>
+        <td class="p-topic">Electronics lab: wiring sensors, displays &amp; actuators</td>
+        <td class="p-who"><span class="b b-shimon">Shimon</span> <span class="b b-daniel">Daniel</span></td>
+      </tr>
+      <tr>
+        <td class="p-num">4</td><td class="p-time">13:55–14:40</td>
+        <td class="p-topic">Firmware lab: LLM integration via OpenRouter — first response on device</td>
+        <td class="p-who"><span class="b b-shimon">Shimon</span> <span class="b b-daniel">Daniel</span></td>
+      </tr>
+      <tr>
+        <td class="p-num">5</td><td class="p-time">15:00–15:45</td>
+        <td class="p-topic">Prompt engineering: system prompts, personality, language tuning</td>
+        <td class="p-who"><span class="b b-shimon">Shimon</span> <span class="b b-daniel">Daniel</span></td>
+      </tr>
+      <tr>
+        <td class="p-num">6</td><td class="p-time">15:55–16:40</td>
+        <td class="p-topic">3D modeling intro · enclosure concept sketches</td>
+        <td class="p-who"><span class="b b-daniel">Daniel</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="sched-session-label">SESSION 4 &nbsp;·&nbsp; WEDNESDAY</div>
+  <table class="sched-table">
+    <thead><tr><th>#</th><th>Time</th><th>Topic</th><th>Instructor(s)</th></tr></thead>
+    <tbody>
+      <tr class="block-hdr"><td colspan="4">▸ Morning</td></tr>
+      <tr>
+        <td class="p-num">1</td><td class="p-time">10:15–11:00</td>
+        <td class="p-topic">Design critique: prototype review &amp; form iteration</td>
+        <td class="p-who"><span class="b b-daniel">Daniel</span></td>
+      </tr>
+      <tr>
+        <td class="p-num">2</td><td class="p-time">11:10–11:55</td>
+        <td class="p-topic">Form development workshop: translating personality into shape</td>
+        <td class="p-who"><span class="b b-daniel">Daniel</span></td>
+      </tr>
+      <tr class="block-hdr"><td colspan="4">▸ Afternoon</td></tr>
+      <tr class="row-guest">
+        <td class="p-num">3</td><td class="p-time">13:00–13:45</td>
+        <td class="p-topic"><strong>Guest:</strong> ESP32 family &amp; ecosystem deep dive (Part 1)</td>
+        <td class="p-who"><span class="b b-esp">Espressif</span></td>
+      </tr>
+      <tr class="row-guest">
+        <td class="p-num">4</td><td class="p-time">13:55–14:40</td>
+        <td class="p-topic"><strong>Guest:</strong> ESP-Claw tooling, AI integration &amp; partner ecosystem (Part 2)</td>
+        <td class="p-who"><span class="b b-esp">Espressif</span></td>
+      </tr>
+      <tr>
+        <td class="p-num">5</td><td class="p-time">15:00–15:45</td>
+        <td class="p-topic">Integration lab: hardware + firmware + LLM end-to-end</td>
+        <td class="p-who"><span class="b b-shimon">Shimon</span> <span class="b b-daniel">Daniel</span></td>
+      </tr>
+      <tr>
+        <td class="p-num">6</td><td class="p-time">15:55–16:40</td>
+        <td class="p-topic">Open studio: prototype build &amp; iteration</td>
+        <td class="p-who"><span class="b b-daniel">Daniel</span></td>
+      </tr>
+    </tbody>
+  </table>
+</div><!-- /week 2 -->
+
+<!-- ══════════════════════════════════ WEEK 3 -->
+<div class="sched-week-block">
+  <div class="sched-week-header w3-hdr">WEEK 3 &nbsp;·&nbsp; BUILD &nbsp;/&nbsp; 制造</div>
+
+  <div class="sched-session-label">SESSION 5 &nbsp;·&nbsp; MONDAY</div>
+  <table class="sched-table">
+    <thead><tr><th>#</th><th>Time</th><th>Topic</th><th>Instructor(s)</th></tr></thead>
+    <tbody>
+      <tr class="block-hdr"><td colspan="4">▸ Morning</td></tr>
+      <tr class="row-zhou">
+        <td class="p-num">1</td><td class="p-time">10:15–11:00</td>
+        <td class="p-topic"><strong>Guest:</strong> Entrepreneurship &amp; the startup ecosystem (Part 1)</td>
+        <td class="p-who"><span class="b b-zhou">Prof. Zhou</span></td>
+      </tr>
+      <tr class="row-zhou">
+        <td class="p-num">2</td><td class="p-time">11:10–11:55</td>
+        <td class="p-topic"><strong>Guest:</strong> How to pitch to VCs &amp; stakeholders for buy-in (Part 2)</td>
+        <td class="p-who"><span class="b b-zhou">Prof. Zhou</span></td>
+      </tr>
+      <tr class="block-hdr"><td colspan="4">▸ Afternoon</td></tr>
+      <tr>
+        <td class="p-num">3</td><td class="p-time">13:00–13:45</td>
+        <td class="p-topic">Full system integration lab: all components running together</td>
+        <td class="p-who"><span class="b b-shimon">Shimon</span> <span class="b b-daniel">Daniel</span></td>
+      </tr>
+      <tr>
+        <td class="p-num">4</td><td class="p-time">13:55–14:40</td>
+        <td class="p-topic">Debugging &amp; stress-testing: 10-minute continuous run</td>
+        <td class="p-who"><span class="b b-shimon">Shimon</span> <span class="b b-daniel">Daniel</span></td>
+      </tr>
+      <tr>
+        <td class="p-num">5</td><td class="p-time">15:00–15:45</td>
+        <td class="p-topic">User testing: live sessions with people outside the class</td>
+        <td class="p-who"><span class="b b-shimon">Shimon</span> <span class="b b-daniel">Daniel</span></td>
+      </tr>
+      <tr>
+        <td class="p-num">6</td><td class="p-time">15:55–16:40</td>
+        <td class="p-topic">3D printing: finalize enclosure design &amp; submit print job</td>
+        <td class="p-who"><span class="b b-daniel">Daniel</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="sched-session-label">SESSION 6 &nbsp;·&nbsp; WEDNESDAY</div>
+  <table class="sched-table">
+    <thead><tr><th>#</th><th>Time</th><th>Topic</th><th>Instructor(s)</th></tr></thead>
+    <tbody>
+      <tr class="block-hdr"><td colspan="4">▸ Morning</td></tr>
+      <tr>
+        <td class="p-num">1</td><td class="p-time">10:15–11:00</td>
+        <td class="p-topic">3D print assembly &amp; fit check · hardware mounting</td>
+        <td class="p-who"><span class="b b-daniel">Daniel</span></td>
+      </tr>
+      <tr>
+        <td class="p-num">2</td><td class="p-time">11:10–11:55</td>
+        <td class="p-topic">Enclosure refinement · cable routing · structural review</td>
+        <td class="p-who"><span class="b b-daniel">Daniel</span></td>
+      </tr>
+      <tr class="block-hdr"><td colspan="4">▸ Afternoon</td></tr>
+      <tr>
+        <td class="p-num">3</td><td class="p-time">13:00–13:45</td>
+        <td class="p-topic">User test debrief: what confused people? What delighted them?</td>
+        <td class="p-who"><span class="b b-shimon">Shimon</span> <span class="b b-daniel">Daniel</span></td>
+      </tr>
+      <tr>
+        <td class="p-num">4</td><td class="p-time">13:55–14:40</td>
+        <td class="p-topic">Rapid iteration: top-3 fixes from user testing</td>
+        <td class="p-who"><span class="b b-shimon">Shimon</span> <span class="b b-daniel">Daniel</span></td>
+      </tr>
+      <tr>
+        <td class="p-num">5</td><td class="p-time">15:00–15:45</td>
+        <td class="p-topic">Demo rehearsal: 2-minute run-through × 3 (rotate presenters)</td>
+        <td class="p-who"><span class="b b-shimon">Shimon</span> <span class="b b-daniel">Daniel</span></td>
+      </tr>
+      <tr>
+        <td class="p-num">6</td><td class="p-time">15:55–16:40</td>
+        <td class="p-topic">Open lab: last build time &amp; loose ends</td>
+        <td class="p-who"><span class="b b-daniel">Daniel</span></td>
+      </tr>
+    </tbody>
+  </table>
+</div><!-- /week 3 -->
+
+<!-- ══════════════════════════════════ WEEK 4 -->
+<div class="sched-week-block">
+  <div class="sched-week-header w4-hdr">WEEK 4 &nbsp;·&nbsp; PITCH IT ★ &nbsp;/&nbsp; 展示</div>
+
+  <div class="sched-session-label">SESSION 7 &nbsp;·&nbsp; MONDAY</div>
+  <table class="sched-table">
+    <thead><tr><th>#</th><th>Time</th><th>Topic</th><th>Instructor(s)</th></tr></thead>
+    <tbody>
+      <tr class="block-hdr"><td colspan="4">▸ Morning</td></tr>
+      <tr class="row-zhou">
+        <td class="p-num">1</td><td class="p-time">10:15–11:00</td>
+        <td class="p-topic"><strong>Guest:</strong> Presentation coaching — story, structure &amp; slide design (Part 1)</td>
+        <td class="p-who"><span class="b b-zhou">Prof. Zhou</span></td>
+      </tr>
+      <tr class="row-zhou">
+        <td class="p-num">2</td><td class="p-time">11:10–11:55</td>
+        <td class="p-topic"><strong>Guest:</strong> Presentation coaching — Q&amp;A prep &amp; live feedback (Part 2)</td>
+        <td class="p-who"><span class="b b-zhou">Prof. Zhou</span></td>
+      </tr>
+      <tr class="block-hdr"><td colspan="4">▸ Afternoon</td></tr>
+      <tr>
+        <td class="p-num">3</td><td class="p-time">13:00–13:45</td>
+        <td class="p-topic">Poster review: content, layout &amp; print finalization</td>
+        <td class="p-who"><span class="b b-shimon">Shimon</span> <span class="b b-daniel">Daniel</span></td>
+      </tr>
+      <tr>
+        <td class="p-num">4</td><td class="p-time">13:55–14:40</td>
+        <td class="p-topic">Demo hardening: run-throughs, backup power, reboot plan</td>
+        <td class="p-who"><span class="b b-shimon">Shimon</span> <span class="b b-daniel">Daniel</span></td>
+      </tr>
+      <tr>
+        <td class="p-num">5</td><td class="p-time">15:00–15:45</td>
+        <td class="p-topic">Full pitch rehearsal with instructor feedback (5 min + Q&amp;A)</td>
+        <td class="p-who"><span class="b b-shimon">Shimon</span> <span class="b b-daniel">Daniel</span></td>
+      </tr>
+      <tr>
+        <td class="p-num">6</td><td class="p-time">15:55–16:40</td>
+        <td class="p-topic">Last design polish · submit poster print file</td>
+        <td class="p-who"><span class="b b-daniel">Daniel</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="sched-session-label">SESSION 8 &nbsp;·&nbsp; WEDNESDAY &nbsp;·&nbsp; ★ DEMO DAY</div>
+  <table class="sched-table">
+    <thead><tr><th>#</th><th>Time</th><th>Topic</th><th>Instructor(s)</th></tr></thead>
+    <tbody>
+      <tr class="block-hdr"><td colspan="4">▸ Morning — Open Preparation</td></tr>
+      <tr>
+        <td class="p-num">1</td><td class="p-time">10:15–11:00</td>
+        <td class="p-topic">Open prep: last fixes, final tests, poster check</td>
+        <td class="p-who"><span class="b b-all">All</span></td>
+      </tr>
+      <tr>
+        <td class="p-num">2</td><td class="p-time">11:10–11:55</td>
+        <td class="p-topic">Open prep: rehearsal &amp; troubleshooting</td>
+        <td class="p-who"><span class="b b-all">All</span></td>
+      </tr>
+      <tr class="block-hdr"><td colspan="4">▸ Afternoon — Demo Day</td></tr>
+      <tr>
+        <td class="p-num">3</td><td class="p-time">13:00–13:45</td>
+        <td class="p-topic">Setup: tables, displays, power, poster mounting</td>
+        <td class="p-who"><span class="b b-all">All</span></td>
+      </tr>
+      <tr>
+        <td class="p-num">4</td><td class="p-time">13:55–14:40</td>
+        <td class="p-topic">Setup complete · buffer · final system check</td>
+        <td class="p-who"><span class="b b-all">All</span></td>
+      </tr>
+      <tr class="row-demo">
+        <td class="p-num">5</td><td class="p-time">15:00–15:45</td>
+        <td class="p-topic"><strong>★ Final presentations</strong> — poster session &amp; live robot demos (guests circulate)</td>
+        <td class="p-who"><span class="b b-demo">★ Demo Day</span></td>
+      </tr>
+      <tr class="row-demo">
+        <td class="p-num">6</td><td class="p-time">15:55–16:40</td>
+        <td class="p-topic"><strong>★ Final presentations</strong> — full-group pitches (5 min each) &amp; Q&amp;A</td>
+        <td class="p-who"><span class="b b-demo">★ Demo Day</span></td>
+      </tr>
+    </tbody>
+  </table>
+</div><!-- /week 4 -->
+
+</div><!-- /sched-wrap -->
+```

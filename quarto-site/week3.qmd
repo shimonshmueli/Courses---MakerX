@@ -30,16 +30,18 @@ By the end of Week 3 you will be able to:
 
 ## Sessions
 
-### Session 7 — Full Hardware Integration
+→ [View period-by-period schedule](schedule.qmd)
 
-Everything on the breadboard; make it work together.
+### Session 5 — Monday · Integration, User Testing & Prof. Zhou
+
+Guest lecture in the morning, then the hardest technical work of the course.
 
 **Agenda:**
-- Solder your circuit (move off the breadboard if components are confirmed)
-- Integrate all sensors and actuators: camera, motor, speaker, display
-- Firmware: handle all hardware in one ESP-Claw sketch
-- Stress test: run continuously for 10 minutes — what breaks?
-- Bug triage with instructors
+- **Guest lecture:** Prof. Zhou — Entrepreneurship, the startup ecosystem, and how to pitch to VCs & stakeholders (2 periods)
+- Full system integration lab: all components running together · Shimon + Daniel
+- Debugging & stress-testing: run continuously for 10 minutes — what breaks? · Shimon + Daniel
+- User testing: live sessions with people outside the class · Shimon + Daniel
+- 3D printing: finalize enclosure design & submit print job · Daniel
 
 ::: {.callout-warning title="The integration wall"}
 Most teams hit a wall here — something that worked separately breaks when combined. **This is normal.** Budget 50% of this session for debugging. The debugging is the learning.
@@ -56,46 +58,25 @@ Most teams hit a wall here — something that worked separately breaks when comb
 
 ---
 
-### Session 8 — 3D Print & Assemble
+### Session 6 — Wednesday · Assembly, Iteration & Demo Rehearsal
 
-Your robot gets a body.
+Your robot gets a body. User feedback gets turned into fixes.
 
 ::: {.callout-tip title="Design for printability"}
 The best enclosure is the one that actually prints. Design with **0.2mm layer height** in mind, avoid overhangs greater than 45°, and add clearance for USB ports and cables.
 :::
 
 **Agenda:**
-- Finalize enclosure design in Fusion 360 / TinkerCAD / Blender
-- Submit print jobs (prints typically take 3–8 hours)
-- While printing: refine firmware, document wiring
-- Assemble when print is complete: mount board, route cables, close enclosure
-- Reality check: does it still feel like your concept brief?
-
-**3D modeling tools:**
-
-| Tool | Best for | Free? |
-|---|---|---|
-| TinkerCAD | Simple shapes, beginners | ✅ Yes |
-| Fusion 360 | Parametric design, precise fits | ✅ Student/edu |
-| Blender | Organic/sculpted shapes | ✅ Yes |
-| SolidWorks | Professional mechanical design | ❌ License needed |
-
----
-
-### Session 9 — User Testing & Iteration
-
-Put the product in front of real people. Fix what matters.
+- 3D print assembly & fit check · hardware mounting · Daniel
+- Enclosure refinement · cable routing · Daniel
+- User test debrief: what confused people? What delighted them? · Shimon + Daniel
+- Rapid iteration: top-3 fixes from user testing · Shimon + Daniel
+- Demo rehearsal: 2-minute run-through × 3, rotate presenters · Shimon + Daniel
+- Open lab: last build time · Daniel
 
 ::: {.callout-note title="Structured user testing"}
 A good user test takes 15 minutes per person. Give them a task, watch silently, take notes. Don't explain or defend — just observe.
 :::
-
-**Agenda:**
-- Each team runs 3–4 user tests (find people outside the class)
-- Observe: what confuses people? What delights them? What do they ignore?
-- Debrief: what are the top 3 things to fix before Week 4?
-- Sprint: make the 3 fixes (if more than a day of work, scope them down)
-- Final hardware check with instructor sign-off
 
 **What to test:**
 - Can a new user figure out how to interact with the robot without explanation?

@@ -30,45 +30,23 @@ By the end of Week 2 you will be able to:
 
 ## Sessions
 
-### Session 4 — Electronics & Firmware First Contact
+→ [View period-by-period schedule](schedule.qmd)
 
-Get the hardware talking.
+### Session 3 — Monday · Electronics, Firmware & LLM Integration
+
+The hardware talks. By the end of the day your robot will be sending a prompt to an LLM and displaying the answer on screen.
 
 ::: {.callout-note}
 This is often the most intimidating session. Don't worry — by the end of it your board will be blinking, displaying text, or responding to a button press. That's real.
 :::
 
 **Agenda:**
-- Intro to ESP32 GPIO, I2C, and SPI interfaces
-- Wire up a display (OLED or LCD) on a breadboard
-- Flash a starter ESP-Claw sketch
-- Make the display show your robot's name
-- Troubleshooting time with instructors
-
-**Tools needed:**
-```
-ESP32 dev board + USB cable
-Breadboard + jumper wires
-OLED display (SSD1306) or LCD
-Arduino IDE or VS Code + PlatformIO
-```
-
----
-
-### Session 5 — LLM Integration via OpenRouter
-
-Connect your robot's brain to an AI model.
-
-::: {.callout-tip title="Why OpenRouter?"}
-OpenRouter provides a **single API** that routes to any LLM — Qwen, DeepSeek, Claude, and others. You write one integration and can swap models with a single parameter change. No re-wiring required.
-:::
-
-**Agenda:**
-- OpenRouter account setup + API key
-- HTTP request from ESP32 to OpenRouter API
-- Parse JSON response and display reply on screen
-- Prompt engineering: write a system prompt that gives your robot its personality
-- Compare two models (e.g. Qwen vs DeepSeek) — what's different?
+- OpenRouter, APIs & LLM system architecture · 梁俊睿
+- MCP protocol · cloud/LLM integration patterns · 梁俊睿
+- Electronics lab: wiring sensors, displays & actuators · Shimon + Daniel
+- Firmware lab: first HTTP call to OpenRouter from ESP32, display reply · Shimon + Daniel
+- Prompt engineering: write a system prompt that gives your robot its personality · Shimon + Daniel
+- 3D modeling intro & enclosure concept sketches · Daniel
 
 **Starter prompt template:**
 ```
@@ -81,19 +59,22 @@ You respond in [language preference], in [tone] — no more than
 When someone says hello, you respond with your signature greeting.
 ```
 
+::: {.callout-tip title="Why OpenRouter?"}
+OpenRouter provides a **single API** that routes to any LLM — Qwen, DeepSeek, Claude, and others. You write one integration and can swap models with a single parameter change. No re-wiring required.
+:::
+
 ---
 
-### Session 6 — Form & Character Development
+### Session 4 — Wednesday · Form Development & Espressif Guest Lecture
 
-Guest lecture: **JunJun Shi 史珺珺** on *"Empathy as the starting point for designing robot personality."*
+The physical form takes shape. Guest engineers from Espressif explain the full ESP32 ecosystem.
 
 **Agenda:**
-- Guest lecture: how human insight shapes a robot's soul
-- Workshop: translate your personality brief into physical form
-- Sketch 3 body shapes — which one *feels* like your robot?
-- Rapid paper prototype: cut, fold, tape — 30 minutes
-- First user test: show the paper prototype to someone outside your team
-- Iterate: one change based on feedback
+- Design critique: prototype review & form iteration · Daniel
+- Form development workshop: translating personality into shape · Daniel
+- **Guest lecture:** Espressif engineers — ESP32 family & ecosystem deep dive, ESP-Claw tooling & partner integrations (2 periods)
+- Integration lab: hardware + firmware + LLM end-to-end · Shimon + Daniel
+- Open studio: prototype build · Daniel
 
 ::: {.callout-important title="Lo-fi is the point"}
 Paper prototypes aren't "not done yet." They're a tool. The goal is to **learn fast and cheaply** before committing to 3D printing.

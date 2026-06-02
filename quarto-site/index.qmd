@@ -160,7 +160,7 @@ We organize groups where different skills and backgrounds complement each other 
 | 🟠 | [Week 3 — Build](week3.qmd) | User testing · Refinement · 3D-print enclosure | Integrated product |
 | 🟢 | [Week 4 — Pitch It ★](week4.qmd) | Demo day · Poster · Public pitch | Presentation + demo |
 
-The course runs at **12 hours per week** — enough time to go deep, not enough time to hesitate.
+The course meets **twice a week** (Monday + Wednesday), with 6 periods per session — enough time to go deep, not enough time to hesitate. → [View full class schedule](schedule.qmd)
 
 ---
 

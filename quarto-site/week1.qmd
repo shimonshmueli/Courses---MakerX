@@ -29,51 +29,36 @@ By the end of Week 1 you will be able to:
 
 ## Sessions
 
-### Session 1 — Kick-off & Team Formation
+→ [View period-by-period schedule](schedule.qmd)
 
-The course begins. Teams are formed across disciplines — you may not know your teammates yet, and that's by design.
+### Session 1 — Monday · Kick-off, ESP32 & Ideation
 
-::: {.callout-note}
-**What happens:**
-Course introduction, team assignments, overview of the 4-week arc. First look at the ESP32 hardware and ESP-Claw framework.
-:::
+The course begins. Teams form across disciplines. By the end of this session you will have your team, your first firmware running, and the seeds of a concept.
 
 **Agenda:**
-- Course overview and grading (Pass / No Pass)
-- Meet your team — skills mapping exercise
-- Hardware unboxing: ESP32 board, sensors, displays
-- Guest overview: Espressif introduction to ESP-Claw
-- Assignment: individual user interview before Session 2
+- Course overview and grading (Pass / No Pass) · 梁俊睿
+- Embedded systems & IoT fundamentals · 梁俊睿
+- ESP32 first contact: hardware setup, GPIO, display · Shimon + Daniel
+- Firmware lab: Hello World — text on display · Shimon + Daniel
+- Robot concept ideation workshop: user, need, personality · Shimon + Daniel
+- Industrial design intro: form follows function, sketching · Daniel
 
 ---
 
-### Session 2 — User Research & Empathy
+### Session 2 — Wednesday · Character Design & Concept Brief
 
-You've each spoken to a potential user. Now you share what you heard.
+Guest lecture day and the first real milestone: every team presents their concept.
 
 ::: {.callout-tip title="Design Thinking in action"}
 The goal of user research is not to confirm your assumptions — it's to **break them**. The most interesting insights come from unexpected answers.
 :::
 
 **Agenda:**
-- Share interview findings in your team (5 min each)
-- Affinity mapping: cluster insights into themes
-- Identify the top 2–3 user needs worth solving
-- Define your **target user persona**
-- Sketch 3 possible robot concepts (rough, fast, no judgment)
-
----
-
-### Session 3 — Concept Selection & Personality Brief
-
-Your team converges on one direction.
-
-**Agenda:**
-- Dot voting: which concept is most feasible *and* most meaningful?
-- Concept refinement: what does the robot *do*, *say*, and *feel like*?
-- Write the **Robot Personality Brief** (see deliverable below)
-- Technical feasibility check with instructors
-- Peer critique round: 3-minute pitches, feedback cards
+- LLMs & conversational AI fundamentals · 梁俊睿
+- ESP-Claw framework overview · 梁俊睿
+- **Guest lecture:** JunJun Shi — *"Empathy as the starting point for designing robot personality"* · character design workshop with sketching & LLM generative tools (2 periods)
+- **Brief poster session** — all teams present their robot concept (3 min each)
+- Open studio: form exploration · Daniel
 
 ---
 
