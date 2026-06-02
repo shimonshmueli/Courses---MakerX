@@ -11,7 +11,7 @@ toc: false
 
   <!-- Team photo -->
   <div style="flex:1; min-width:260px; max-width:380px;">
-    <img src="images/team.jpg" alt="The Maker-X instructors" style="width:100%; border-radius:10px; opacity:0.92;">
+    <img src="images/team.png" alt="The Maker-X instructors" style="width:100%; border-radius:10px; opacity:0.92;">
   </div>
 
   <!-- Encouraging text -->
