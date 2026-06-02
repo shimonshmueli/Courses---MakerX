@@ -30,6 +30,8 @@ website:
             href: week3.qmd
           - text: "Week 4 — Pitch It ★"
             href: week4.qmd
+      - text: "Get Ready"
+        href: setup.qmd
       - text: "Resources"
         href: resources.qmd
       - text: "Team"
@@ -63,6 +65,7 @@ website:
             - week2.qmd
             - week3.qmd
             - week4.qmd
+        - setup.qmd
         - resources.qmd
         - team.qmd
 

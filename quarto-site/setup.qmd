@@ -1,0 +1,309 @@
+---
+title: "Get Ready for the Course"
+description: "Accounts to open and tools to install before Day 1 — takes about 30 minutes"
+toc: false
+---
+
+<span class="sl" style="color:#A78BFA">// PRE-COURSE SETUP &nbsp;·&nbsp; 课前准备</span>
+
+```{=html}
+<div style="display:flex; flex-wrap:wrap; gap:2rem; align-items:flex-start; margin:2rem 0 2.5rem;">
+
+  <!-- Caricature -->
+  <div style="flex:1; min-width:260px; max-width:400px;">
+<svg width="100%" viewBox="0 0 680 340" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>Maker-X instructors at the cutting edge</title>
+  <desc>Four cartoon instructor figures standing at the literal edge of a cliff labeled cutting edge, with a small robot, and a speech bubble saying We're figuring it out too</desc>
+  <style>
+    .cl { font-family:'Exo 2',sans-serif; font-size:13px; fill:#E2E8F0; text-anchor:middle; }
+    .cs { font-family:'Exo 2',sans-serif; font-size:10px; fill:#64748B; text-anchor:middle; }
+    .cb { font-family:'Barlow',sans-serif; font-size:11.5px; fill:#E2E8F0; }
+    .ce { font-family:'Exo 2',sans-serif; font-size:10px; font-weight:700; fill:#FB923C; text-anchor:middle; letter-spacing:.08em; }
+  </style>
+  <rect x="0" y="0" width="680" height="340" fill="#0A0F1E"/>
+  <rect x="480" y="200" width="200" height="140" fill="#020617"/>
+  <rect x="0" y="200" width="492" height="140" fill="#1E293B"/>
+  <rect x="0" y="196" width="492" height="9" rx="2" fill="#166534"/>
+  <line x1="490" y1="196" x2="490" y2="340" stroke="#FB923C" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text class="ce" x="560" y="220">← CUTTING</text>
+  <text class="ce" x="560" y="234">EDGE</text>
+  <!-- Shimon -->
+  <g transform="translate(78,100)">
+    <ellipse cx="0" cy="-38" rx="16" ry="18" fill="#60A5FA"/>
+    <rect x="-14" y="-20" width="28" height="40" rx="5" fill="#1D4ED8"/>
+    <rect x="-10" y="-10" width="20" height="14" rx="2" fill="#93C5FD"/>
+    <text style="font-family:monospace;font-size:6px;fill:#1e3a5f;text-anchor:middle" x="0" y="-1">AI&gt;_</text>
+    <line x1="-14" y1="8" x2="-22" y2="28" stroke="#60A5FA" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="14" y1="4" x2="22" y2="20" stroke="#60A5FA" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="-5" y1="20" x2="-7" y2="55" stroke="#60A5FA" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="5" y1="20" x2="7" y2="55" stroke="#60A5FA" stroke-width="2.5" stroke-linecap="round"/>
+    <text class="cl" x="0" y="72">Shimon</text>
+    <text class="cs" x="0" y="85">SCA</text>
+  </g>
+  <!-- Daniel -->
+  <g transform="translate(192,100)">
+    <ellipse cx="0" cy="-38" rx="15" ry="17" fill="#FB923C"/>
+    <rect x="-13" y="-21" width="26" height="39" rx="5" fill="#9A3412"/>
+    <g transform="rotate(-35) translate(13,-2)">
+      <rect x="0" y="-2" width="20" height="4" rx="1" fill="#FED7AA"/>
+    </g>
+    <line x1="-13" y1="8" x2="-21" y2="28" stroke="#FB923C" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="13" y1="4" x2="22" y2="20" stroke="#FB923C" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="-5" y1="20" x2="-7" y2="55" stroke="#FB923C" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="5" y1="20" x2="7" y2="55" stroke="#FB923C" stroke-width="2.5" stroke-linecap="round"/>
+    <text class="cl" x="0" y="72">Daniel</text>
+    <text class="cs" x="0" y="85">SCA</text>
+  </g>
+  <!-- Liang -->
+  <g transform="translate(308,100)">
+    <ellipse cx="0" cy="-38" rx="15" ry="17" fill="#22D3EE"/>
+    <rect x="-13" y="-21" width="26" height="39" rx="5" fill="#0E7490"/>
+    <ellipse cx="13" cy="-6" rx="9" ry="6" fill="none" stroke="#67E8F9" stroke-width="1.5"/>
+    <text style="font-size:7px;fill:#67E8F9;text-anchor:middle" x="13" y="-3">⚡</text>
+    <line x1="-13" y1="8" x2="-21" y2="26" stroke="#22D3EE" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="13" y1="4" x2="22" y2="20" stroke="#22D3EE" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="-5" y1="20" x2="-7" y2="55" stroke="#22D3EE" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="5" y1="20" x2="7" y2="55" stroke="#22D3EE" stroke-width="2.5" stroke-linecap="round"/>
+    <text class="cl" x="0" y="72">梁俊睿</text>
+    <text class="cs" x="0" y="85">SIST</text>
+  </g>
+  <!-- Xiaoyu -->
+  <g transform="translate(418,100)">
+    <ellipse cx="0" cy="-38" rx="15" ry="17" fill="#34D399"/>
+    <rect x="-13" y="-21" width="26" height="39" rx="5" fill="#065F46"/>
+    <rect x="8" y="-15" width="13" height="17" rx="1" fill="#6EE7B7"/>
+    <text style="font-size:5px;fill:#064e3b;text-anchor:middle" x="14" y="-5">VC$</text>
+    <line x1="-13" y1="8" x2="-21" y2="26" stroke="#34D399" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="13" y1="4" x2="22" y2="20" stroke="#34D399" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="-5" y1="20" x2="-7" y2="55" stroke="#34D399" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="5" y1="20" x2="7" y2="55" stroke="#34D399" stroke-width="2.5" stroke-linecap="round"/>
+    <text class="cl" x="0" y="72">Xiaoyu</text>
+    <text class="cs" x="0" y="85">SEM</text>
+  </g>
+  <!-- Robot -->
+  <g transform="translate(554,128)">
+    <rect x="-16" y="-46" width="32" height="30" rx="4" fill="#A78BFA" stroke="#7C3AED" stroke-width="1"/>
+    <circle cx="-6" cy="-38" r="3" fill="#DDD6FE"/>
+    <circle cx="6" cy="-38" r="3" fill="#DDD6FE"/>
+    <rect x="-10" y="-28" width="20" height="5" rx="2" fill="#C4B5FD"/>
+    <rect x="-12" y="-16" width="24" height="24" rx="3" fill="#7C3AED"/>
+    <line x1="-8" y1="8" x2="-10" y2="22" stroke="#A78BFA" stroke-width="2" stroke-linecap="round"/>
+    <line x1="8" y1="8" x2="10" y2="22" stroke="#A78BFA" stroke-width="2" stroke-linecap="round"/>
+    <text class="cl" x="0" y="36">robot</text>
+  </g>
+  <!-- Speech bubble -->
+  <rect x="340" y="14" width="295" height="62" rx="10" fill="#1E293B" stroke="#334155" stroke-width="0.8"/>
+  <polygon points="365,76 354,94 388,76" fill="#1E293B" stroke="#334155" stroke-width="0.8"/>
+  <text class="cb" x="352" y="38">"We're figuring it out too.</text>
+  <text class="cb" x="352" y="56">That's kind of the point."</text>
+  <!-- Arrow -->
+  <text style="font-family:'Exo 2',sans-serif;font-size:9px;fill:#FB923C" x="12" y="188">▸ you are here</text>
+  <line x1="58" y1="192" x2="58" y2="198" stroke="#FB923C" stroke-width="1" stroke-dasharray="3 2"/>
+</svg>
+  </div>
+
+  <!-- Encouraging text -->
+  <div style="flex:1; min-width:240px;">
+    <p style="font-family:'Exo 2',sans-serif; font-size:1.15rem; font-weight:700; color:#fff; margin:0 0 .8rem;">
+      Don't panic. We're all figuring this out.
+    </p>
+    <p style="font-family:'Barlow',sans-serif; font-size:0.92rem; color:#9AACBF; line-height:1.7; margin:0 0 .9rem;">
+      Some of these tools didn't exist two years ago. One or two will probably change before the course starts.
+      The documentation will have gaps. The AI will occasionally hallucinate something spectacular.
+      This is not a sign you're doing it wrong — it's a sign you're at the frontier.
+    </p>
+    <p style="font-family:'Barlow',sans-serif; font-size:0.92rem; color:#9AACBF; line-height:1.7; margin:0 0 .9rem;">
+      Your instructors are learning too — we just have a head start of a few months.
+      The best thing you can do is show up curious, set up the tools below, and be ready to break things on Day 1.
+    </p>
+    <p style="font-family:'Barlow',sans-serif; font-size:0.88rem; color:rgba(255,255,255,0.35); font-style:italic;">
+      Total setup time: ~30 minutes. Most of it is waiting for downloads.
+    </p>
+  </div>
+</div>
+
+<!-- Setup checklist -->
+<style>
+.setup-item {
+  display: flex;
+  gap: 1.4rem;
+  align-items: flex-start;
+  padding: 1.4rem;
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  background: rgba(255,255,255,0.025);
+  transition: border-color .2s;
+}
+.setup-item:hover { border-color: rgba(255,255,255,0.14); }
+.setup-num {
+  font-family: 'Audiowide', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  min-width: 2.2rem;
+  line-height: 1;
+  margin-top: .15rem;
+}
+.setup-body { flex: 1; }
+.setup-title {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  color: #fff;
+  margin: 0 0 .3rem;
+  letter-spacing: .02em;
+}
+.setup-desc {
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.86rem;
+  color: #9AACBF;
+  line-height: 1.65;
+  margin: 0 0 .7rem;
+}
+.setup-steps {
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.84rem;
+  color: #CBD5E1;
+  line-height: 1.8;
+  margin: 0 0 .7rem;
+  padding-left: 1rem;
+}
+.setup-steps li { margin-bottom: .1rem; }
+.setup-link {
+  display: inline-block;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgba(255,255,255,0.55);
+  border: 1px solid rgba(255,255,255,0.15);
+  padding: 3px 12px;
+  border-radius: 20px;
+  margin: 2px 4px 2px 0;
+  transition: border-color .2s, color .2s;
+}
+.setup-link:hover { color: #fff; border-color: rgba(255,255,255,0.4); }
+.setup-note {
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.3);
+  font-style: italic;
+  margin-top: .4rem;
+}
+</style>
+
+<div class="setup-item">
+  <div class="setup-num" style="color:#FCD34D">01</div>
+  <div class="setup-body">
+    <div class="setup-title">GitHub + Copilot</div>
+    <div class="setup-desc">
+      GitHub is where your team's code lives — it's a deliverable. Copilot is GitHub's AI pair programmer,
+      built into VS Code. It completes code, explains unfamiliar functions, and writes boilerplate so you can focus on the interesting parts.
+    </div>
+    <ol class="setup-steps">
+      <li>Create a free GitHub account at <strong>github.com</strong></li>
+      <li>Apply for the GitHub Education Pack at <strong>education.github.com/pack</strong> — use your <strong>@shanghaitech.edu.cn</strong> email. Approval takes 1–3 days and gives you Copilot for free.</li>
+      <li>Install GitHub Copilot as a VS Code extension (step 5 — set up VS Code first if needed)</li>
+    </ol>
+    <a class="setup-link" href="https://github.com" target="_blank">→ github.com</a>
+    <a class="setup-link" href="https://education.github.com/pack" target="_blank">→ Education Pack</a>
+    <div class="setup-note">Apply for the Education Pack as early as possible — approval is not instant.</div>
+  </div>
+</div>
+
+<div class="setup-item">
+  <div class="setup-num" style="color:#60A5FA">02</div>
+  <div class="setup-body">
+    <div class="setup-title">OpenRouter</div>
+    <div class="setup-desc">
+      OpenRouter is a single API gateway to 300+ AI models — Qwen, DeepSeek, Claude, and others.
+      Your ESP32 will call OpenRouter to get your robot's AI responses.
+      You use one API key, one endpoint, and can swap models with a one-line change.
+    </div>
+    <ol class="setup-steps">
+      <li>Create a free account at <strong>openrouter.ai</strong></li>
+      <li>Go to <strong>Settings → API Keys</strong> and create a key — save it somewhere safe</li>
+      <li>Add $5–10 of credit under <strong>Settings → Credits</strong> — this will last the entire course</li>
+    </ol>
+    <a class="setup-link" href="https://openrouter.ai" target="_blank">→ openrouter.ai</a>
+    <a class="setup-link" href="https://openrouter.ai/models" target="_blank">→ Browse models</a>
+    <div class="setup-note">$5 is genuinely enough. Each LLM call costs fractions of a cent at the models we use.</div>
+  </div>
+</div>
+
+<div class="setup-item">
+  <div class="setup-num" style="color:#FB923C">03</div>
+  <div class="setup-body">
+    <div class="setup-title">Blender</div>
+    <div class="setup-desc">
+      Blender is the 3D modeling tool you'll use to design your robot's enclosure — the physical body that makes it a <em>product</em>, not just a circuit on a table.
+      It's free, open-source, and runs on any computer.
+      You don't need to know it yet — we'll learn the basics together.
+    </div>
+    <ol class="setup-steps">
+      <li>Download and install Blender from <strong>blender.org/download</strong> — get the latest stable release</li>
+      <li>Optional head start: watch the first 2 episodes of the <a href="https://www.blenderguru.com/posts/blender-donut-v5-tutorial" target="_blank" style="color:#FB923C;">Blender Guru donut tutorial</a> — it covers the core interface in ~30 minutes</li>
+    </ol>
+    <a class="setup-link" href="https://www.blender.org/download/" target="_blank">→ blender.org/download</a>
+    <div class="setup-note">Free forever. No account needed.</div>
+  </div>
+</div>
+
+<div class="setup-item">
+  <div class="setup-num" style="color:#A78BFA">04</div>
+  <div class="setup-body">
+    <div class="setup-title">Claude Pro</div>
+    <div class="setup-desc">
+      Claude Pro gives you access to <strong>Claude Code</strong> — Anthropic's agentic AI coding tool that runs in your terminal.
+      It understands your entire codebase, writes firmware, explains ESP-IDF errors, and can refactor across multiple files at once.
+      It's the fastest way to go from "I have no idea what this error means" to "it's working."
+    </div>
+    <ol class="setup-steps">
+      <li>Sign up at <strong>claude.ai</strong> — use any email</li>
+      <li>Subscribe to <strong>Claude Pro</strong> ($20/month) — check if your institution has a discount or arrangement</li>
+      <li>Install Claude Code in your terminal: <code>npm install -g @anthropic-ai/claude-code</code></li>
+    </ol>
+    <a class="setup-link" href="https://claude.ai" target="_blank">→ claude.ai</a>
+    <a class="setup-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank">→ Claude Code docs</a>
+    <div class="setup-note">Requires Node.js. If you don't have it, install from nodejs.org first.</div>
+  </div>
+</div>
+
+<div class="setup-item">
+  <div class="setup-num" style="color:#22D3EE">05</div>
+  <div class="setup-body">
+    <div class="setup-title">VS Code + PlatformIO + ESP-IDF</div>
+    <div class="setup-desc">
+      VS Code is the editor. PlatformIO is the extension that handles ESP32 board config, library management, and flashing.
+      ESP-IDF is Espressif's official development framework that PlatformIO uses under the hood.
+      Together they turn your laptop into a proper embedded development workstation.
+    </div>
+    <ol class="setup-steps">
+      <li>Download and install VS Code from <strong>code.visualstudio.com</strong></li>
+      <li>Open VS Code → Extensions (⌘⇧X) → search <strong>PlatformIO IDE</strong> → Install</li>
+      <li>PlatformIO will install ESP-IDF automatically when you first open an ESP32 project</li>
+      <li>While you're in Extensions, also install <strong>GitHub Copilot</strong> (from step 1)</li>
+    </ol>
+    <a class="setup-link" href="https://code.visualstudio.com" target="_blank">→ VS Code</a>
+    <a class="setup-link" href="https://platformio.org/install/ide?install=vscode" target="_blank">→ PlatformIO for VS Code</a>
+    <a class="setup-link" href="https://docs.espressif.com/projects/esp-idf/en/stable/esp32/get-started/index.html" target="_blank">→ ESP-IDF docs</a>
+    <div class="setup-note">All free. The PlatformIO first-time install downloads ~500 MB of toolchains — do it on Wi-Fi.</div>
+  </div>
+</div>
+```
+
+---
+
+::: {.callout-tip title="Already done? Try a hello world."}
+Flash the built-in LED on your ESP32 before class. If you can get a blink running, you're ahead of the game.
+
+```cpp
+// paste this into a PlatformIO project's src/main.cpp
+#include <Arduino.h>
+void setup() { pinMode(2, OUTPUT); }
+void loop()  { digitalWrite(2, HIGH); delay(500);
+               digitalWrite(2, LOW);  delay(500); }
+```
+:::

@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Prototyping, firmware setup, and character development">
+<meta name="description" content="Accounts to open and tools to install before Day 1 — takes about 30 minutes">
 
-<title>Week 2 — Design – MAKER-X</title>
+<title>Get Ready for the Course – MAKER-X</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -23,6 +23,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -82,7 +117,7 @@ ul.task-list li input[type="checkbox"] {
 <meta property="og:site_name" content="MAKER-X">
 </head>
 
-<body class="nav-sidebar floating nav-fixed quarto-light">
+<body class="nav-sidebar floating nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -157,7 +192,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week1.html">Weekly Schedule</a></li><li class="breadcrumb-item"><a href="./week2.html">Week 2 — Design</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./setup.html">Get Ready for the Course</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -183,13 +218,13 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
  <span class="menu-text">Weekly Schedule</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week1.html" class="sidebar-item-text sidebar-link">
@@ -198,7 +233,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week2.html" class="sidebar-item-text sidebar-link active">
+  <a href="./week2.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Week 2 — Design</span></a>
   </div>
 </li>
@@ -218,7 +253,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./setup.html" class="sidebar-item-text sidebar-link">
+  <a href="./setup.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Get Ready for the Course</span></a>
   </div>
 </li>
@@ -239,32 +274,18 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
-  <li><a href="#sessions" id="toc-sessions" class="nav-link" data-scroll-target="#sessions">Sessions</a>
-  <ul class="collapse">
-  <li><a href="#session-3-monday-electronics-firmware-llm-integration" id="toc-session-3-monday-electronics-firmware-llm-integration" class="nav-link" data-scroll-target="#session-3-monday-electronics-firmware-llm-integration">Session 3 — Monday · Electronics, Firmware &amp; LLM Integration</a></li>
-  <li><a href="#session-4-wednesday-form-development-espressif-guest-lecture" id="toc-session-4-wednesday-form-development-espressif-guest-lecture" class="nav-link" data-scroll-target="#session-4-wednesday-form-development-espressif-guest-lecture">Session 4 — Wednesday · Form Development &amp; Espressif Guest Lecture</a></li>
-  </ul></li>
-  <li><a href="#resources-for-week-2" id="toc-resources-for-week-2" class="nav-link" data-scroll-target="#resources-for-week-2">Resources for Week 2</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week1.html">Weekly Schedule</a></li><li class="breadcrumb-item"><a href="./week2.html">Week 2 — Design</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Week 2 — Design</h1>
+<h1 class="title">Get Ready for the Course</h1>
 </div>
 
 <div>
   <div class="description">
-    Prototyping, firmware setup, and character development
+    Accounts to open and tools to install before Day 1 — takes about 30 minutes
   </div>
 </div>
 
@@ -281,128 +302,313 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="week-hero week-hero-w2">
-  <div class="week-num" style="color:#A78BFA">// WEEK TWO &nbsp;·&nbsp; 第二周</div>
-  <div class="week-title">Design</div>
-  <div class="week-zh">设计</div>
-  <p class="week-desc">
-    You have a concept. Now make it real — at low fidelity first, then higher.
-    Week 2 is about <strong>rapid prototyping and fearless iteration</strong>:
-    electronics on a breadboard, firmware running hello-world, and a 3D sketch of the body.
-  </p>
+<p><span class="sl" style="color:#A78BFA">// PRE-COURSE SETUP &nbsp;·&nbsp; 课前准备</span></p>
+<div style="display:flex; flex-wrap:wrap; gap:2rem; align-items:flex-start; margin:2rem 0 2.5rem;">
+
+  <!-- Caricature -->
+  <div style="flex:1; min-width:260px; max-width:400px;">
+<svg width="100%" viewbox="0 0 680 340" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>Maker-X instructors at the cutting edge</title>
+  <desc>Four cartoon instructor figures standing at the literal edge of a cliff labeled cutting edge, with a small robot, and a speech bubble saying We're figuring it out too</desc>
+  <style>
+    .cl { font-family:'Exo 2',sans-serif; font-size:13px; fill:#E2E8F0; text-anchor:middle; }
+    .cs { font-family:'Exo 2',sans-serif; font-size:10px; fill:#64748B; text-anchor:middle; }
+    .cb { font-family:'Barlow',sans-serif; font-size:11.5px; fill:#E2E8F0; }
+    .ce { font-family:'Exo 2',sans-serif; font-size:10px; font-weight:700; fill:#FB923C; text-anchor:middle; letter-spacing:.08em; }
+  </style>
+  <rect x="0" y="0" width="680" height="340" fill="#0A0F1E"></rect>
+  <rect x="480" y="200" width="200" height="140" fill="#020617"></rect>
+  <rect x="0" y="200" width="492" height="140" fill="#1E293B"></rect>
+  <rect x="0" y="196" width="492" height="9" rx="2" fill="#166534"></rect>
+  <line x1="490" y1="196" x2="490" y2="340" stroke="#FB923C" stroke-width="1.5" stroke-dasharray="5 3"></line>
+  <text class="ce" x="560" y="220">← CUTTING</text>
+  <text class="ce" x="560" y="234">EDGE</text>
+  <!-- Shimon -->
+  <g transform="translate(78,100)">
+    <ellipse cx="0" cy="-38" rx="16" ry="18" fill="#60A5FA"></ellipse>
+    <rect x="-14" y="-20" width="28" height="40" rx="5" fill="#1D4ED8"></rect>
+    <rect x="-10" y="-10" width="20" height="14" rx="2" fill="#93C5FD"></rect>
+    <text style="font-family:monospace;font-size:6px;fill:#1e3a5f;text-anchor:middle" x="0" y="-1">AI&gt;_</text>
+    <line x1="-14" y1="8" x2="-22" y2="28" stroke="#60A5FA" stroke-width="2.5" stroke-linecap="round"></line>
+    <line x1="14" y1="4" x2="22" y2="20" stroke="#60A5FA" stroke-width="2.5" stroke-linecap="round"></line>
+    <line x1="-5" y1="20" x2="-7" y2="55" stroke="#60A5FA" stroke-width="2.5" stroke-linecap="round"></line>
+    <line x1="5" y1="20" x2="7" y2="55" stroke="#60A5FA" stroke-width="2.5" stroke-linecap="round"></line>
+    <text class="cl" x="0" y="72">Shimon</text>
+    <text class="cs" x="0" y="85">SCA</text>
+  </g>
+  <!-- Daniel -->
+  <g transform="translate(192,100)">
+    <ellipse cx="0" cy="-38" rx="15" ry="17" fill="#FB923C"></ellipse>
+    <rect x="-13" y="-21" width="26" height="39" rx="5" fill="#9A3412"></rect>
+    <g transform="rotate(-35) translate(13,-2)">
+      <rect x="0" y="-2" width="20" height="4" rx="1" fill="#FED7AA"></rect>
+    </g>
+    <line x1="-13" y1="8" x2="-21" y2="28" stroke="#FB923C" stroke-width="2.5" stroke-linecap="round"></line>
+    <line x1="13" y1="4" x2="22" y2="20" stroke="#FB923C" stroke-width="2.5" stroke-linecap="round"></line>
+    <line x1="-5" y1="20" x2="-7" y2="55" stroke="#FB923C" stroke-width="2.5" stroke-linecap="round"></line>
+    <line x1="5" y1="20" x2="7" y2="55" stroke="#FB923C" stroke-width="2.5" stroke-linecap="round"></line>
+    <text class="cl" x="0" y="72">Daniel</text>
+    <text class="cs" x="0" y="85">SCA</text>
+  </g>
+  <!-- Liang -->
+  <g transform="translate(308,100)">
+    <ellipse cx="0" cy="-38" rx="15" ry="17" fill="#22D3EE"></ellipse>
+    <rect x="-13" y="-21" width="26" height="39" rx="5" fill="#0E7490"></rect>
+    <ellipse cx="13" cy="-6" rx="9" ry="6" fill="none" stroke="#67E8F9" stroke-width="1.5"></ellipse>
+    <text style="font-size:7px;fill:#67E8F9;text-anchor:middle" x="13" y="-3">⚡</text>
+    <line x1="-13" y1="8" x2="-21" y2="26" stroke="#22D3EE" stroke-width="2.5" stroke-linecap="round"></line>
+    <line x1="13" y1="4" x2="22" y2="20" stroke="#22D3EE" stroke-width="2.5" stroke-linecap="round"></line>
+    <line x1="-5" y1="20" x2="-7" y2="55" stroke="#22D3EE" stroke-width="2.5" stroke-linecap="round"></line>
+    <line x1="5" y1="20" x2="7" y2="55" stroke="#22D3EE" stroke-width="2.5" stroke-linecap="round"></line>
+    <text class="cl" x="0" y="72">梁俊睿</text>
+    <text class="cs" x="0" y="85">SIST</text>
+  </g>
+  <!-- Xiaoyu -->
+  <g transform="translate(418,100)">
+    <ellipse cx="0" cy="-38" rx="15" ry="17" fill="#34D399"></ellipse>
+    <rect x="-13" y="-21" width="26" height="39" rx="5" fill="#065F46"></rect>
+    <rect x="8" y="-15" width="13" height="17" rx="1" fill="#6EE7B7"></rect>
+    <text style="font-size:5px;fill:#064e3b;text-anchor:middle" x="14" y="-5">VC$</text>
+    <line x1="-13" y1="8" x2="-21" y2="26" stroke="#34D399" stroke-width="2.5" stroke-linecap="round"></line>
+    <line x1="13" y1="4" x2="22" y2="20" stroke="#34D399" stroke-width="2.5" stroke-linecap="round"></line>
+    <line x1="-5" y1="20" x2="-7" y2="55" stroke="#34D399" stroke-width="2.5" stroke-linecap="round"></line>
+    <line x1="5" y1="20" x2="7" y2="55" stroke="#34D399" stroke-width="2.5" stroke-linecap="round"></line>
+    <text class="cl" x="0" y="72">Xiaoyu</text>
+    <text class="cs" x="0" y="85">SEM</text>
+  </g>
+  <!-- Robot -->
+  <g transform="translate(554,128)">
+    <rect x="-16" y="-46" width="32" height="30" rx="4" fill="#A78BFA" stroke="#7C3AED" stroke-width="1"></rect>
+    <circle cx="-6" cy="-38" r="3" fill="#DDD6FE"></circle>
+    <circle cx="6" cy="-38" r="3" fill="#DDD6FE"></circle>
+    <rect x="-10" y="-28" width="20" height="5" rx="2" fill="#C4B5FD"></rect>
+    <rect x="-12" y="-16" width="24" height="24" rx="3" fill="#7C3AED"></rect>
+    <line x1="-8" y1="8" x2="-10" y2="22" stroke="#A78BFA" stroke-width="2" stroke-linecap="round"></line>
+    <line x1="8" y1="8" x2="10" y2="22" stroke="#A78BFA" stroke-width="2" stroke-linecap="round"></line>
+    <text class="cl" x="0" y="36">robot</text>
+  </g>
+  <!-- Speech bubble -->
+  <rect x="340" y="14" width="295" height="62" rx="10" fill="#1E293B" stroke="#334155" stroke-width="0.8"></rect>
+  <polygon points="365,76 354,94 388,76" fill="#1E293B" stroke="#334155" stroke-width="0.8"></polygon>
+  <text class="cb" x="352" y="38">"We're figuring it out too.</text>
+  <text class="cb" x="352" y="56">That's kind of the point."</text>
+  <!-- Arrow -->
+  <text style="font-family:'Exo 2',sans-serif;font-size:9px;fill:#FB923C" x="12" y="188">▸ you are here</text>
+  <line x1="58" y1="192" x2="58" y2="198" stroke="#FB923C" stroke-width="1" stroke-dasharray="3 2"></line>
+</svg>
+  </div>
+
+  <!-- Encouraging text -->
+  <div style="flex:1; min-width:240px;">
+    <p style="font-family:'Exo 2',sans-serif; font-size:1.15rem; font-weight:700; color:#fff; margin:0 0 .8rem;">
+      Don't panic. We're all figuring this out.
+    </p>
+    <p style="font-family:'Barlow',sans-serif; font-size:0.92rem; color:#9AACBF; line-height:1.7; margin:0 0 .9rem;">
+      Some of these tools didn't exist two years ago. One or two will probably change before the course starts.
+      The documentation will have gaps. The AI will occasionally hallucinate something spectacular.
+      This is not a sign you're doing it wrong — it's a sign you're at the frontier.
+    </p>
+    <p style="font-family:'Barlow',sans-serif; font-size:0.92rem; color:#9AACBF; line-height:1.7; margin:0 0 .9rem;">
+      Your instructors are learning too — we just have a head start of a few months.
+      The best thing you can do is show up curious, set up the tools below, and be ready to break things on Day 1.
+    </p>
+    <p style="font-family:'Barlow',sans-serif; font-size:0.88rem; color:rgba(255,255,255,0.35); font-style:italic;">
+      Total setup time: ~30 minutes. Most of it is waiting for downloads.
+    </p>
+  </div>
 </div>
-<section id="learning-objectives" class="level2">
-<h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
-<p>By the end of Week 2 you will be able to:</p>
-<ul>
-<li>Wire a basic ESP32 circuit with a display or sensor</li>
-<li>Flash firmware using the ESP-Claw framework</li>
-<li>Send your first message to an LLM via OpenRouter and receive a response</li>
-<li>Sketch and prototype the robot’s physical form</li>
-<li>Run a first user test (lo-fi prototype, real feedback)</li>
-</ul>
+
+<!-- Setup checklist -->
+<style>
+.setup-item {
+  display: flex;
+  gap: 1.4rem;
+  align-items: flex-start;
+  padding: 1.4rem;
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  background: rgba(255,255,255,0.025);
+  transition: border-color .2s;
+}
+.setup-item:hover { border-color: rgba(255,255,255,0.14); }
+.setup-num {
+  font-family: 'Audiowide', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  min-width: 2.2rem;
+  line-height: 1;
+  margin-top: .15rem;
+}
+.setup-body { flex: 1; }
+.setup-title {
+  font-family: 'Exo 2', sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  color: #fff;
+  margin: 0 0 .3rem;
+  letter-spacing: .02em;
+}
+.setup-desc {
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.86rem;
+  color: #9AACBF;
+  line-height: 1.65;
+  margin: 0 0 .7rem;
+}
+.setup-steps {
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.84rem;
+  color: #CBD5E1;
+  line-height: 1.8;
+  margin: 0 0 .7rem;
+  padding-left: 1rem;
+}
+.setup-steps li { margin-bottom: .1rem; }
+.setup-link {
+  display: inline-block;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgba(255,255,255,0.55);
+  border: 1px solid rgba(255,255,255,0.15);
+  padding: 3px 12px;
+  border-radius: 20px;
+  margin: 2px 4px 2px 0;
+  transition: border-color .2s, color .2s;
+}
+.setup-link:hover { color: #fff; border-color: rgba(255,255,255,0.4); }
+.setup-note {
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.3);
+  font-style: italic;
+  margin-top: .4rem;
+}
+</style>
+
+<div class="setup-item">
+  <div class="setup-num" style="color:#FCD34D">01</div>
+  <div class="setup-body">
+    <div class="setup-title">GitHub + Copilot</div>
+    <div class="setup-desc">
+      GitHub is where your team's code lives — it's a deliverable. Copilot is GitHub's AI pair programmer,
+      built into VS Code. It completes code, explains unfamiliar functions, and writes boilerplate so you can focus on the interesting parts.
+    </div>
+    <ol class="setup-steps">
+      <li>Create a free GitHub account at <strong>github.com</strong></li>
+      <li>Apply for the GitHub Education Pack at <strong>education.github.com/pack</strong> — use your <strong>@shanghaitech.edu.cn</strong> email. Approval takes 1–3 days and gives you Copilot for free.</li>
+      <li>Install GitHub Copilot as a VS Code extension (step 5 — set up VS Code first if needed)</li>
+    </ol>
+    <a class="setup-link" href="https://github.com" target="_blank">→ github.com</a>
+    <a class="setup-link" href="https://education.github.com/pack" target="_blank">→ Education Pack</a>
+    <div class="setup-note">Apply for the Education Pack as early as possible — approval is not instant.</div>
+  </div>
+</div>
+
+<div class="setup-item">
+  <div class="setup-num" style="color:#60A5FA">02</div>
+  <div class="setup-body">
+    <div class="setup-title">OpenRouter</div>
+    <div class="setup-desc">
+      OpenRouter is a single API gateway to 300+ AI models — Qwen, DeepSeek, Claude, and others.
+      Your ESP32 will call OpenRouter to get your robot's AI responses.
+      You use one API key, one endpoint, and can swap models with a one-line change.
+    </div>
+    <ol class="setup-steps">
+      <li>Create a free account at <strong>openrouter.ai</strong></li>
+      <li>Go to <strong>Settings → API Keys</strong> and create a key — save it somewhere safe</li>
+      <li>Add $5–10 of credit under <strong>Settings → Credits</strong> — this will last the entire course</li>
+    </ol>
+    <a class="setup-link" href="https://openrouter.ai" target="_blank">→ openrouter.ai</a>
+    <a class="setup-link" href="https://openrouter.ai/models" target="_blank">→ Browse models</a>
+    <div class="setup-note">$5 is genuinely enough. Each LLM call costs fractions of a cent at the models we use.</div>
+  </div>
+</div>
+
+<div class="setup-item">
+  <div class="setup-num" style="color:#FB923C">03</div>
+  <div class="setup-body">
+    <div class="setup-title">Blender</div>
+    <div class="setup-desc">
+      Blender is the 3D modeling tool you'll use to design your robot's enclosure — the physical body that makes it a <em>product</em>, not just a circuit on a table.
+      It's free, open-source, and runs on any computer.
+      You don't need to know it yet — we'll learn the basics together.
+    </div>
+    <ol class="setup-steps">
+      <li>Download and install Blender from <strong>blender.org/download</strong> — get the latest stable release</li>
+      <li>Optional head start: watch the first 2 episodes of the <a href="https://www.blenderguru.com/posts/blender-donut-v5-tutorial" target="_blank" style="color:#FB923C;">Blender Guru donut tutorial</a> — it covers the core interface in ~30 minutes</li>
+    </ol>
+    <a class="setup-link" href="https://www.blender.org/download/" target="_blank">→ blender.org/download</a>
+    <div class="setup-note">Free forever. No account needed.</div>
+  </div>
+</div>
+
+<div class="setup-item">
+  <div class="setup-num" style="color:#A78BFA">04</div>
+  <div class="setup-body">
+    <div class="setup-title">Claude Pro</div>
+    <div class="setup-desc">
+      Claude Pro gives you access to <strong>Claude Code</strong> — Anthropic's agentic AI coding tool that runs in your terminal.
+      It understands your entire codebase, writes firmware, explains ESP-IDF errors, and can refactor across multiple files at once.
+      It's the fastest way to go from "I have no idea what this error means" to "it's working."
+    </div>
+    <ol class="setup-steps">
+      <li>Sign up at <strong>claude.ai</strong> — use any email</li>
+      <li>Subscribe to <strong>Claude Pro</strong> ($20/month) — check if your institution has a discount or arrangement</li>
+      <li>Install Claude Code in your terminal: <code>npm install -g @anthropic-ai/claude-code</code></li>
+    </ol>
+    <a class="setup-link" href="https://claude.ai" target="_blank">→ claude.ai</a>
+    <a class="setup-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank">→ Claude Code docs</a>
+    <div class="setup-note">Requires Node.js. If you don't have it, install from nodejs.org first.</div>
+  </div>
+</div>
+
+<div class="setup-item">
+  <div class="setup-num" style="color:#22D3EE">05</div>
+  <div class="setup-body">
+    <div class="setup-title">VS Code + PlatformIO + ESP-IDF</div>
+    <div class="setup-desc">
+      VS Code is the editor. PlatformIO is the extension that handles ESP32 board config, library management, and flashing.
+      ESP-IDF is Espressif's official development framework that PlatformIO uses under the hood.
+      Together they turn your laptop into a proper embedded development workstation.
+    </div>
+    <ol class="setup-steps">
+      <li>Download and install VS Code from <strong>code.visualstudio.com</strong></li>
+      <li>Open VS Code → Extensions (⌘⇧X) → search <strong>PlatformIO IDE</strong> → Install</li>
+      <li>PlatformIO will install ESP-IDF automatically when you first open an ESP32 project</li>
+      <li>While you're in Extensions, also install <strong>GitHub Copilot</strong> (from step 1)</li>
+    </ol>
+    <a class="setup-link" href="https://code.visualstudio.com" target="_blank">→ VS Code</a>
+    <a class="setup-link" href="https://platformio.org/install/ide?install=vscode" target="_blank">→ PlatformIO for VS Code</a>
+    <a class="setup-link" href="https://docs.espressif.com/projects/esp-idf/en/stable/esp32/get-started/index.html" target="_blank">→ ESP-IDF docs</a>
+    <div class="setup-note">All free. The PlatformIO first-time install downloads ~500 MB of toolchains — do it on Wi-Fi.</div>
+  </div>
+</div>
 <hr>
-</section>
-<section id="sessions" class="level2">
-<h2 class="anchored" data-anchor-id="sessions">Sessions</h2>
-<p>→ <a href="./schedule.html">View period-by-period schedule</a></p>
-<section id="session-3-monday-electronics-firmware-llm-integration" class="level3">
-<h3 class="anchored" data-anchor-id="session-3-monday-electronics-firmware-llm-integration">Session 3 — Monday · Electronics, Firmware &amp; LLM Integration</h3>
-<p>The hardware talks. By the end of the day your robot will be sending a prompt to an LLM and displaying the answer on screen.</p>
-<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout callout-style-default callout-tip callout-titled" title="Already done? Try a hello world.">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note
+<span class="screen-reader-only">Tip</span>Already done? Try a hello world.
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>This is often the most intimidating session. Don’t worry — by the end of it your board will be blinking, displaying text, or responding to a button press. That’s real.</p>
+<p>Flash the built-in LED on your ESP32 before class. If you can get a blink running, you’re ahead of the game.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">// paste this into a PlatformIO project's src/main.cpp</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;Arduino.h&gt;</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> setup<span class="op">()</span> <span class="op">{</span> pinMode<span class="op">(</span><span class="dv">2</span><span class="op">,</span> OUTPUT<span class="op">);</span> <span class="op">}</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> loop<span class="op">()</span>  <span class="op">{</span> digitalWrite<span class="op">(</span><span class="dv">2</span><span class="op">,</span> HIGH<span class="op">);</span> delay<span class="op">(</span><span class="dv">500</span><span class="op">);</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>               digitalWrite<span class="op">(</span><span class="dv">2</span><span class="op">,</span> LOW<span class="op">);</span>  delay<span class="op">(</span><span class="dv">500</span><span class="op">);</span> <span class="op">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
-<p><strong>Agenda:</strong> - OpenRouter, APIs &amp; LLM system architecture · 梁俊睿 - MCP protocol · cloud/LLM integration patterns · 梁俊睿 - Electronics lab: wiring sensors, displays &amp; actuators · Shimon + Daniel - Firmware lab: first HTTP call to OpenRouter from ESP32, display reply · Shimon + Daniel - Prompt engineering: write a system prompt that gives your robot its personality · Shimon + Daniel - 3D modeling intro &amp; enclosure concept sketches · Daniel</p>
-<p><strong>Starter prompt template:</strong></p>
-<pre><code>You are [robot name], a [personality adjective] AI companion
-designed for [target user].
-
-You respond in [language preference], in [tone] — no more than
-2 sentences per reply. You never break character.
-
-When someone says hello, you respond with your signature greeting.</code></pre>
-<div class="callout callout-style-default callout-tip callout-titled" title="Why OpenRouter?">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Why OpenRouter?
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>OpenRouter provides a <strong>single API</strong> that routes to any LLM — Qwen, DeepSeek, Claude, and others. You write one integration and can swap models with a single parameter change. No re-wiring required.</p>
-</div>
-</div>
-<hr>
-</section>
-<section id="session-4-wednesday-form-development-espressif-guest-lecture" class="level3">
-<h3 class="anchored" data-anchor-id="session-4-wednesday-form-development-espressif-guest-lecture">Session 4 — Wednesday · Form Development &amp; Espressif Guest Lecture</h3>
-<p>The physical form takes shape. Guest engineers from Espressif explain the full ESP32 ecosystem.</p>
-<p><strong>Agenda:</strong> - Design critique: prototype review &amp; form iteration · Daniel - Form development workshop: translating personality into shape · Daniel - <strong>Guest lecture:</strong> Espressif engineers — ESP32 family &amp; ecosystem deep dive, ESP-Claw tooling &amp; partner integrations (2 periods) - Integration lab: hardware + firmware + LLM end-to-end · Shimon + Daniel - Open studio: prototype build · Daniel</p>
-<div class="callout callout-style-default callout-important callout-titled" title="Lo-fi is the point">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Important</span>Lo-fi is the point
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Paper prototypes aren’t “not done yet.” They’re a tool. The goal is to <strong>learn fast and cheaply</strong> before committing to 3D printing.</p>
-</div>
-</div>
-<hr>
-<section id="week-2-deliverables" class="level4 deliverables">
-<h4 class="anchored" data-anchor-id="week-2-deliverables">✓ Week 2 Deliverables</h4>
-<ul class="task-list">
-<li><label><input type="checkbox"><strong>Working hardware sketch</strong> — ESP32 + display showing robot name / first response</label></li>
-<li><label><input type="checkbox"><strong>LLM integration demo</strong> — robot sends a prompt and displays the reply</label></li>
-<li><label><input type="checkbox"><strong>3D sketch / paper prototype</strong> of the robot’s enclosure</label></li>
-<li><label><input type="checkbox"><strong>Personality system prompt</strong> — documented, tested, iterable</label></li>
-<li><label><input type="checkbox"><strong>User test notes</strong> — what you showed, who you showed it to, what you learned</label></li>
-</ul>
-</section>
-<hr>
-</section>
-</section>
-<section id="resources-for-week-2" class="level2">
-<h2 class="anchored" data-anchor-id="resources-for-week-2">Resources for Week 2</h2>
-<p><strong>Firmware &amp; Hardware</strong></p>
-<ul>
-<li><a href="https://esp-claw.com/en/">ESP-Claw Getting Started</a> — official ESP-Claw docs and examples</li>
-<li><a href="https://docs.platformio.org/en/latest/frameworks/espidf.html">PlatformIO + ESP-IDF setup</a> — PlatformIO’s ESP-IDF framework integration guide</li>
-<li><a href="https://www.sunfounder.com/blogs/news/how-to-set-up-esp32-on-platformio-with-vs-code-complete-step-by-step-guide">VS Code + PlatformIO + ESP32 setup — SunFounder</a> — illustrated step-by-step guide for the recommended IDE setup</li>
-</ul>
-<p><strong>LLM Integration &amp; Prompt Engineering</strong></p>
-<ul>
-<li><a href="https://openrouter.ai/docs/quickstart">OpenRouter Quickstart</a> — API key setup and first call in minutes</li>
-<li><a href="https://openrouter.ai/models">OpenRouter Models list &amp; pricing</a> — compare Qwen, DeepSeek, Claude and others</li>
-<li><a href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview">Prompt Engineering Overview — Anthropic</a> — structured guide to writing effective prompts</li>
-<li><a href="https://docs.anthropic.com/en/docs/test-and-evaluate/strengthen-guardrails/keep-claude-in-character">Keep Claude in Character — Anthropic</a> — how to maintain robot personality consistency</li>
-<li><a href="https://github.com/anthropics/prompt-eng-interactive-tutorial">Anthropic Prompt Engineering Interactive Tutorial</a> — hands-on Jupyter notebook course from Anthropic</li>
-</ul>
-<p><strong>3D Modeling with Blender</strong></p>
-<ul>
-<li><a href="https://www.blenderguru.com/posts/blender-donut-v5-tutorial">Beginner Blender 5.0 Donut Tutorial — Blender Guru</a> — the most-watched Blender beginner series, updated for 2025</li>
-<li><a href="https://www.blender.org/support/tutorials/">Official Blender Tutorials — Blender.org</a> — curated official tutorial index</li>
-</ul>
-<hr>
-<p><em>← <a href="./week1.html">Week 1 — Conceive</a> &nbsp;|&nbsp; <a href="./week3.html">Week 3 — Build →</a></em></p>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
