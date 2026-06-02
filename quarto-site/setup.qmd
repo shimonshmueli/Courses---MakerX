@@ -10,7 +10,7 @@ toc: false
 <div style="display:flex; flex-wrap:wrap; gap:2rem; align-items:flex-start; margin:2rem 0 2.5rem;">
 
   <!-- Team photo -->
-  <div style="flex:1; min-width:260px; max-width:380px;">
+  <div style="flex:1; min-width:220px; max-width:323px;">
     <img src="images/team.png" alt="The Maker-X instructors" style="width:100%; border-radius:10px; opacity:0.92;">
   </div>
 
