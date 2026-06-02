@@ -171,10 +171,8 @@ toc: false
 
 {{< include _schedule_generated.html >}}
 
-<!-- ══ BELOW IS THE OLD HARDCODED FALLBACK — REMOVE AFTER CONFIRMING GENERATION WORKS ══
-
 ```{=html}
-<div class="sched-wrap">
+<div class="sched-wrap-unused" style="display:none">
 
 <!-- ══════════════════════════════════ WEEK 1 -->
 <div class="sched-week-block">
@@ -508,7 +506,5 @@ toc: false
   </table>
 </div><!-- /week 4 -->
 
-</div><!-- /sched-wrap -->
+</div>
 ```
-
-══ END OF OLD HARDCODED FALLBACK ══ -->
