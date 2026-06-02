@@ -1,6 +1,7 @@
 project:
   type: website
   output-dir: _site
+  pre-render: generate_schedule.py
 
 website:
   title: "MAKER-X"
