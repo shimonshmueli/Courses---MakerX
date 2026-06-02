@@ -1,49 +1,49 @@
 week,session,date,day,block,period,time,topic,guest,instructors,highlight
-1,1,July 6,Monday,Morning,1,10:15–11:00,Course introduction · overview of the 4-week arc · team formation,,"liang,shimon,daniel",
-1,1,July 6,Monday,Morning,2,11:10–11:55,Embedded systems & IoT fundamentals · meet the ESP32,,liang,
-1,1,July 6,Monday,Afternoon,3,13:00–13:45,Character by design — lecture & sketching exercises (Part 1),yes,junjun,guest
-1,1,July 6,Monday,Afternoon,4,13:55–14:40,Character by design — LLM generative tools workshop (Part 2),yes,junjun,guest
-1,1,July 6,Monday,Afternoon,5,15:00–15:45,Open studio: form exploration · concept sketching,,"shimon,daniel",
-1,1,July 6,Monday,Afternoon,6,15:55–16:40,Industrial design intro: form follows function · sketching exercise,,"shimon,daniel",
-1,2,July 8,Wednesday,Morning,1,10:15–11:00,LLMs & conversational AI fundamentals · how robots think,,liang,
-1,2,July 8,Wednesday,Morning,2,11:10–11:55,ESP-Claw framework overview · architecture & design patterns,,liang,
-1,2,July 8,Wednesday,Afternoon,3,13:00–13:45,ESP32 first contact: hardware setup · GPIO · breadboard wiring,,"shimon,daniel",
-1,2,July 8,Wednesday,Afternoon,4,13:55–14:40,Firmware lab: Hello World — display output & LED blink,,"shimon,daniel",
-1,2,July 8,Wednesday,Afternoon,5,15:00–15:45,Robot concept ideation workshop · user persona · target need,,"shimon,daniel",
-1,2,July 8,Wednesday,Afternoon,6,15:55–16:40,Brief poster session — all teams present robot concept (3 min each),,all,poster
-2,3,July 13,Monday,Morning,1,10:15–11:00,OpenRouter APIs & LLM system architecture,,liang,
-2,3,July 13,Monday,Morning,2,11:10–11:55,MCP protocol · cloud/LLM integration patterns · Xiaozhi,,liang,
-2,3,July 13,Monday,Afternoon,3,13:00–13:45,Electronics lab: wiring sensors · displays & actuators,,"shimon,daniel",
-2,3,July 13,Monday,Afternoon,4,13:55–14:40,Firmware lab: LLM integration via OpenRouter — first response on device,,"shimon,daniel",
-2,3,July 13,Monday,Afternoon,5,15:00–15:45,Prompt engineering: system prompts · personality · language tuning,,"shimon,daniel",
-2,3,July 13,Monday,Afternoon,6,15:55–16:40,3D modeling intro · enclosure concept sketches,,"shimon,daniel",
-2,4,July 15,Wednesday,Morning,1,10:15–11:00,Design critique: prototype review & form iteration,,"shimon,daniel",
-2,4,July 15,Wednesday,Morning,2,11:10–11:55,Form development workshop: translating personality into shape,,"shimon,daniel",
-2,4,July 15,Wednesday,Afternoon,3,13:00–13:45,ESP32 ecosystem deep dive (Part 1),yes,espressif,guest
-2,4,July 15,Wednesday,Afternoon,4,13:55–14:40,ESP-Claw tooling · AI integration & partner ecosystem (Part 2),yes,espressif,guest
-2,4,July 15,Wednesday,Afternoon,5,15:00–15:45,Integration lab: hardware + firmware + LLM end-to-end,,"shimon,daniel",
-2,4,July 15,Wednesday,Afternoon,6,15:55–16:40,Open studio: prototype build & iteration,,"shimon,daniel",
-3,5,July 20,Monday,Morning,1,10:15–11:00,Entrepreneurship & the startup ecosystem (Part 1),yes,zhou,zhou
-3,5,July 20,Monday,Morning,2,11:10–11:55,How to pitch to VCs & stakeholders for buy-in (Part 2),yes,zhou,zhou
-3,5,July 20,Monday,Afternoon,3,13:00–13:45,Full system integration lab: all components running together,,"shimon,daniel",
-3,5,July 20,Monday,Afternoon,4,13:55–14:40,Debugging & stress-testing: 10-minute continuous run,,"shimon,daniel",
-3,5,July 20,Monday,Afternoon,5,15:00–15:45,User testing: live sessions with people outside the class,,"shimon,daniel",
-3,5,July 20,Monday,Afternoon,6,15:55–16:40,3D printing: finalize enclosure design & submit print job,,"shimon,daniel",
-3,6,July 22,Wednesday,Morning,1,10:15–11:00,3D print assembly & fit check · hardware mounting,,"shimon,daniel",
-3,6,July 22,Wednesday,Morning,2,11:10–11:55,Enclosure refinement · cable routing · structural review,,"shimon,daniel",
-3,6,July 22,Wednesday,Afternoon,3,13:00–13:45,User test debrief: what confused people? What delighted them?,,"shimon,daniel",
-3,6,July 22,Wednesday,Afternoon,4,13:55–14:40,Rapid iteration: top-3 fixes from user testing,,"shimon,daniel",
-3,6,July 22,Wednesday,Afternoon,5,15:00–15:45,Demo rehearsal: 2-minute run-through x3 (rotate presenters),,"shimon,daniel",
-3,6,July 22,Wednesday,Afternoon,6,15:55–16:40,Open lab: last build time & loose ends,,"shimon,daniel",
-4,7,July 27,Monday,Morning,1,10:15–11:00,Presentation coaching: story · structure & slide design (Part 1),yes,zhou,zhou
-4,7,July 27,Monday,Morning,2,11:10–11:55,Presentation coaching: Q&A prep & live feedback (Part 2),yes,zhou,zhou
-4,7,July 27,Monday,Afternoon,3,13:00–13:45,Poster review: content · layout & print finalization,,"shimon,daniel",
-4,7,July 27,Monday,Afternoon,4,13:55–14:40,Demo hardening: run-throughs · backup power · reboot plan,,"shimon,daniel",
-4,7,July 27,Monday,Afternoon,5,15:00–15:45,Full pitch rehearsal with instructor feedback (5 min + Q&A),,"shimon,daniel",
-4,7,July 27,Monday,Afternoon,6,15:55–16:40,Last design polish · submit poster print file,,"shimon,daniel",
-4,8,July 29,Wednesday,Morning,1,10:15–11:00,Open prep: last fixes · final tests · poster check,,all,
-4,8,July 29,Wednesday,Morning,2,11:10–11:55,Open prep: rehearsal & troubleshooting,,all,
-4,8,July 29,Wednesday,Afternoon,3,13:00–13:45,Setup: tables · displays · power · poster mounting,,all,
-4,8,July 29,Wednesday,Afternoon,4,13:55–14:40,Setup complete · buffer · final system check,,all,
-4,8,July 29,Wednesday,Afternoon,5,15:00–15:45,Final presentations — poster session & live robot demos (guests circulate),,all,demo
-4,8,July 29,Wednesday,Afternoon,6,15:55–16:40,Final presentations — full-group pitches (5 min each) & Q&A,,all,demo
+1,1,6-Jul,Monday,Morning,1,10:15–11:00,Course introduction · overview of the 4-week arc · team formation,,"liang,shimon,daniel",
+1,1,6-Jul,Monday,Morning,2,11:10–11:55,Embedded systems & IoT fundamentals · meet the ESP32,,liang,
+1,1,6-Jul,Monday,Afternoon,3,13:00–13:45,Character by design — lecture & sketching exercises (Part 1),yes,junjun Si,guest
+1,1,6-Jul,Monday,Afternoon,4,13:55–14:40,Character by design — LLM generative tools workshop (Part 2),yes,junjun,guest
+1,1,6-Jul,Monday,Afternoon,5,15:00–15:45,Open studio: form exploration · concept sketching,,"shimon,daniel",
+1,1,6-Jul,Monday,Afternoon,6,15:55–16:40,Industrial design intro: form follows function · sketching exercise,,"shimon,daniel",
+1,2,8-Jul,Wednesday,Morning,1,10:15–11:00,LLMs & conversational AI fundamentals · how robots think,,liang,
+1,2,8-Jul,Wednesday,Morning,2,11:10–11:55,ESP-Claw framework overview · architecture & design patterns,,liang,
+1,2,8-Jul,Wednesday,Afternoon,3,13:00–13:45,ESP32 first contact: hardware setup · GPIO · breadboard wiring,,"shimon,daniel",
+1,2,8-Jul,Wednesday,Afternoon,4,13:55–14:40,Firmware lab: Hello World — display output & LED blink,,"shimon,daniel",
+1,2,8-Jul,Wednesday,Afternoon,5,15:00–15:45,Robot concept ideation workshop · user persona · target need,,"shimon,daniel",
+1,2,8-Jul,Wednesday,Afternoon,6,15:55–16:40,Brief poster session — all teams present robot concept (3 min each),,all,poster
+2,3,13-Jul,Monday,Morning,1,10:15–11:00,OpenRouter APIs & LLM system architecture,,liang,
+2,3,13-Jul,Monday,Morning,2,11:10–11:55,MCP protocol · cloud/LLM integration patterns · Xiaozhi,,liang,
+2,3,13-Jul,Monday,Afternoon,3,13:00–13:45,Electronics lab: wiring sensors · displays & actuators,,"shimon,daniel",
+2,3,13-Jul,Monday,Afternoon,4,13:55–14:40,Firmware lab: LLM integration via OpenRouter — first response on device,,"shimon,daniel",
+2,3,13-Jul,Monday,Afternoon,5,15:00–15:45,Prompt engineering: system prompts · personality · language tuning,,"shimon,daniel",
+2,3,13-Jul,Monday,Afternoon,6,15:55–16:40,3D modeling intro · enclosure concept sketches,,"shimon,daniel",
+2,4,15-Jul,Wednesday,Morning,1,10:15–11:00,Design critique: prototype review & form iteration,,"shimon,daniel",
+2,4,15-Jul,Wednesday,Morning,2,11:10–11:55,Form development workshop: translating personality into shape,,"shimon,daniel",
+2,4,15-Jul,Wednesday,Afternoon,3,13:00–13:45,ESP32 ecosystem deep dive (Part 1),yes,espressif,guest
+2,4,15-Jul,Wednesday,Afternoon,4,13:55–14:40,ESP-Claw tooling · AI integration & partner ecosystem (Part 2),yes,espressif,guest
+2,4,15-Jul,Wednesday,Afternoon,5,15:00–15:45,Integration lab: hardware + firmware + LLM end-to-end,,"shimon,daniel",
+2,4,15-Jul,Wednesday,Afternoon,6,15:55–16:40,Open studio: prototype build & iteration,,"shimon,daniel",
+3,5,20-Jul,Monday,Morning,1,10:15–11:00,Entrepreneurship & the startup ecosystem (Part 1),yes,zhou,zhou
+3,5,20-Jul,Monday,Morning,2,11:10–11:55,How to pitch to VCs & stakeholders for buy-in (Part 2),yes,zhou,zhou
+3,5,20-Jul,Monday,Afternoon,3,13:00–13:45,Full system integration lab: all components running together,,"shimon,daniel",
+3,5,20-Jul,Monday,Afternoon,4,13:55–14:40,Debugging & stress-testing: 10-minute continuous run,,"shimon,daniel",
+3,5,20-Jul,Monday,Afternoon,5,15:00–15:45,User testing: live sessions with people outside the class,,"shimon,daniel",
+3,5,20-Jul,Monday,Afternoon,6,15:55–16:40,3D printing: finalize enclosure design & submit print job,,"shimon,daniel",
+3,6,22-Jul,Wednesday,Morning,1,10:15–11:00,3D print assembly & fit check · hardware mounting,,"shimon,daniel",
+3,6,22-Jul,Wednesday,Morning,2,11:10–11:55,Enclosure refinement · cable routing · structural review,,"shimon,daniel",
+3,6,22-Jul,Wednesday,Afternoon,3,13:00–13:45,User test debrief: what confused people? What delighted them?,,"shimon,daniel",
+3,6,22-Jul,Wednesday,Afternoon,4,13:55–14:40,Rapid iteration: top-3 fixes from user testing,,"shimon,daniel",
+3,6,22-Jul,Wednesday,Afternoon,5,15:00–15:45,Demo rehearsal: 2-minute run-through x3 (rotate presenters),,"shimon,daniel",
+3,6,22-Jul,Wednesday,Afternoon,6,15:55–16:40,Open lab: last build time & loose ends,,"shimon,daniel",
+4,7,27-Jul,Monday,Morning,1,10:15–11:00,Presentation coaching: story · structure & slide design (Part 1),yes,zhou,zhou
+4,7,27-Jul,Monday,Morning,2,11:10–11:55,Presentation coaching: Q&A prep & live feedback (Part 2),yes,zhou,zhou
+4,7,27-Jul,Monday,Afternoon,3,13:00–13:45,Poster review: content · layout & print finalization,,"shimon,daniel",
+4,7,27-Jul,Monday,Afternoon,4,13:55–14:40,Demo hardening: run-throughs · backup power · reboot plan,,"shimon,daniel",
+4,7,27-Jul,Monday,Afternoon,5,15:00–15:45,Full pitch rehearsal with instructor feedback (5 min + Q&A),,"shimon,daniel",
+4,7,27-Jul,Monday,Afternoon,6,15:55–16:40,Last design polish · submit poster print file,,"shimon,daniel",
+4,8,29-Jul,Wednesday,Morning,1,10:15–11:00,Open prep: last fixes · final tests · poster check,,all,
+4,8,29-Jul,Wednesday,Morning,2,11:10–11:55,Open prep: rehearsal & troubleshooting,,all,
+4,8,29-Jul,Wednesday,Afternoon,3,13:00–13:45,Setup: tables · displays · power · poster mounting,,all,
+4,8,29-Jul,Wednesday,Afternoon,4,13:55–14:40,Setup complete · buffer · final system check,,all,
+4,8,29-Jul,Wednesday,Afternoon,5,15:00–15:45,Final presentations — poster session & live robot demos (guests circulate),,all,demo
+4,8,29-Jul,Wednesday,Afternoon,6,15:55–16:40,Final presentations — full-group pitches (5 min each) & Q&A,,all,demo
