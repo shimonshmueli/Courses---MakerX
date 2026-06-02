@@ -60,7 +60,8 @@ Maker-X is an intensive **4-week project course** where cross-disciplinary teams
 ::: {.g-col-12 .g-col-md-3}
 ::: {.card .card-blue}
 <span class="sl" style="color:#60A5FA">01</span>
-### Conceive
+**Conceive**
+
 Identify a real user and a genuine need. Define the personality and purpose of your robot before touching any hardware.
 :::
 :::
@@ -68,7 +69,8 @@ Identify a real user and a genuine need. Define the personality and purpose of y
 ::: {.g-col-12 .g-col-md-3}
 ::: {.card .card-purple}
 <span class="sl" style="color:#A78BFA">02</span>
-### Design
+**Design**
+
 Shape, sound, language, expression — every detail of the robot's soul. Prototype rapidly and iterate without fear.
 :::
 :::
@@ -76,7 +78,8 @@ Shape, sound, language, expression — every detail of the robot's soul. Prototy
 ::: {.g-col-12 .g-col-md-3}
 ::: {.card .card-coral}
 <span class="sl" style="color:#FB923C">03</span>
-### Build
+**Build**
+
 Solder, code, 3D-print, and integrate. Electronics, firmware, enclosure — one complete, working product.
 :::
 :::
@@ -84,7 +87,8 @@ Solder, code, 3D-print, and integrate. Electronics, firmware, enclosure — one 
 ::: {.g-col-12 .g-col-md-3}
 ::: {.card .card-green}
 <span class="sl" style="color:#34D399">04</span>
-### Pitch It ★
+**Pitch It ★**
+
 Present your product to real university guests. A working demo, a poster, a story — your public debut.
 :::
 :::

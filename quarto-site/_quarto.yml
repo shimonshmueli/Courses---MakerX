@@ -41,10 +41,8 @@ website:
   page-footer:
     background: "#070C1A"
     border: true
-    left: "MAKER-X · Summer 2026 · ShanghaiTech University · SCA & SIST & Kedao College"
-    right:
-      - text: "sshmueli@shanghaitech.edu.cn"
-        href: "mailto:sshmueli@shanghaitech.edu.cn"
+    left: "MAKER-X · Summer 2026 · ShanghaiTech University"
+    right: []
 
   open-graph:
     title: "MAKER-X — AI-Powered Robotics"
