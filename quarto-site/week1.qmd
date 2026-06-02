@@ -31,23 +31,22 @@ By the end of Week 1 you will be able to:
 
 → [View period-by-period schedule](schedule.qmd)
 
-### Session 1 — Monday · Kick-off, ESP32 & Ideation
+### Session 1 — Monday · Kick-off, Character Design & Concept Brief
 
-The course begins. Teams form across disciplines. By the end of this session you will have your team, your first firmware running, and the seeds of a concept.
+The course begins. Guest lecturer JunJun Shi leads the afternoon — students leave with a team, a concept direction, and a clear sense of what robot personality means.
 
 **Agenda:**
 - Course overview and grading (Pass / No Pass) · 梁俊睿
-- Embedded systems & IoT fundamentals · 梁俊睿
-- ESP32 first contact: hardware setup, GPIO, display · Shimon + Daniel
-- Firmware lab: Hello World — text on display · Shimon + Daniel
-- Robot concept ideation workshop: user, need, personality · Shimon + Daniel
-- Industrial design intro: form follows function, sketching · Daniel
+- Embedded systems & IoT fundamentals · meet the ESP32 · 梁俊睿
+- **Guest lecture:** JunJun Shi — *"Empathy as the starting point for designing robot personality"* · character design workshop with sketching & LLM generative tools (2 periods)
+- **Brief poster session** — all teams present their robot concept (3 min each)
+- Industrial design intro: form follows function · sketching · Daniel
 
 ---
 
-### Session 2 — Wednesday · Character Design & Concept Brief
+### Session 2 — Wednesday · ESP32, Firmware & Ideation
 
-Guest lecture day and the first real milestone: every team presents their concept.
+Hands-on from the start. By the end of the session your board is talking to an LLM.
 
 ::: {.callout-tip title="Design Thinking in action"}
 The goal of user research is not to confirm your assumptions — it's to **break them**. The most interesting insights come from unexpected answers.
@@ -56,9 +55,10 @@ The goal of user research is not to confirm your assumptions — it's to **break
 **Agenda:**
 - LLMs & conversational AI fundamentals · 梁俊睿
 - ESP-Claw framework overview · 梁俊睿
-- **Guest lecture:** JunJun Shi — *"Empathy as the starting point for designing robot personality"* · character design workshop with sketching & LLM generative tools (2 periods)
-- **Brief poster session** — all teams present their robot concept (3 min each)
-- Open studio: form exploration · Daniel
+- ESP32 first contact: hardware setup, GPIO, breadboard wiring · Shimon + Daniel
+- Firmware lab: Hello World — display output & LED blink · Shimon + Daniel
+- Robot concept ideation workshop: user persona, target need · Shimon + Daniel
+- Open studio: form exploration & sketching · Daniel
 
 ---
 
