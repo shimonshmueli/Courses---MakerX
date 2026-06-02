@@ -7,37 +7,6 @@ toc: false
 <span class="sl" style="color:#A78BFA">// PRE-COURSE SETUP &nbsp;·&nbsp; 课前准备</span>
 
 ```{=html}
-<div style="display:flex; flex-wrap:wrap; gap:2rem; align-items:flex-start; margin:2rem 0 2.5rem;">
-
-  <!-- Team photo -->
-  <div style="flex:1; min-width:220px; max-width:323px;">
-    <img src="images/team.png" alt="The Maker-X instructors" style="width:100%; border-radius:10px; opacity:0.92;">
-  </div>
-
-  <!-- Encouraging text -->
-  <div style="flex:1; min-width:240px;">
-    <p style="font-family:'Exo 2',sans-serif; font-size:1.15rem; font-weight:700; color:#fff; margin:0 0 .8rem;">
-      Don't panic. We're all figuring this out.
-    </p>
-    <p style="font-family:'Barlow',sans-serif; font-size:0.92rem; color:#9AACBF; line-height:1.7; margin:0 0 .9rem;">
-      Some of these tools didn't exist two years ago. One or two will probably change before the course starts.
-      The documentation will have gaps. The AI will occasionally hallucinate something spectacular.
-      This is not a sign you're doing it wrong — it's a sign you're at the frontier.
-    </p>
-    <p style="font-family:'Barlow',sans-serif; font-size:0.92rem; color:#9AACBF; line-height:1.7; margin:0 0 .9rem;">
-      Your instructors are learning too — we just have a head start of a few months.
-      The best thing you can do is show up curious, set up the tools below, and be ready to break things on Day 1.
-    </p>
-    <p style="font-family:'Barlow',sans-serif; font-size:0.88rem; color:rgba(255,255,255,0.35); font-style:italic;">
-      Total setup time: ~30 minutes. Most of it is waiting for downloads.
-    </p>
-  </div>
-</div>
-
-<p style="font-family:'Audiowide',sans-serif; font-size:1.25rem; color:#FCD34D; text-align:center; margin:0 0 2.5rem; letter-spacing:.03em;">
-  Get ready to break things on Day 1.
-</p>
-
 <!-- Setup checklist -->
 <style>
 .setup-item {
@@ -236,3 +205,34 @@ to build and upload it.
 
 Claude Code writes the code, places it in the right file, and gives you the exact command to flash it. If something fails, paste the error back and ask it to fix it — that loop is the core skill you'll use all course.
 :::
+
+---
+
+```{=html}
+<div style="display:flex; flex-wrap:wrap; gap:2rem; align-items:flex-start; margin:2.5rem 0 1rem;">
+
+  <!-- Team photo -->
+  <div style="flex:1; min-width:220px; max-width:323px;">
+    <img src="images/team.png" alt="The Maker-X instructors" style="width:100%; border-radius:10px; opacity:0.92;">
+  </div>
+
+  <!-- Encouraging text -->
+  <div style="flex:1; min-width:240px;">
+    <p style="font-family:'Exo 2',sans-serif; font-size:1.15rem; font-weight:700; color:#fff; margin:0 0 .8rem;">
+      Don't panic. We're all figuring this out.
+    </p>
+    <p style="font-family:'Barlow',sans-serif; font-size:0.92rem; color:#9AACBF; line-height:1.7; margin:0 0 .9rem;">
+      Some of these tools didn't exist two years ago. One or two will probably change before the course starts.
+      The documentation will have gaps. The AI will occasionally hallucinate something spectacular.
+      This is not a sign you're doing it wrong — it's a sign you're at the frontier.
+    </p>
+    <p style="font-family:'Barlow',sans-serif; font-size:0.92rem; color:#9AACBF; line-height:1.7; margin:0 0 .9rem;">
+      Your instructors are learning too — we just have a head start of a few months.
+      The best thing you can do is show up curious, set up the tools above, and be ready to break things on Day 1.
+    </p>
+    <p style="font-family:'Audiowide',sans-serif; font-size:1.1rem; color:#FCD34D; margin:.5rem 0 0; letter-spacing:.03em;">
+      Get ready to break things on Day 1.
+    </p>
+  </div>
+</div>
+```
