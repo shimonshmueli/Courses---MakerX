@@ -1,8 +1,8 @@
 week,session,date,day,block,period,time,topic,guest,instructors,highlight
 1,1,6-Jul,Monday,Morning,1,10:15–11:00,Course introduction · overview of the 4-week arc · team formation,,"liang,shimon,daniel",
 1,1,6-Jul,Monday,Morning,2,11:10–11:55,Embedded systems & IoT fundamentals · meet the ESP32,,liang,
-1,1,6-Jul,Monday,Afternoon,3,13:00–13:45,Character by design — lecture & sketching exercises (Part 1),yes,junjun Si,guest
-1,1,6-Jul,Monday,Afternoon,4,13:55–14:40,Character by design — LLM generative tools workshop (Part 2),yes,junjun,guest
+1,1,6-Jul,Monday,Afternoon,3,13:00–13:45,Character by design — lecture & sketching exercises (Part 1),yes,junjun,guest
+1,1,6-Jul,Monday,Afternoon,4,13:55–14:40,Character by design — LLM generative tools (Part 2),yes,junjun,guest
 1,1,6-Jul,Monday,Afternoon,5,15:00–15:45,Open studio: form exploration · concept sketching,,"shimon,daniel",
 1,1,6-Jul,Monday,Afternoon,6,15:55–16:40,Industrial design intro: form follows function · sketching exercise,,"shimon,daniel",
 1,2,8-Jul,Wednesday,Morning,1,10:15–11:00,LLMs & conversational AI fundamentals · how robots think,,liang,
