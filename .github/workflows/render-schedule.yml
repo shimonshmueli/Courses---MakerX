@@ -1,0 +1,38 @@
+name: Render Schedule from Google Sheet
+
+# Triggered remotely by the Apps Script bound to the schedule Google Sheet
+# (see docs/apps-script-trigger.gs) every time someone edits the sheet.
+# Can also be run manually from the GitHub Actions tab for testing.
+on:
+  repository_dispatch:
+    types: [sheet-updated]
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  render-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Render site (fetches latest data from the Google Sheet)
+        working-directory: quarto-site
+        run: quarto render
+
+      - name: Commit and push if anything changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add quarto-site/_site quarto-site/_schedule_data.csv quarto-site/_schedule_generated.html
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Auto-render: schedule updated from Google Sheet"
+            git push
+          fi
