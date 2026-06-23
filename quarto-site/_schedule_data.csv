@@ -14,7 +14,7 @@ week,session,date,day,block,period,time,topic,guest,instructors,highlight
 2,3,13-Jul,Monday,Morning,1,10:15–11:00,OpenRouter APIs & LLM system architecture,,Wang WenChao,guest
 2,3,13-Jul,Monday,Morning,2,11:10–11:55,MCP protocol · cloud/LLM integration patterns · Xiaozhi,,Wang WenChao,guest
 2,3,13-Jul,Monday,Afternoon,3,13:00–13:45,Electronics lab: wiring sensors · displays & actuators,,liang,
-2,3,13-Jul,Monday,Afternoon,4,13:55–14:40,Firmware lab: LLM integration via OpenRouter — first response on device,,"shimon,daniel",
+2,3,13-Jul,Monday,Afternoon,4,13:55–14:40,Firmware lab: LLM integration via OpenRouter — first response on device,,liang,
 2,3,13-Jul,Monday,Afternoon,5,15:00–15:45,Prompt engineering: system prompts · personality · language tuning,,"shimon,daniel",
 2,3,13-Jul,Monday,Afternoon,6,15:55–16:40,3D modeling intro · enclosure concept sketches,,"shimon,daniel",
 2,4,15-Jul,Wednesday,Morning,1,10:15–11:00,Design critique: prototype review & form iteration,,"shimon,daniel",
