@@ -35,8 +35,8 @@ week,session,date,day,block,period,time,topic,guest,instructors,highlight
 3,6,22-Jul,Wednesday,Afternoon,4,13:55–14:40,Rapid iteration: top-3 fixes from user testing,,"shimon,daniel",
 3,6,22-Jul,Wednesday,Afternoon,5,15:00–15:45,Demo rehearsal: 2-minute run-through x3 (rotate presenters),,"shimon,daniel",
 3,6,22-Jul,Wednesday,Afternoon,6,15:55–16:40,Open lab: last build time & loose ends,,"shimon,daniel",
-4,7,27-Jul,Monday,Morning,1,10:15–11:00,Presentation coaching: story · structure & slide design (Part 1),yes,zhou,zhou
-4,7,27-Jul,Monday,Morning,2,11:10–11:55,Presentation coaching: Q&A prep & live feedback (Part 2),yes,zhou,zhou
+4,7,27-Jul,Monday,Morning,1,10:15–11:00,Presentation coaching: story · structure & slide design (Part 1),,zhou,zhou
+4,7,27-Jul,Monday,Morning,2,11:10–11:55,Presentation coaching: Q&A prep & live feedback (Part 2),,zhou,zhou
 4,7,27-Jul,Monday,Afternoon,3,13:00–13:45,Poster review: content · layout & print finalization,,"shimon,daniel",
 4,7,27-Jul,Monday,Afternoon,4,13:55–14:40,Demo hardening: run-throughs · backup power · reboot plan,,"shimon,daniel",
 4,7,27-Jul,Monday,Afternoon,5,15:00–15:45,Full pitch rehearsal with instructor feedback (5 min + Q&A),,"shimon,daniel",
