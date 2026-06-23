@@ -17,8 +17,8 @@ week,session,date,day,block,period,time,topic,guest,instructors,highlight
 2,3,13-Jul,Monday,Afternoon,4,13:55–14:40,Firmware lab: LLM integration via OpenRouter — first response on device,,"shimon,daniel",
 2,3,13-Jul,Monday,Afternoon,5,15:00–15:45,Prompt engineering: system prompts · personality · language tuning,,"shimon,daniel",
 2,3,13-Jul,Monday,Afternoon,6,15:55–16:40,3D modeling intro · enclosure concept sketches,,"shimon,daniel",
-2,4,15-Jul,Wednesday,Morning,1,10:15–11:00,Design critique: prototype review & form iteration,,"shimon,daniel",guest
-2,4,15-Jul,Wednesday,Morning,2,11:10–11:55,Form development workshop: translating personality into shape,,"shimon,daniel",guest
+2,4,15-Jul,Wednesday,Morning,1,10:15–11:00,Design critique: prototype review & form iteration,,"shimon,daniel",
+2,4,15-Jul,Wednesday,Morning,2,11:10–11:55,Form development workshop: translating personality into shape,,"shimon,daniel",
 2,4,15-Jul,Wednesday,Afternoon,3,13:00–13:45,ESP32 ecosystem deep dive (Part 1),yes,espressif,guest
 2,4,15-Jul,Wednesday,Afternoon,4,13:55–14:40,ESP-Claw tooling · AI integration & partner ecosystem (Part 2),yes,espressif,guest
 2,4,15-Jul,Wednesday,Afternoon,5,15:00–15:45,Integration lab: hardware + firmware + LLM end-to-end,,"shimon,daniel",
