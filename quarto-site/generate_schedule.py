@@ -18,7 +18,7 @@ import sys
 from pathlib import Path
 
 # ── CONFIGURATION ────────────────────────────────────────────────────────────
-SHEET_URL   = "YOUR_GOOGLE_SHEETS_CSV_URL_HERE"   # paste published CSV URL here
+SHEET_URL   = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQuOxB_aSJwEFyHbyKhja9hhOsLBLFZ1bG_vUVtiXNbbsKYVyLpXjqeBF-OvCiDg-ZnK25fIX7nSQJ6/pub?gid=1871517813&single=true&output=csv"
 CACHE_FILE  = Path("_schedule_data.csv")           # local fallback / cache
 OUTPUT_FILE = Path("_schedule_generated.html")     # included by schedule.qmd
 # ─────────────────────────────────────────────────────────────────────────────
