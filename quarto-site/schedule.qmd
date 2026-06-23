@@ -90,7 +90,7 @@ toc: false
 }
 .p-topic { color: #CBD5E1; }
 .p-topic strong { color: #fff; font-weight: 600; }
-.p-who { width: 140px; white-space: nowrap; }
+.p-who { width: 150px; color: #CBD5E1; }
 
 .block-hdr td {
   padding: 0.22rem 0.9rem;

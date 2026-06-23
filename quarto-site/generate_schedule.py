@@ -31,15 +31,15 @@ WEEK_META = {
     "4": {"title": "PITCH IT ★",  "zh": "展示", "cls": "w4-hdr"},
 }
 
-# Instructor badge HTML
-BADGES = {
-    "liang":     '<span class="b b-liang">梁俊睿</span>',
-    "shimon":    '<span class="b b-shimon">Shimon</span>',
-    "daniel":    '<span class="b b-daniel">Daniel</span>',
-    "junjun":    '<span class="b b-junjun">JunJun</span>',
-    "espressif": '<span class="b b-esp">Espressif</span>',
-    "zhou":      '<span class="b b-zhou">Prof. Zhou</span>',
-    "all":       '<span class="b b-all">All</span>',
+# Display names for known instructor keys (rendered as plain text, no badge)
+INSTRUCTOR_NAMES = {
+    "liang":     "梁俊睿",
+    "shimon":    "Shimon",
+    "daniel":    "Daniel",
+    "junjun":    "JunJun",
+    "espressif": "Espressif",
+    "zhou":      "Prof. Zhou",
+    "all":       "All",
 }
 
 # Row highlight CSS classes
@@ -52,11 +52,14 @@ HIGHLIGHT_CLASSES = {
 
 
 def render_badges(instructors_str: str) -> str:
-    """Convert comma-separated instructor keys to badge HTML."""
+    """Render comma-separated instructor keys/names as plain, uniform text
+    (no colored badges — known keys are mapped to their display name,
+    case-insensitively; anything else is shown as typed)."""
     if not instructors_str.strip():
         return ""
-    parts = [p.strip() for p in instructors_str.split(",")]
-    return " ".join(BADGES.get(p, html.escape(p)) for p in parts if p)
+    parts = [p.strip() for p in instructors_str.split(",") if p.strip()]
+    names = [INSTRUCTOR_NAMES.get(p.lower(), p) for p in parts]
+    return html.escape(", ".join(names))
 
 
 def fetch_sheet() -> str | None:
