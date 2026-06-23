@@ -7,14 +7,14 @@ week,session,date,day,block,period,time,topic,guest,instructors,highlight
 1,1,6-Jul,Monday,Afternoon,6,15:55–16:40,Industrial design intro: form follows function · sketching exercise,,"shimon,daniel",
 1,2,8-Jul,Wednesday,Morning,1,10:15–11:00,3D modeling and prototyping,,Wang WenChao,guest
 1,2,8-Jul,Wednesday,Morning,2,11:10–11:55,3D modeling and prototyping,,Wang WenChao,guest
-1,2,8-Jul,Wednesday,Afternoon,3,13:00–13:45,Intro to Embedded Systems and IoT,,liang,
-1,2,8-Jul,Wednesday,Afternoon,4,13:55–14:40,Intro to Embedded Systems and IoT,,liang,
+1,2,8-Jul,Wednesday,Afternoon,3,13:00–13:45,"Intro to IoT, communications, circuits, OS, computer architecture...",,liang,
+1,2,8-Jul,Wednesday,Afternoon,4,13:55–14:40,"Intro to IoT, communications, circuits, OS, computer architecture...",,liang,
 1,2,8-Jul,Wednesday,Afternoon,5,15:00–15:45,Robot concept ideation workshop · user persona · target need,,"shimon,daniel",
 1,2,8-Jul,Wednesday,Afternoon,6,15:55–16:40,Brief poster session — all teams present robot concept (3 min each),,all,poster
 2,3,13-Jul,Monday,Morning,1,10:15–11:00,3D modeling and prototyping,,Wang WenChao,guest
-2,3,13-Jul,Monday,Morning,2,11:10–11:55,3D modeling and prototyping,,Wang WenChao,guest
-2,3,13-Jul,Monday,Afternoon,3,13:00–13:45,Intro to Embedded Systems and IoT,,liang,
-2,3,13-Jul,Monday,Afternoon,4,13:55–14:40,Intro to Embedded Systems and IoT,,liang,
+2,3,13-Jul,Monday,Morning,2,11:10–11:55,MCP protocol · cloud/LLM integration patterns · Xiaozhi,,Wang WenChao,guest
+2,3,13-Jul,Monday,Afternoon,3,13:00–13:45,"Intro to IoT, communications, circuits, OS, computer architecture...",,liang,
+2,3,13-Jul,Monday,Afternoon,4,13:55–14:40,"Intro to IoT, communications, circuits, OS, computer architecture...",,liang,
 2,3,13-Jul,Monday,Afternoon,5,15:00–15:45,Prompt engineering: system prompts · personality · language tuning,,"shimon,daniel",
 2,3,13-Jul,Monday,Afternoon,6,15:55–16:40,3D modeling intro · enclosure concept sketches,,"shimon,daniel",
 2,4,15-Jul,Wednesday,Morning,1,10:15–11:00,Design critique: prototype review & form iteration,,"shimon,daniel",
@@ -23,8 +23,8 @@ week,session,date,day,block,period,time,topic,guest,instructors,highlight
 2,4,15-Jul,Wednesday,Afternoon,4,13:55–14:40,ESP-Claw tooling · AI integration & partner ecosystem (Part 2),yes,espressif,guest
 2,4,15-Jul,Wednesday,Afternoon,5,15:00–15:45,Integration lab: hardware + firmware + LLM end-to-end,,"shimon,daniel",
 2,4,15-Jul,Wednesday,Afternoon,6,15:55–16:40,Open studio: prototype build & iteration,,"shimon,daniel",
-3,5,20-Jul,Monday,Morning,1,10:15–11:00,Hands-on 3D modeling and printing,yes,Fan MinXiao,guest
-3,5,20-Jul,Monday,Morning,2,11:10–11:55,Hands-on 3D modeling and printing,yes,Fan MinXiao,guest
+3,5,20-Jul,Monday,Morning,1,10:15–11:00,Entrepreneurship & the startup ecosystem (Part 1),yes,Fan MinXiao,guest
+3,5,20-Jul,Monday,Morning,2,11:10–11:55,How to pitch to VCs & stakeholders for buy-in (Part 2),yes,Fan MinXiao,guest
 3,5,20-Jul,Monday,Afternoon,3,13:00–13:45,"Intro to IoT, communications, circuits, OS, computer architecture...",,liang,
 3,5,20-Jul,Monday,Afternoon,4,13:55–14:40,"Intro to IoT, communications, circuits, OS, computer architecture...",,liang,
 3,5,20-Jul,Monday,Afternoon,5,15:00–15:45,User testing: live sessions with people outside the class,,"shimon,daniel",
