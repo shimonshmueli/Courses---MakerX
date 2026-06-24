@@ -3,31 +3,31 @@ week,session,date,day,block,period,time,topic,guest,instructors,highlight
 1,1,6-Jul,Monday,Morning,2,11:10–11:55,Overview of Design Thinking and Doing,,Daniel,
 1,1,6-Jul,Monday,Afternoon,3,13:00–13:45,Character by design — lecture & sketching exercises (Part 1),yes,junjun,guest
 1,1,6-Jul,Monday,Afternoon,4,13:55–14:40,Character by design — LLM generative tools (Part 2),yes,junjun,guest
-1,1,6-Jul,Monday,Afternoon,5,15:00–15:45,Open studio: form exploration · concept sketching,,"shimon,daniel",
-1,1,6-Jul,Monday,Afternoon,6,15:55–16:40,Industrial design intro: form follows function · sketching exercise,,"shimon,daniel",
+1,1,6-Jul,Monday,Afternoon,5,15:00–15:45,Studio,,"shimon,daniel",
+1,1,6-Jul,Monday,Afternoon,6,15:55–16:40,Studio,,"shimon,daniel",
 1,2,8-Jul,Wednesday,Morning,1,10:15–11:00,3D modeling and prototyping (Part 1),,Wang WenChao,guest
 1,2,8-Jul,Wednesday,Morning,2,11:10–11:55,3D modeling and prototyping (Part 2),,Wang WenChao,guest
 1,2,8-Jul,Wednesday,Afternoon,3,13:00–13:45,Intro to Embedded Systems and IoT (Part 1),,liang,
 1,2,8-Jul,Wednesday,Afternoon,4,13:55–14:40,Intro to Embedded Systems and IoT (Part 2),,liang,
-1,2,8-Jul,Wednesday,Afternoon,5,15:00–15:45,Robot concept ideation workshop · user persona · target need,,"shimon,daniel",
+1,2,8-Jul,Wednesday,Afternoon,5,15:00–15:45,Studio,,"shimon,daniel",
 1,2,8-Jul,Wednesday,Afternoon,6,15:55–16:40,Team Presentations - The Design Brief,,,poster
 2,3,13-Jul,Monday,Morning,1,10:15–11:00,3D modeling and prototyping (Part 3),,Wang WenChao,guest
 2,3,13-Jul,Monday,Morning,2,11:10–11:55,3D modeling and prototyping (Part 4),,Wang WenChao,guest
 2,3,13-Jul,Monday,Afternoon,3,13:00–13:45,Intro to Embedded Systems and IoT (Part 3),,liang,
 2,3,13-Jul,Monday,Afternoon,4,13:55–14:40,Intro to Embedded Systems and IoT (Part 4),,liang,
-2,3,13-Jul,Monday,Afternoon,5,15:00–15:45,Prompt engineering: system prompts · personality · language tuning,,"shimon,daniel",
-2,3,13-Jul,Monday,Afternoon,6,15:55–16:40,3D modeling intro · enclosure concept sketches,,"shimon,daniel",
-2,4,15-Jul,Wednesday,Morning,1,10:15–11:00,Design critique: prototype review & form iteration,,"shimon,daniel",
-2,4,15-Jul,Wednesday,Morning,2,11:10–11:55,Form development workshop: translating personality into shape,,"shimon,daniel",
+2,3,13-Jul,Monday,Afternoon,5,15:00–15:45,Studio,,"shimon,daniel",
+2,3,13-Jul,Monday,Afternoon,6,15:55–16:40,Studio,,"shimon,daniel",
+2,4,15-Jul,Wednesday,Morning,1,10:15–11:00,Studio,,"shimon,daniel",
+2,4,15-Jul,Wednesday,Morning,2,11:10–11:55,Studio,,"shimon,daniel",
 2,4,15-Jul,Wednesday,Afternoon,3,13:00–13:45,ESP32 ecosystem deep dive (Part 1),yes,espressif,guest
 2,4,15-Jul,Wednesday,Afternoon,4,13:55–14:40,ESP32 ecosystem deep dive (Part 2),yes,espressif,guest
-2,4,15-Jul,Wednesday,Afternoon,5,15:00–15:45,Integration lab: hardware + firmware + LLM end-to-end,,"shimon,daniel",
-2,4,15-Jul,Wednesday,Afternoon,6,15:55–16:40,Open studio: prototype build & iteration,,"shimon,daniel",
+2,4,15-Jul,Wednesday,Afternoon,5,15:00–15:45,Studio,,"shimon,daniel",
+2,4,15-Jul,Wednesday,Afternoon,6,15:55–16:40,Studio,,"shimon,daniel",
 3,5,20-Jul,Monday,Morning,1,10:15–11:00,Hands-on 3D modeling and printing (Part 1),yes,Fan MinXiao,guest
 3,5,20-Jul,Monday,Morning,2,11:10–11:55,Hands-on 3D modeling and printing (Part 2),yes,Fan MinXiao,guest
 3,5,20-Jul,Monday,Afternoon,3,13:00–13:45,Intro to Embedded Systems and IoT (Part 5),,liang,
 3,5,20-Jul,Monday,Afternoon,4,13:55–14:40,Intro to Embedded Systems and IoT (Part 6),,liang,
-3,5,20-Jul,Monday,Afternoon,5,15:00–15:45,User testing: live sessions with people outside the class,,"shimon,daniel",
+3,5,20-Jul,Monday,Afternoon,5,15:00–15:45,Studio,,"shimon,daniel",
 3,5,20-Jul,Monday,Afternoon,6,15:55–16:40,3D printing: finalize enclosure design & submit print job,,"shimon,daniel",
 3,6,22-Jul,Wednesday,Morning,1,10:15–11:00,3D print assembly & fit check · hardware mounting,,"shimon,daniel",
 3,6,22-Jul,Wednesday,Morning,2,11:10–11:55,Enclosure refinement · cable routing · structural review,,"shimon,daniel",
