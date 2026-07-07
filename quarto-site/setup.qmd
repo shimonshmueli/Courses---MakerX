@@ -177,12 +177,30 @@ toc: false
     <div class="setup-note">All free. The PlatformIO first-time install downloads ~500 MB of toolchains — do it on Wi-Fi.</div>
   </div>
 </div>
+
+<div class="setup-item">
+  <div class="setup-num" style="color:#34D399">06</div>
+  <div class="setup-body">
+    <div class="setup-title">Chatbox AI</div>
+    <div class="setup-desc">
+      Chatbox is a desktop AI client that gives you a clean, fast interface for chatting with any LLM — Claude, GPT, DeepSeek, Qwen, and others — via your own API keys.
+      Unlike browser-based chat UIs, it keeps your conversations local, lets you switch models instantly, and works great for testing system prompts before you embed them in your robot's firmware.
+    </div>
+    <ol class="setup-steps">
+      <li>Download Chatbox from <strong>chatboxai.app</strong> — available for macOS, Windows, and Linux</li>
+      <li>Open Chatbox → Settings → Add a provider — choose <strong>OpenRouter</strong> and paste the API key you created in step 02</li>
+      <li>Select a model (start with <strong>Qwen 2.5</strong> or <strong>DeepSeek Chat</strong>) and send a test message</li>
+    </ol>
+    <a class="setup-link" href="https://chatboxai.app/" target="_blank">→ chatboxai.app</a>
+    <div class="setup-note">Free desktop app. Uses your own OpenRouter key — no extra subscription required.</div>
+  </div>
+</div>
 ```
 
 ---
 
 ::: {.callout-tip title="Already done? Try a hello world with Claude Code."}
-All five tools installed? Let Claude Code write your first firmware. Here's how:
+All six tools installed? Let Claude Code write your first firmware. Here's how:
 
 **1. Create a PlatformIO project in VS Code**
 
